@@ -1,11 +1,15 @@
 package gq.not11.bot;
 
 import gq.not11.bot.commands.PingCommand;
+import gq.not11.bot.commands.music.DisconnectCommand;
+import gq.not11.bot.commands.music.JoinCommand;
+import gq.not11.bot.commands.music.PlayCommand;
 import gq.not11.bot.core.command.CommandHandler;
 import net.dv8tion.jda.bot.sharding.DefaultShardManagerBuilder;
 import net.dv8tion.jda.bot.sharding.ShardManager;
 import net.dv8tion.jda.core.OnlineStatus;
 import net.dv8tion.jda.core.entities.Game;
+import net.dv8tion.jda.core.entities.Guild;
 
 import javax.security.auth.login.LoginException;
 
@@ -20,9 +24,18 @@ public class Bot {
                 .setStatus(OnlineStatus.ONLINE)
                 .setGame(Game.listening(".help"));
 
+
+
+
         commandHandler = new CommandHandler(this);
         commandHandler.register(new PingCommand());
+        commandHandler.register(new PlayCommand());
+        commandHandler.register(new JoinCommand());
+        commandHandler.register(new DisconnectCommand());
         builder.addEventListeners(commandHandler);
+
+
+
 
         try {
             shardManager = builder.build();

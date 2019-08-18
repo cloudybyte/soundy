@@ -29,7 +29,7 @@ public class CommandEvent {
         } else if (event instanceof GuildMessageUpdateEvent) {
             type = CommandType.EDIT;
             raw = event;
-            // IMPLEMENT LATER ON
+            //TODO IMPLEMENT READING OF EDITED MESSAGES
         } else {
             throw new InvalidTypeException("CommandEvent cannot be initialized with that GuildMessageEvent!");
         }
