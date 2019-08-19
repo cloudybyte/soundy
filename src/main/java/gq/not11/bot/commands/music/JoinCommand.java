@@ -11,7 +11,7 @@ import net.dv8tion.jda.core.managers.AudioManager;
 public class JoinCommand extends Command {
 
     public JoinCommand() {
-        super("Let's the bot join your channel", new String[]{"join"}, "");
+        super("Let's the bot join your channel", new String[]{"join"}, ".join");
     }
 
 
