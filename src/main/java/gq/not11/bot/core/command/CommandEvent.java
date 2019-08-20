@@ -17,6 +17,8 @@ public class CommandEvent {
         if (event instanceof GuildMessageReceivedEvent) {
             type = CommandType.NEW;
             raw = event;
+ 
+            //TODO Clarify InvalidTypeExeption
 
             prefix = System.getenv("PREFIX");
             command = ((GuildMessageReceivedEvent) event).getMessage().getContentDisplay().substring(prefix.length()).split(" ")[0];
