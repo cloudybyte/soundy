@@ -10,10 +10,17 @@ import net.dv8tion.jda.bot.sharding.ShardManager;
 import net.dv8tion.jda.core.OnlineStatus;
 import net.dv8tion.jda.core.entities.Game;
 import net.dv8tion.jda.core.entities.Guild;
-
+import java.util.concurrent.TimeUnit;
 import javax.security.auth.login.LoginException;
 
+
+
+
+
+
 public class Bot {
+
+    long startupTime = System.currentTimeMillis();
 
     private ShardManager shardManager;
     private CommandHandler commandHandler;
@@ -42,6 +49,10 @@ public class Bot {
         } catch (LoginException e) {
             e.printStackTrace();
         }
+
+
+
+
     }
 
     public static void main(String[] args) {
