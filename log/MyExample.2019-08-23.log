@@ -1,0 +1,7 @@
+17:54:10.853 [main] DEBUG io.sentry.config.FileResourceLoader - The configuration file sentry.properties (which resolves to absolute path C:\Users\Ole\IdeaProjects\nexot - Kopie\sentry.properties) doesn't exist, is not a file or is not readable.
+17:54:10.928 [main] WARN  io.sentry.dsn.Dsn - *** Couldn't find a suitable DSN, Sentry operations will do nothing! See documentation: https://docs.sentry.io/clients/java/ ***
+17:54:10.976 [main] DEBUG io.sentry.DefaultSentryClientFactory - Using noop to send events.
+17:54:10.979 [main] DEBUG io.sentry.config.Lookup - Found async=false in DSN.
+17:54:10.982 [main] DEBUG io.sentry.DefaultSentryClientFactory - The current environment doesn't provide access to servlets, or provides an unsupported version.
+17:54:10.983 [main] DEBUG io.sentry.SentryClient - Adding 'io.sentry.event.helper.ContextBuilderHelper@3590fc5b' to the list of builder helpers.
+17:54:10.984 [main] DEBUG io.sentry.SentryClientFactory - Configuring uncaught exception handler.
