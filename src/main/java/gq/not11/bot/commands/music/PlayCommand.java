@@ -16,25 +16,28 @@ import gq.not11.bot.core.audio.PlayerManager;
 import gq.not11.bot.core.audio.TrackScheduler;
 import gq.not11.bot.core.command.Command;
 import gq.not11.bot.core.command.CommandEvent;
+import gq.not11.bot.util.Colors;
+import io.sentry.SentryClient;
+import io.sentry.SentryClientFactory;
 import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.audio.AudioSendHandler;
-import net.dv8tion.jda.core.entities.Guild;
-import net.dv8tion.jda.core.entities.Member;
-import net.dv8tion.jda.core.entities.Message;
-import net.dv8tion.jda.core.entities.VoiceChannel;
+import net.dv8tion.jda.core.entities.*;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.core.exceptions.InsufficientPermissionException;
 import net.dv8tion.jda.core.managers.AudioManager;
-import org.slf4j.Logger;
+//import org.slf4j.Logger;
+import org.apache.log4j.Logger;
 import org.slf4j.LoggerFactory;
+import io.sentry.Sentry;
+import gq.not11.bot.util.Colors.*;
 
 import static com.sedmelluq.discord.lavaplayer.tools.FriendlyException.Severity.COMMON;
 
 
-public class PlayCommand extends Command implements AudioEventListener {
+public class PlayCommand extends Command implements AudioEventListener  {
 
     public PlayCommand() {
-        super("Let's you play music", new String[]{"play"}, ".play [provide youtube link]");
+        super("Plays a song", new String[]{"play"}, ".play [song url]");
     }
 
 
@@ -45,6 +48,7 @@ public class PlayCommand extends Command implements AudioEventListener {
 
         GuildMessageReceivedEvent raw = ((GuildMessageReceivedEvent) event.getRaw());
 
+        SentryClient sentry = SentryClientFactory.sentryClient();
 
 
         Guild guild = raw.getGuild();
@@ -58,12 +62,36 @@ public class PlayCommand extends Command implements AudioEventListener {
         AudioPlayer player = playerManager.createPlayer();
         TrackScheduler trackScheduler = new TrackScheduler(player);
 
+        TextChannel channel = raw.getChannel();
+
+        String BLUE = Colors.BLUE;
+        String RESET = Colors.RESET;
+
+
+
+
+
+
+
+
+
+
         PlayerManager manager = PlayerManager.getInstance();
 
-        String trackURL = "https://youtu.be/SJ5eW0xRgOA";
+        try {
+            String[] args = CommandEvent.getArgs;
+            System.out.println(BLUE + args[0] + RESET);
+            manager.loadAndPlay(raw.getChannel(), args[0]);
+        }
+        catch(NullPointerException e){
+            raw.getChannel().sendMessage("URL cannot be null!").queue();
+            sentry.sendException(e);
+        }
 
 
-        manager.loadAndPlay(raw.getChannel(), trackURL );
+
+
+
 
 
         manager.getGuildMusicManager(raw.getGuild()).player.setVolume(60);

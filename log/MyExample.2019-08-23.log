@@ -5,3 +5,21 @@
 17:54:10.982 [main] DEBUG io.sentry.DefaultSentryClientFactory - The current environment doesn't provide access to servlets, or provides an unsupported version.
 17:54:10.983 [main] DEBUG io.sentry.SentryClient - Adding 'io.sentry.event.helper.ContextBuilderHelper@3590fc5b' to the list of builder helpers.
 17:54:10.984 [main] DEBUG io.sentry.SentryClientFactory - Configuring uncaught exception handler.
+<<<<<<< Updated upstream
+=======
+17:56:37.328 [main] DEBUG io.sentry.config.FileResourceLoader - The configuration file sentry.properties (which resolves to absolute path C:\Users\Ole\IdeaProjects\nexot - Kopie\sentry.properties) doesn't exist, is not a file or is not readable.
+17:56:37.396 [main] DEBUG io.sentry.DefaultSentryClientFactory - Using an HTTPS connection to Sentry.
+17:56:37.559 [main] DEBUG io.sentry.DefaultSentryClientFactory - The current environment doesn't provide access to servlets, or provides an unsupported version.
+17:56:37.560 [main] DEBUG io.sentry.SentryClient - Adding 'io.sentry.event.helper.ContextBuilderHelper@77f1baf5' to the list of builder helpers.
+17:56:37.562 [main] DEBUG io.sentry.SentryClientFactory - Configuring uncaught exception handler.
+17:56:40.043 [JDA RateLimit-Worker 1] DEBUG n.d.jda.core.requests.Requester - Received response with following cf-rays: [50ae470cd8e7c4d6-DUS]
+17:56:40.072 [main] INFO  n.d.jda.bot.sharding.ShardManager - Login Successful!
+17:56:40.967 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.core.requests.WebSocketClient - Connected to WebSocket
+17:56:40.967 [JDA [0 / 1] MainWS-ReadThread] DEBUG n.d.j.core.requests.WebSocketClient - Sending Identify-packet...
+17:56:41.006 [JDA [0 / 1] MainWS-ReadThread] DEBUG n.d.j.core.requests.WebSocketClient - Got HELLO packet (OP 10). Initializing keep-alive.
+17:56:41.007 [JDA [0 / 1] MainWS-ReadThread] DEBUG n.d.j.core.requests.WebSocketClient - Received a _trace for HELLO (OP: 10) with ["[\"gateway-prd-main-gbs0\",{\"micros\":0.0}]"]
+17:56:43.837 [JDA [0 / 1] MainWS-ReadThread] DEBUG n.d.j.core.requests.WebSocketClient - Received a _trace for READY (OP: 0) with ["[\"gateway-prd-main-gbs0\",{\"micros\":1058019,\"calls\":[\"discord-sessions-prd-1-19\",{\"micros\":1053718,\"calls\":[\"start_session\",{\"micros\":36032,\"calls\":[\"api-prd-main-fg20\",{\"micros\":31178,\"calls\":[\"get_user\",{\"micros\":2338},\"add_authorized_ip\",{\"micros\":8369},\"get_guilds\",{\"micros\":2402},\"coros_wait\",{\"micros\":2}]}]},\"guilds_connect\",{\"micros\":2,\"calls\":[]},\"presence_connect\",{\"micros\":1000650,\"calls\":[]}]}]}]"]
+17:56:43.843 [JDA [0 / 1] MainWS-ReadThread] DEBUG n.d.j.c.handle.GuildSetupController - Setting incomplete count to 1
+17:56:44.089 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.core.JDA - Finished Loading!
+17:56:44.090 [JDA [0 / 1] MainWS-ReadThread] DEBUG n.d.j.c.handle.GuildSetupController - Finished setup for guild 579340391938261003 firing cached events 0
+>>>>>>> Stashed changes

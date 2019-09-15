@@ -7,10 +7,19 @@ import com.sedmelluq.discord.lavaplayer.source.AudioSourceManagers;
 import com.sedmelluq.discord.lavaplayer.tools.FriendlyException;
 import com.sedmelluq.discord.lavaplayer.track.AudioPlaylist;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
+import io.sentry.SentryClient;
+import io.sentry.SentryClientFactory;
 import net.dv8tion.jda.core.entities.Guild;
 import net.dv8tion.jda.core.entities.TextChannel;
-import org.slf4j.Logger;
+
 import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
+import org.apache.log4j.MDC;
+import org.apache.log4j.NDC;
+import io.sentry.Sentry;
+
+
+
 
 import java.util.HashMap;
 import java.util.Map;
@@ -24,6 +33,7 @@ public class PlayerManager {
     private final AudioPlayerManager playerManager;
     private final Map<Long, GuildMusicManager> musicManagers;
     private static final Logger log = LoggerFactory.getLogger(PlayerManager.class);
+
 
 
 
@@ -51,6 +61,8 @@ public class PlayerManager {
 
     public void loadAndPlay(TextChannel channel, String trackURL) {
         GuildMusicManager musicManager = getGuildMusicManager(channel.getGuild());
+
+        SentryClient sentry = SentryClientFactory.sentryClient();
 
         playerManager.loadItemOrdered(musicManager, trackURL, new AudioLoadResultHandler() {
             @Override
@@ -81,6 +93,9 @@ public class PlayerManager {
             @Override
             public void loadFailed(FriendlyException exception) {
                 channel.sendMessage("Could not play: " + exception.getMessage()).queue();
+                log.error("Loading track failed: " + exception.getMessage());
+                sentry.sendException(exception);
+
             }
         });
     }

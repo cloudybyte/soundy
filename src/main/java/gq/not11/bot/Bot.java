@@ -12,6 +12,7 @@ import net.dv8tion.jda.core.entities.Game;
 import net.dv8tion.jda.core.entities.Guild;
 import java.util.concurrent.TimeUnit;
 import javax.security.auth.login.LoginException;
+import io.sentry.Sentry;
 
 
 
@@ -25,7 +26,13 @@ public class Bot {
     private ShardManager shardManager;
     private CommandHandler commandHandler;
 
+
+
     private Bot(String[] args) {
+        //INITIALIZE SENTRY
+        Sentry.init(System.getenv("SENTRY_DSN"));
+
+
         DefaultShardManagerBuilder builder = new DefaultShardManagerBuilder()
                 .setToken(System.getenv("DISCORD_TOKEN"))
                 .setStatus(OnlineStatus.ONLINE)

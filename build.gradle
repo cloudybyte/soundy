@@ -23,6 +23,9 @@ dependencies {
     compile group: 'org.slf4j', name:'slf4j-api', version: '1.7.28'
     compile group: 'ch.qos.logback', name:'logback-classic', version: '1.2.3'
     compile group: 'ch.qos.logback', name:'logback-core', version: '1.2.3'
+    compile 'io.sentry:sentry-log4j:1.7.27'
+    compile 'io.sentry:sentry:1.7.27'
+
 }
 
 compileJava.options.encoding = 'UTF-8'
