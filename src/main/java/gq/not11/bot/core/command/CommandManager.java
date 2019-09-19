@@ -5,6 +5,7 @@ import gq.not11.bot.commands.PingCommand;
 import gq.not11.bot.commands.StatsCommand;
 import gq.not11.bot.commands.UptimeCommand;
 import gq.not11.bot.commands.management.ShardCommand;
+import gq.not11.bot.commands.management.ShutdownCommand;
 import gq.not11.bot.commands.music.*;
 import gq.not11.bot.core.Constants;
 import net.dv8tion.jda.bot.sharding.ShardManager;
@@ -36,6 +37,7 @@ public class CommandManager {
         addCommand(new InfoCommand());
         addCommand(new StatsCommand());
         addCommand(new ShardCommand());
+        addCommand(new ShutdownCommand());
     }
 
 

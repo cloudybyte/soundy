@@ -17,12 +17,8 @@ import static gq.not11.bot.util.Colors.GREEN;
 
 public class Listener extends ListenerAdapter {
 
-    private final CommandManager manager;
+    private final CommandManager manager = new CommandManager();
     private final Logger logger = LoggerFactory.getLogger(Listener.class);
-
-    Listener(CommandManager manager) {
-        this.manager = manager;
-    }
 
 
 
@@ -47,10 +43,10 @@ public class Listener extends ListenerAdapter {
             Guild guild = event.getGuild();
             TextChannel textChannel = event.getTextChannel();
 
-            logger.info(String.format("(%s) [%s] <%#s>: %s", guild.getName(), textChannel.getName(), author, content));
+            //logger.info(String.format("(%s) [%s] <%#s>: %s", guild.getName(), textChannel.getName(), author, content));
         }
         else if (event.isFromType(ChannelType.PRIVATE)) {
-            logger.info(String.format("[PRIV] <%#s>: %s", author, content));
+            //logger.info(String.format("[PRIV] <%#s>: %s", author, content));
         }
 
     }
@@ -65,8 +61,7 @@ public class Listener extends ListenerAdapter {
             return;
         }
         if (!event.getAuthor().isBot() && !event.getMessage().isWebhookMessage() && event.getMessage().getContentRaw().startsWith(Constants.PREFIX)) {
-
-            manager.handleCommand(event);
+                    manager.handleCommand(event);
         }
     }
 

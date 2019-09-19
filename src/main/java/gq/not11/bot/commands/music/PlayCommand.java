@@ -11,12 +11,13 @@ import com.sedmelluq.discord.lavaplayer.source.AudioSourceManagers;
 import com.sedmelluq.discord.lavaplayer.tools.FriendlyException;
 import com.sedmelluq.discord.lavaplayer.track.AudioPlaylist;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
+import gq.not11.bot.core.Constants;
 import gq.not11.bot.core.audio.AudioPlayerSendHandler;
 import gq.not11.bot.core.audio.PlayerManager;
 import gq.not11.bot.core.audio.TrackScheduler;
-import gq.not11.bot.core.command.Command;
-import gq.not11.bot.core.command.CommandEvent;
+import gq.not11.bot.core.command.ICommand;
 import gq.not11.bot.util.Colors;
+import gq.not11.bot.util.EmbedBuilder;
 import io.sentry.SentryClient;
 import io.sentry.SentryClientFactory;
 import net.dv8tion.jda.core.JDA;
@@ -26,35 +27,38 @@ import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.core.exceptions.InsufficientPermissionException;
 import net.dv8tion.jda.core.managers.AudioManager;
 //import org.slf4j.Logger;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import io.sentry.Sentry;
 import gq.not11.bot.util.Colors.*;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.List;
+
 import static com.sedmelluq.discord.lavaplayer.tools.FriendlyException.Severity.COMMON;
 
 
-public class PlayCommand extends Command implements AudioEventListener  {
+public class PlayCommand implements ICommand, AudioEventListener  {
 
-    public PlayCommand() {
-        super("Plays a song", new String[]{"play"}, ".play [song url]");
+    private Logger logger = LoggerFactory.getLogger(PlayCommand.class);
+
+
+
+    public void onEvent(AudioEvent event) {
+
     }
 
-
-    private static final Logger log = LoggerFactory.getLogger(PlayCommand.class);
-
     @Override
-    public void run(CommandEvent event) {
+    public void handle(List<String> args, GuildMessageReceivedEvent event) {
 
-        GuildMessageReceivedEvent raw = ((GuildMessageReceivedEvent) event.getRaw());
 
         SentryClient sentry = SentryClientFactory.sentryClient();
+        EmbedBuilder embedBuilder = new EmbedBuilder();
 
 
-        Guild guild = raw.getGuild();
-        Member member = raw.getMember();
-        VoiceChannel vc = member.getVoiceState().getChannel();
-        AudioManager audioManager = guild.getAudioManager();
+        VoiceChannel vc = event.getMember().getVoiceState().getChannel();
+        AudioManager audioManager = event.getGuild().getAudioManager();
 
 
         AudioPlayerManager playerManager = new DefaultAudioPlayerManager();
@@ -62,29 +66,30 @@ public class PlayCommand extends Command implements AudioEventListener  {
         AudioPlayer player = playerManager.createPlayer();
         TrackScheduler trackScheduler = new TrackScheduler(player);
 
-        TextChannel channel = raw.getChannel();
 
         String BLUE = Colors.BLUE;
         String RESET = Colors.RESET;
 
+        if(args.isEmpty()){
+            embedBuilder.warn(event,"Arguments error", "Please provide a url");
+        }
 
 
 
+        String input = String.join(" ", args);
 
-
-
-
-
+        if(!isURL(input) && !input.startsWith("ytsearch:")){
+            embedBuilder.warn(event, "Not a valid link", "Please provide a valid link! Valid links can be found at");
+        }
 
         PlayerManager manager = PlayerManager.getInstance();
 
         try {
-            String[] args = CommandEvent.getArgs;
-            System.out.println(BLUE + args[0] + RESET);
-            manager.loadAndPlay(raw.getChannel(), args[0]);
+            manager.loadAndPlay(event.getChannel(), input);
+            logger.info(BLUE + "Queued " + args.get(0) + "in guild " + event.getGuild().getName() + " by " + event.getAuthor() + RESET);
         }
         catch(NullPointerException e){
-            raw.getChannel().sendMessage("URL cannot be null!").queue();
+            event.getChannel().sendMessage("URL cannot be null!").queue();
             sentry.sendException(e);
         }
 
@@ -94,16 +99,39 @@ public class PlayCommand extends Command implements AudioEventListener  {
 
 
 
-        manager.getGuildMusicManager(raw.getGuild()).player.setVolume(60);
 
 
 
 
-        }
+        manager.getGuildMusicManager(event.getGuild()).player.setVolume(100);
 
-    @Override
-    public void onEvent(AudioEvent event) {
+
+
 
     }
+
+
+    private boolean isURL(String input) {
+        try{
+            new URL(input);
+            return true;
+        } catch (MalformedURLException ignored) {
+            return false;
+        }
+    }
+
+    @Override
+    public String getHelp() {
+        return "Plays a song\n" +
+                "Usage: `" + Constants.PREFIX + getInvoke() + " [song url]`";
+    }
+
+    @Override
+    public String getInvoke() {
+        return "play";
+    }
 }
+
+
+
 
