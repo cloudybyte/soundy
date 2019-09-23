@@ -25,6 +25,7 @@ dependencies {
     compile group: 'ch.qos.logback', name:'logback-core', version: '1.2.3'
     compile 'io.sentry:sentry-log4j:1.7.27'
     compile 'io.sentry:sentry:1.7.27'
+    compile group: 'com.google.apis', name: 'google-api-services-youtube', version: 'v3-rev212-1.25.0'
 
 }
 

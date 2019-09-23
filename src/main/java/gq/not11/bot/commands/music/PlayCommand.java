@@ -1,6 +1,10 @@
 package gq.not11.bot.commands.music;
 
 
+import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
+import com.google.api.client.json.jackson2.JacksonFactory;
+import com.google.api.services.youtube.YouTube;
+import com.google.api.services.youtube.model.SearchResult;
 import com.sedmelluq.discord.lavaplayer.player.AudioLoadResultHandler;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayerManager;
@@ -32,6 +36,7 @@ import org.slf4j.LoggerFactory;
 import io.sentry.Sentry;
 import gq.not11.bot.util.Colors.*;
 
+import javax.annotation.Nullable;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
@@ -42,6 +47,26 @@ import static com.sedmelluq.discord.lavaplayer.tools.FriendlyException.Severity.
 public class PlayCommand implements ICommand, AudioEventListener  {
 
     private Logger logger = LoggerFactory.getLogger(PlayCommand.class);
+
+    private final YouTube youTube;
+
+    public PlayCommand() {
+        YouTube temp = null;
+
+        try {
+            temp = new YouTube.Builder(
+                    GoogleNetHttpTransport.newTrustedTransport(),
+                    JacksonFactory.getDefaultInstance(),
+                    null
+            )
+                    .setApplicationName("nightplay Youtube Search Engine")
+                    .build();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        youTube = temp;
+        }
 
 
 
@@ -71,22 +96,29 @@ public class PlayCommand implements ICommand, AudioEventListener  {
         String RESET = Colors.RESET;
 
         if(args.isEmpty()){
-            embedBuilder.warn(event,"Arguments error", "Please provide a url");
+            embedBuilder.warn(event,"Arguments error", "Please provide a song name");
         }
 
 
 
         String input = String.join(" ", args);
 
-        if(!isURL(input) && !input.startsWith("ytsearch:")){
-            embedBuilder.warn(event, "Not a valid link", "Please provide a valid link! Valid links can be found at");
+        if(!isURL(input)){
+            String ytSearched = searchYoutube(input);
+            input = ytSearched;
+
+            if(ytSearched == null){
+                embedBuilder.warn(event, "Search error", "Nothing found");
+
+                return;
+            }
         }
 
         PlayerManager manager = PlayerManager.getInstance();
 
         try {
             manager.loadAndPlay(event.getChannel(), input);
-            logger.info(BLUE + "Queued " + args.get(0) + "in guild " + event.getGuild().getName() + " by " + event.getAuthor() + RESET);
+            logger.info(BLUE + "Queued " + args.get(0) + " in guild " + event.getGuild().getName() + " by " + event.getAuthor() + RESET);
         }
         catch(NullPointerException e){
             event.getChannel().sendMessage("URL cannot be null!").queue();
@@ -118,6 +150,37 @@ public class PlayCommand implements ICommand, AudioEventListener  {
         } catch (MalformedURLException ignored) {
             return false;
         }
+    }
+
+     @Nullable
+    private String searchYoutube(String input){
+
+        try {
+            List<SearchResult> results = youTube.search()
+                    .list("id,snippet")
+                    .setQ(input)
+                    .setMaxResults(1L)
+                    .setType("video")
+                    .setFields("items(id/kind,id/videoId,snippet/title)")
+                    .setKey(System.getenv("YOUTUBE_KEY"))
+                    .execute()
+                    .getItems();
+
+            if (!results.isEmpty()){
+
+                String videoID = results.get(0).getId().getVideoId();
+
+
+                return "https://www.youtube.com/watch?v=" + videoID;
+
+
+            }
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return null;
     }
 
     @Override

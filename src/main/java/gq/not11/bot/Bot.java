@@ -1,15 +1,11 @@
 package gq.not11.bot;
 
-import gq.not11.bot.commands.PingCommand;
-import gq.not11.bot.commands.music.DisconnectCommand;
-import gq.not11.bot.commands.music.JoinCommand;
-import gq.not11.bot.commands.music.PlayCommand;
 import net.dv8tion.jda.bot.sharding.DefaultShardManagerBuilder;
 import net.dv8tion.jda.bot.sharding.ShardManager;
 import net.dv8tion.jda.core.OnlineStatus;
 import net.dv8tion.jda.core.entities.Game;
-import net.dv8tion.jda.core.entities.Guild;
-import java.util.concurrent.TimeUnit;
+
+import java.io.IOException;
 import javax.security.auth.login.LoginException;
 import io.sentry.Sentry;
 
@@ -20,6 +16,8 @@ import io.sentry.Sentry;
 
 public class Bot {
 
+
+
     private Listener Listener;
     long startupTime = System.currentTimeMillis();
 
@@ -27,7 +25,7 @@ public class Bot {
 
 
 
-    private Bot(String[] args) {
+    private Bot(String[] args) throws IOException {
         //INITIALIZE SENTRY
         Sentry.init(System.getenv("SENTRY_DSN"));
 
@@ -55,7 +53,7 @@ builder.addEventListeners(new Listener());
 
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         new Bot(args);
     }
 }

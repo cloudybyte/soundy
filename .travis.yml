@@ -1,0 +1,39 @@
+# travis-ci config file
+
+
+
+language: java
+
+
+
+before_install:
+
+  - chmod +x gradlew
+
+
+
+before_script:
+
+  - chmod +x gradlew
+
+
+
+
+
+jdk:
+
+  - oraclejdk11
+
+
+
+sudo: required
+
+
+
+script:
+
+  - ./gradlew clean build -i --continue
+
+
+
+
