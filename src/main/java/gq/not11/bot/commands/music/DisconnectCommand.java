@@ -3,6 +3,7 @@ package gq.not11.bot.commands.music;
 
 import gq.not11.bot.core.Constants;
 import gq.not11.bot.core.command.ICommand;
+import gq.not11.bot.util.Reactions;
 import io.sentry.SentryClient;
 import io.sentry.SentryClientFactory;
 import net.dv8tion.jda.core.entities.Guild;
@@ -29,7 +30,7 @@ public class DisconnectCommand implements ICommand {
 
         try {
             audioManager.closeAudioConnection();
-            event.getChannel().sendMessage("Disconnected!").queue();
+            event.getMessage().addReaction(Reactions.BYE).queue();
         }
         catch (IllegalArgumentException e){
             sentry.sendException(e);
