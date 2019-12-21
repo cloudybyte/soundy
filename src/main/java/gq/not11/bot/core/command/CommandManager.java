@@ -39,6 +39,7 @@ public class CommandManager {
         addCommand(new ShardCommand());
         addCommand(new ShutdownCommand());
         addCommand(new VolumeCommand());
+        addCommand(new LoopCommand());
     }
 
 

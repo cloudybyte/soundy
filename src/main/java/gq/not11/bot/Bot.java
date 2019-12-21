@@ -1,5 +1,6 @@
 package gq.not11.bot;
 
+import gq.not11.bot.core.Constants;
 import net.dv8tion.jda.bot.sharding.DefaultShardManagerBuilder;
 import net.dv8tion.jda.bot.sharding.ShardManager;
 import net.dv8tion.jda.core.OnlineStatus;
@@ -33,7 +34,7 @@ public class Bot {
         DefaultShardManagerBuilder builder = new DefaultShardManagerBuilder()
                 .setToken(System.getenv("DISCORD_TOKEN"))
                 .setStatus(OnlineStatus.ONLINE)
-                .setGame(Game.listening(".help"));
+                .setGame(Game.listening(Constants.PREFIX + "help"));
 
 
 

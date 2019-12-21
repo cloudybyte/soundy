@@ -12,8 +12,7 @@ import net.dv8tion.jda.core.entities.Guild;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 
 import java.awt.*;
-import java.lang.management.ManagementFactory;
-import java.lang.management.RuntimeMXBean;
+
 import java.time.Instant;
 
 public class EmbedBuilder{
@@ -178,5 +177,67 @@ public class EmbedBuilder{
         event.getChannel().sendMessage(builder.build()).queue();
 
     }
+
+    public void shardAveragePing(GuildMessageReceivedEvent event) {
+
+        String title = "Average Ping";
+
+
+
+        net.dv8tion.jda.core.EmbedBuilder builder = new net.dv8tion.jda.core.EmbedBuilder()
+                .setTitle(title)
+                .setColor(Color.CYAN)
+                .setFooter("https://nightplay.gq", null)
+                .setTimestamp(Instant.now())
+
+                .addField("Average Ping:", String.format("`%s` ms", shardManager.getAveragePing()), true);
+
+
+        //TODO: Permission check if the bot can send embed messages
+        event.getChannel().sendMessage(builder.build()).queue();
+
+    }
+
+
+    public void shardNumberRunning(GuildMessageReceivedEvent event){
+
+        String title = "Number of shards running:";
+
+
+
+        net.dv8tion.jda.core.EmbedBuilder builder = new net.dv8tion.jda.core.EmbedBuilder()
+                .setTitle(title)
+                .setColor(Color.CYAN)
+                .setFooter("https://nightplay.gq", null)
+                .setTimestamp(Instant.now())
+
+                .addField("Running shards:", String.format("`%s`", shardManager.getShardsRunning()), true);
+
+
+        //TODO: Permission check if the bot can send embed messages
+        event.getChannel().sendMessage(builder.build()).queue();
+
+    }
+
+    public void shardApplicationInfo(GuildMessageReceivedEvent event){
+
+        String title = "Application Info:";
+
+
+
+        net.dv8tion.jda.core.EmbedBuilder builder = new net.dv8tion.jda.core.EmbedBuilder()
+                .setTitle(title)
+                .setColor(Color.CYAN)
+                .setFooter("https://nightplay.gq", null)
+                .setTimestamp(Instant.now())
+
+                .addField("Application Info:", String.format("`%s`", shardManager.getApplicationInfo()), true);
+
+
+        //TODO: Permission check if the bot can send embed messages
+        event.getChannel().sendMessage(builder.build()).queue();
+
+    }
+
 
 }
