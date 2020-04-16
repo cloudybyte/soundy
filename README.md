@@ -1,4 +1,4 @@
-# nightplay
+# soundy
  
 ##  Features
  - Just provide a Youtube, Soundcloud, Bandcamp, Twitch, Vimeo or http-Audio Link and start listening!
