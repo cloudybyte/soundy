@@ -1,0 +1,10 @@
+11:58:32.381 [main] INFO  n.d.jda.bot.sharding.ShardManager - Login Successful!
+11:58:32.742 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.core.requests.WebSocketClient - Connected to WebSocket
+11:58:32.961 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.core.JDA - Finished Loading!
+11:58:32.961 [JDA [0 / 1] MainWS-ReadThread] INFO  gq.not11.bot.Listener - Logged in as nightplay DEV#3047
+11:58:32.961 [JDA [0 / 1] MainWS-ReadThread] INFO  gq.not11.bot.Listener - [0;32mBooted[0m
+12:23:53.316 [main] INFO  n.d.jda.bot.sharding.ShardManager - Login Successful!
+12:23:53.675 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.core.requests.WebSocketClient - Connected to WebSocket
+12:23:53.889 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.core.JDA - Finished Loading!
+12:23:53.890 [JDA [0 / 1] MainWS-ReadThread] INFO  gq.not11.bot.Listener - Logged in as nightplay DEV#3047
+12:23:53.890 [JDA [0 / 1] MainWS-ReadThread] INFO  gq.not11.bot.Listener - [0;32mBooted[0m

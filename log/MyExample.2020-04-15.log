@@ -1,0 +1,85 @@
+16:41:02.610 [main] INFO  n.d.jda.bot.sharding.ShardManager - Login Successful!
+16:41:03.061 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.core.requests.WebSocketClient - Connected to WebSocket
+16:41:03.361 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.core.JDA - Finished Loading!
+16:41:03.362 [JDA [0 / 1] MainWS-ReadThread] INFO  net.cloudybyte.bot.Listener - Logged in as nightplay DEV#3047
+16:41:03.362 [JDA [0 / 1] MainWS-ReadThread] INFO  net.cloudybyte.bot.Listener - [0;32mBooted[0m
+16:50:50.767 [main] INFO  n.d.jda.bot.sharding.ShardManager - Login Successful!
+16:50:52.197 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.core.requests.WebSocketClient - Connected to WebSocket
+16:50:52.428 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.core.JDA - Finished Loading!
+16:50:52.429 [JDA [0 / 1] MainWS-ReadThread] INFO  net.cloudybyte.bot.Listener - Logged in as nightplay DEV#3047
+16:50:52.429 [JDA [0 / 1] MainWS-ReadThread] INFO  net.cloudybyte.bot.Listener - [0;32mBooted[0m
+16:53:17.767 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued riot in guild nexottest by U:cloudybyte(301780655019130880)[0m
+16:53:17.912 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued riot in guild nexottest by U:cloudybyte(301780655019130880)[0m
+16:53:18.939 [lava-daemon-pool-info-loader-6-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=ixZDTiXiHsc Title: Three Days Grace - Riot (Official Audio)[0m
+16:53:18.999 [lava-daemon-pool-info-loader-6-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=ixZDTiXiHsc Title: Three Days Grace - Riot (Official Audio)[0m
+16:53:19.820 [lava-daemon-pool-playback-5-thread-1] ERROR c.s.d.l.t.p.LocalAudioTrackExecutor - Error in playback of ixZDTiXiHsc
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Something broke when playing the track.
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:43)
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:102)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$1(DefaultAudioPlayerManager.java:349)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.io.IOException: Received non-success response code 404
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeSignatureCipherManager.validateResponseCode(YoutubeSignatureCipherManager.java:155)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeSignatureCipherManager.getCipherKeyFromScript(YoutubeSignatureCipherManager.java:140)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeSignatureCipherManager.getValidUrl(YoutubeSignatureCipherManager.java:101)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.loadBestFormatWithUrl(YoutubeAudioTrack.java:101)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.process(YoutubeAudioTrack.java:62)
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:90)
+	... 4 common frames omitted
+16:53:19.822 [lava-daemon-pool-playback-5-thread-1] ERROR c.s.d.l.t.p.LocalAudioTrackExecutor - Error in playback of ixZDTiXiHsc
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Something broke when playing the track.
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:43)
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:102)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$1(DefaultAudioPlayerManager.java:349)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.io.IOException: Received non-success response code 404
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeSignatureCipherManager.validateResponseCode(YoutubeSignatureCipherManager.java:155)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeSignatureCipherManager.getCipherKeyFromScript(YoutubeSignatureCipherManager.java:140)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeSignatureCipherManager.getValidUrl(YoutubeSignatureCipherManager.java:101)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.loadBestFormatWithUrl(YoutubeAudioTrack.java:101)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.process(YoutubeAudioTrack.java:62)
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:90)
+	... 4 common frames omitted
+16:53:37.777 [JDA RateLimit-Worker 1] WARN  n.d.jda.core.requests.RateLimiter - Encountered 429 on route /channels/579340391938261005/messages/{message_id}/reactions/{reaction_code}/@me
+16:53:37.779 [ForkJoinPool.commonPool-worker-19] ERROR n.d.jda.core.requests.RestAction - RestAction queue returned failure: [ErrorResponseException] 10014: Unknown Emoji
+16:53:38.200 [ForkJoinPool.commonPool-worker-19] ERROR n.d.jda.core.requests.RestAction - RestAction queue returned failure: [ErrorResponseException] 10014: Unknown Emoji
+16:54:29.254 [main] INFO  n.d.jda.bot.sharding.ShardManager - Login Successful!
+16:54:29.666 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.core.requests.WebSocketClient - Connected to WebSocket
+16:54:30.027 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.core.JDA - Finished Loading!
+16:54:30.028 [JDA [0 / 1] MainWS-ReadThread] INFO  net.cloudybyte.bot.Listener - Logged in as nightplay DEV#3047
+16:54:30.028 [JDA [0 / 1] MainWS-ReadThread] INFO  net.cloudybyte.bot.Listener - [0;32mBooted[0m
+16:54:46.924 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued riot in guild nexottest by U:cloudybyte(301780655019130880)[0m
+16:54:47.108 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued riot in guild nexottest by U:cloudybyte(301780655019130880)[0m
+16:54:47.691 [lava-daemon-pool-info-loader-6-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=ixZDTiXiHsc Title: Three Days Grace - Riot (Official Audio)[0m
+16:54:48.314 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=ixZDTiXiHsc Title: Three Days Grace - Riot (Official Audio)[0m
+16:54:48.522 [lava-daemon-pool-playback-5-thread-1] ERROR c.s.d.l.t.p.LocalAudioTrackExecutor - Error in playback of ixZDTiXiHsc
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Something broke when playing the track.
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:43)
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:102)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$1(DefaultAudioPlayerManager.java:349)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.io.IOException: Received non-success response code 404
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeSignatureCipherManager.validateResponseCode(YoutubeSignatureCipherManager.java:155)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeSignatureCipherManager.getCipherKeyFromScript(YoutubeSignatureCipherManager.java:140)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeSignatureCipherManager.getValidUrl(YoutubeSignatureCipherManager.java:101)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.loadBestFormatWithUrl(YoutubeAudioTrack.java:101)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.process(YoutubeAudioTrack.java:62)
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:90)
+	... 4 common frames omitted
+23:57:43.282 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+23:57:43.676 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+23:57:44.020 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+23:57:44.021 [JDA [0 / 1] MainWS-ReadThread] INFO  net.cloudybyte.bot.Listener - Logged in as nightplay DEV#3047
+23:57:44.021 [JDA [0 / 1] MainWS-ReadThread] INFO  net.cloudybyte.bot.Listener - [0;32mBooted[0m
+23:57:58.865 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued riot in guild nexottest by U:cloudybyte(301780655019130880)[0m
+23:57:59.889 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=ixZDTiXiHsc Title: Three Days Grace - Riot (Official Audio)[0m
+23:58:07.745 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$233/0x00000008003f7840@1c7e8e9
+23:58:07.755 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+23:58:07.755 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+23:58:07.782 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.

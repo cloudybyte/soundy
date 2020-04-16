@@ -1,0 +1,5 @@
+17:17:19.140 [main] INFO  n.d.jda.bot.sharding.ShardManager - Login Successful!
+17:17:19.502 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.core.requests.WebSocketClient - Connected to WebSocket
+17:17:19.789 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.core.JDA - Finished Loading!
+17:17:19.790 [JDA [0 / 1] MainWS-ReadThread] INFO  gq.not11.bot.Listener - Logged in as nightplay DEV#3047
+17:17:19.790 [JDA [0 / 1] MainWS-ReadThread] INFO  gq.not11.bot.Listener - [0;32mBooted[0m

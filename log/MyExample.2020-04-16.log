@@ -1,0 +1,36 @@
+00:02:21.157 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.lang.IllegalArgumentException: Provided VoiceChannel may not be null
+	at net.dv8tion.jda.internal.utils.Checks.notNull(Checks.java:56)
+	at net.dv8tion.jda.internal.managers.AudioManagerImpl.openAudioConnection(AudioManagerImpl.java:75)
+	at net.cloudybyte.bot.commands.music.PlayCommand.handle(PlayCommand.java:107)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:75)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:61)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+00:02:33.246 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=vj-x3FSUmVc in guild nexottest by U:cloudybyte(301780655019130880)[0m
+00:02:34.077 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=vj-x3FSUmVc Title: Hollywood Undead - Riot (Official Audio)[0m
+00:06:46.209 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://soundcloud.com/tapio_official/krisenzeit in guild nexottest by U:cloudybyte(301780655019130880)[0m
+00:06:46.210 [lava-daemon-pool-info-loader-5-thread-1] INFO  c.s.d.l.s.s.SoundCloudClientIdTracker - Updating SoundCloud client ID (current is null).
+00:06:46.518 [lava-daemon-pool-info-loader-5-thread-1] INFO  c.s.d.l.s.s.SoundCloudClientIdTracker - Updating SoundCloud client ID succeeded, new ID is 5GgluyZWRsmOnJymmhf8QKPVfsDxRYXF.
+00:06:46.796 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://soundcloud.com/tapio_official/krisenzeit Title: Krisenzeit[0m
+00:10:14.175 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://soundcloud.com/tapio_official/krisenzeit in guild nexottest by U:cloudybyte(301780655019130880)[0m
+00:10:14.355 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://soundcloud.com/tapio_official/krisenzeit Title: Krisenzeit[0m
+00:14:13.519 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://soundcloud.com/tapio_official/krisenzeit in guild nexottest by U:cloudybyte(301780655019130880)[0m
+00:14:13.799 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://soundcloud.com/tapio_official/krisenzeit Title: Krisenzeit[0m
+00:17:58.831 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://soundcloud.com/tapio_official/krisenzeit in guild nexottest by U:cloudybyte(301780655019130880)[0m
+00:17:59.104 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://soundcloud.com/tapio_official/krisenzeit Title: Krisenzeit[0m
