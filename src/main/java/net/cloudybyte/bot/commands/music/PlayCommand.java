@@ -19,6 +19,7 @@ import net.cloudybyte.bot.core.audio.TrackScheduler;
 import net.cloudybyte.bot.core.command.ICommand;
 import net.cloudybyte.bot.util.Colors;
 import net.cloudybyte.bot.util.EmbedBuilder;
+import net.cloudybyte.bot.util.GuildTrackScheduleHandler;
 import net.dv8tion.jda.api.entities.VoiceChannel;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.managers.AudioManager;
@@ -78,6 +79,7 @@ public class PlayCommand implements ICommand, AudioEventListener  {
         AudioSourceManagers.registerRemoteSources(playerManager);
         AudioPlayer player = playerManager.createPlayer();
         TrackScheduler trackScheduler = new TrackScheduler(player);
+        GuildTrackScheduleHandler.addTrackScheduler(event.getGuild(), trackScheduler);
 
 
         String BLUE = Colors.BLUE;

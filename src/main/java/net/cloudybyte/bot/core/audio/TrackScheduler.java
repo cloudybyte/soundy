@@ -58,9 +58,7 @@ public class TrackScheduler extends AudioEventAdapter {
 
         if(endReason.mayStartNext && trackLoop){
             player.playTrack(track);
-        }
-
-        if (endReason.mayStartNext) {
+        } else if (endReason.mayStartNext) {
             nextTrack();
         }
     }

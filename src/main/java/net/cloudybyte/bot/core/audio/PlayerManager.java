@@ -29,9 +29,6 @@ public class PlayerManager {
     private final Map<Long, GuildMusicManager> musicManagers;
     private static final Logger log = LoggerFactory.getLogger(PlayerManager.class);
 
-
-
-
     private PlayerManager() {
         this.musicManagers = new HashMap<>();
 

@@ -12,9 +12,11 @@ import net.cloudybyte.bot.core.audio.TrackScheduler;
 import net.cloudybyte.bot.core.command.ICommand;
 import net.cloudybyte.bot.util.Colors;
 import net.cloudybyte.bot.util.EmbedBuilder;
+import net.cloudybyte.bot.util.GuildTrackScheduleHandler;
 import net.dv8tion.jda.api.entities.VoiceChannel;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.managers.AudioManager;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
@@ -27,29 +29,25 @@ public class LoopCommand implements ICommand {
         SentryClient sentry = SentryClientFactory.sentryClient();
         EmbedBuilder embedBuilder = new EmbedBuilder();
 
-
         VoiceChannel vc = event.getMember().getVoiceState().getChannel();
         AudioManager audioManager = event.getGuild().getAudioManager();
-
 
         AudioPlayerManager playerManager = new DefaultAudioPlayerManager();
         AudioSourceManagers.registerRemoteSources(playerManager);
         AudioPlayer player = playerManager.createPlayer();
-        TrackScheduler trackScheduler = new TrackScheduler(player);
-
+        TrackScheduler trackScheduler = GuildTrackScheduleHandler.getTrackScheduler(event.getGuild());
 
         String BLUE = Colors.BLUE;
         String RESET = Colors.RESET;
 
+        if (trackScheduler == null) return;
         boolean trackLoop = trackScheduler.isTrackLooped();
 
-
-        if (trackLoop = false) {
-
+        if (!trackLoop) {
+            trackScheduler.setTrackLoop(true);
             embedBuilder.info(event, "Looping turned on", "Hey! I just stepped on of the loop train!");
-        }
-        if (trackLoop = true) {
-            trackLoop = false;
+        } else {
+            trackScheduler.setTrackLoop(false);
             embedBuilder.info(event, "Looping turned off", "Hey! I just fell of the looping train!");
         }
     }
