@@ -21,11 +21,7 @@ public class Listener extends ListenerAdapter {
     private final Logger logger = LoggerFactory.getLogger(Listener.class);
 
 
-    @Override
-    public void onReady(ReadyEvent event) {
-        logger.info(String.format("Logged in as %#s", event.getJDA().getSelfUser()));
-        logger.info(String.format(GREEN + "Booted" + RESET));
-    }
+
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
 

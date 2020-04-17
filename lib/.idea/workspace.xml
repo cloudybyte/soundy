@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="34ab317e-c6fc-478f-9a8c-3f891a2e7613" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/copyright/main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/copyright/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/lib.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-connector-java-8.0.18.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-connector-java-8.0.19.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/util/GuildVolumeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules/soundy.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules/soundy.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules/soundy.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../log/MyExample.2020-04-16.log" beforeDir="false" afterPath="$PROJECT_DIR$/../log/MyExample.2020-04-16.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/Bot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/commands/UptimeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/commands/UptimeCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/commands/music/DisconnectCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/commands/music/DisconnectCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/commands/music/JoinCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/commands/music/JoinCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/commands/music/LoopCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/commands/music/LoopCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/commands/music/PlayCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/commands/music/PlayCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/commands/music/VolumeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/commands/music/VolumeCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/core/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/core/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/core/audio/TrackScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/core/audio/TrackScheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/core/command/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/core/command/CommandManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/core/data/MySQLManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/core/data/MySQLManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/listeners/ReadyListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/listeners/ReadyListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/util/EmbedBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/util/EmbedBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/util/Reactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/net/cloudybyte/bot/util/Reactions.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1adgT7eb2rs14q2TMIRq9vymoxi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../GGMdiscordVerification" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="34ab317e-c6fc-478f-9a8c-3f891a2e7613" name="Default Changelist" comment="" />
+      <created>1587070889454</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587070889454</updated>
+      <workItem from="1587070891366" duration="49000" />
+      <workItem from="1587112562726" duration="23000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="314" key="FileChooserDialogImpl" timestamp="1587070911730">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="740" y="314" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1587070911730" />
+  </component>
+</project>

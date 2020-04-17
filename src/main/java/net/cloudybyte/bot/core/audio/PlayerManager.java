@@ -9,9 +9,11 @@ import com.sedmelluq.discord.lavaplayer.track.AudioPlaylist;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 import io.sentry.SentryClient;
 import io.sentry.SentryClientFactory;
+import net.cloudybyte.bot.util.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.TextChannel;
+import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -43,7 +45,8 @@ public class PlayerManager {
         GuildMusicManager musicManager = musicManagers.get(guildId);
 
         if (musicManager == null) {
-            musicManager = new GuildMusicManager(playerManager);
+            long guildid = guild.getIdLong();
+            musicManager = new GuildMusicManager(playerManager, guildid);
             musicManagers.put(guildId, musicManager);
         }
 
@@ -51,16 +54,17 @@ public class PlayerManager {
         return musicManager;
     }
 
-    public void loadAndPlay(TextChannel channel, String trackURL) {
-        GuildMusicManager musicManager = getGuildMusicManager(channel.getGuild());
+    public void loadAndPlay(GuildMessageReceivedEvent event, String trackURL) {
+        GuildMusicManager musicManager = getGuildMusicManager(event.getChannel().getGuild());
+        TextChannel channel = event.getChannel();
+        EmbedBuilder embedBuilder = new EmbedBuilder();
 
         SentryClient sentry = SentryClientFactory.sentryClient();
 
         playerManager.loadItemOrdered(musicManager, trackURL, new AudioLoadResultHandler() {
             @Override
             public void trackLoaded(AudioTrack track) {
-
-                channel.sendMessage("Adding to queue: " + track.getInfo().title).queue();
+                embedBuilder.nowPlayingCommand(event, track.getInfo().title);
                 log.info(GREEN + "Track was loaded! Now playing: " + trackURL + " Title: " + track.getInfo().title + RESET);
                 play(musicManager, track);
             }
@@ -84,7 +88,7 @@ public class PlayerManager {
 
             @Override
             public void loadFailed(FriendlyException exception) {
-                channel.sendMessage("Could not play: " + exception.getMessage()).queue();
+                embedBuilder.error(event, null, "Could not play: " + exception.getMessage());
                 log.error("Loading track failed: " + exception.getMessage());
                 sentry.sendException(exception);
 

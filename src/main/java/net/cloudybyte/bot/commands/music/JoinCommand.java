@@ -6,6 +6,7 @@ import io.sentry.SentryClientFactory;
 import net.cloudybyte.bot.core.Constants;
 import net.cloudybyte.bot.core.command.ICommand;
 import net.cloudybyte.bot.util.EmbedBuilder;
+import net.cloudybyte.bot.util.Reactions;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.VoiceChannel;
@@ -59,12 +60,13 @@ public class JoinCommand implements ICommand {
 
         try {
             audioManager.openAudioConnection(vc);
-            event.getChannel().sendMessage("Successfully joined your Voice Channel!").queue();
+            audioManager.setSelfDeafened(true);
+            event.getMessage().addReaction(Reactions.HELLO).queue();
         }
         catch (IllegalArgumentException e) {
             event.getChannel().sendMessage("Sorry, but it seems like you aren't connected to a Voice Channel!").queue();
         }
-        catch (UnsupportedOperationException | GuildUnavailableException e){
+        catch (UnsupportedOperationException e){
             sentry.sendException(e);
             embedBuilder.error(event, "Error", "An error occurred! Error code: ");
 
