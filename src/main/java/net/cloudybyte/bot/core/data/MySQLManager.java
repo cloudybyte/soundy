@@ -184,6 +184,53 @@ public class MySQLManager {
         return false;
     }
 
+
+
+    public boolean insertandupdate(String table, String[] keys, Object[] values, String keytoUpdate, Integer valuetoUpdate) throws MySQL_NotConnectedQueryException {
+        if (!connected())
+            throw new MySQL_NotConnectedQueryException("MySQLManager is currently not connected to any database!" +
+                    " Therefore can't call INSERT");
+        String sql = "INSERT INTO `" + table + "`(";
+        if (keys != null && values != null) {
+            if (keys.length == values.length) {
+                boolean first = true;
+                for (String key : keys) {
+                    if (!first) {
+                        sql += ",";
+                    }
+                    first = false;
+                    sql += "`" + key + "`";
+                }
+                sql += ") VALUES (";
+                first = true;
+                for (Object value : values) {
+                    if (!first) {
+                        sql += ",";
+                    }
+                    first = false;
+                    if (value instanceof String || value instanceof Timestamp || value instanceof java.security.Timestamp) {
+                        sql += "'" + value + "'";
+                    } else {
+                        if (value == null) {
+                            sql += "NULL";
+                        } else {
+                            sql += "" + value + "";
+                        }
+                    }
+                }
+                sql += ")";
+                sql += " ON DUPLICATE KEY UPDATE ";
+                sql += keytoUpdate + "=";
+                sql += valuetoUpdate;
+
+                return update(sql);
+            }
+        }
+        return false;
+    }
+
+
+
     /**
      * @param table     UPDATE <table> -> required
      * @param keys      SET <keys[element]> -> at least a length of 1

@@ -1,7 +1,9 @@
 package net.cloudybyte.bot.util;
 
 import com.sun.management.OperatingSystemMXBean;
+import com.sun.org.apache.bcel.internal.Const;
 import net.cloudybyte.bot.core.Constants;
+import net.cloudybyte.bot.core.data.MySQLManager;
 import net.dv8tion.jda.api.sharding.ShardManager;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDAInfo;
@@ -14,10 +16,12 @@ import java.time.Instant;
 public class EmbedBuilder{
 
     private static final String URL = Constants.URL;
+    private static final String iconURL = Constants.iconURL;
     public JDAInfo jdaInfo = new JDAInfo();
     private ShardManager shardManager;
     private OperatingSystemMXBean operatingSystemMXBean;
     public JDA jda;
+    MySQLManager mySQLManager = new MySQLManager("localhost", "3306", "root", "", "soundy");
 
 
 
@@ -33,7 +37,7 @@ public class EmbedBuilder{
         net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
                 .setTitle(title)
                 .setColor(Color.white)
-                .setFooter(URL, null)
+                .setFooter(URL, iconURL)
                 .setTimestamp(Instant.now());
 
         StringBuilder descriptionBuilder = builder.getDescriptionBuilder();
@@ -51,7 +55,7 @@ public class EmbedBuilder{
         net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
                 .setTitle(title)
                 .setColor(Color.green)
-                .setFooter(URL, null)
+                .setFooter(URL, iconURL)
                 .setTimestamp(Instant.now());
 
         StringBuilder descriptionBuilder = builder.getDescriptionBuilder();
@@ -68,7 +72,7 @@ public class EmbedBuilder{
         net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
                 .setTitle(title)
                 .setColor(Color.orange)
-                .setFooter(URL, null)
+                .setFooter(URL, iconURL)
                 .setTimestamp(Instant.now());
 
         StringBuilder descriptionBuilder = builder.getDescriptionBuilder();
@@ -85,7 +89,7 @@ public class EmbedBuilder{
         net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
                 .setTitle(title)
                 .setColor(Color.red)
-                .setFooter(URL, null)
+                .setFooter(URL, iconURL)
                 .setTimestamp(Instant.now());
 
         StringBuilder descriptionBuilder = builder.getDescriptionBuilder();
@@ -105,7 +109,7 @@ public class EmbedBuilder{
         net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
                 .setTitle(title)
                 .setColor(Color.CYAN)
-                .setFooter(URL, null)
+                .setFooter(URL, iconURL)
                 .setTimestamp(Instant.now());
 
         StringBuilder descriptionBuilder = builder.getDescriptionBuilder();
@@ -131,7 +135,7 @@ public class EmbedBuilder{
         net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
                 .setTitle(title)
                 .setColor(Color.CYAN)
-                .setFooter(URL, null)
+                .setFooter(URL, iconURL)
                 .setTimestamp(Instant.now())
 
                 .addField("Shard", String.valueOf(guild.getJDA().getShardInfo().getShardString()), true)
@@ -153,17 +157,18 @@ public class EmbedBuilder{
 
         String title = "Status information";
 
-
+        mySQLManager.connect();
 
         net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
                 .setTitle(title)
                 .setColor(Color.BLUE)
-                .setFooter(URL, null)
+                .setFooter(URL, iconURL)
                 .setTimestamp(Instant.now())
 
                 .addField("Guilds:", String.format("`%s` guilds", event.getJDA().getShardManager().getGuilds().size()), true)
                 .addField("Users:", String.format("`%s` users", event.getJDA().getShardManager().getUsers().size()), true)
                 .addField("Shards:", String.format("`%s` shards", event.getJDA().getShardManager().getShards().size()), true)
+              //  .addField("DB ping:", String.format("`%sms`", mySQLManager.query("/* ping */ SELECT 1") ), true)
                 .addField("Threads:", String.format("`%s` threads", Thread.getAllStackTraces().size()), true);
 
               //  .addField("CPU load:", String.format("`%s`)", Math.round(operatingSystemMXBean.getSystemCpuLoad() * 100)) + "%", true)
@@ -182,7 +187,7 @@ public class EmbedBuilder{
         net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
                 .setTitle(title)
                 .setColor(Color.CYAN)
-                .setFooter(URL, null)
+                .setFooter(URL, iconURL)
                 .setTimestamp(Instant.now())
 
                 .addField("Average Ping:", String.format("`%s` ms", shardManager.getAverageGatewayPing()), true);
@@ -203,7 +208,7 @@ public class EmbedBuilder{
             net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
                     .setTitle(title)
                     .setColor(Color.CYAN)
-                    .setFooter(URL, null)
+                    .setFooter(URL, iconURL)
                     .setTimestamp(Instant.now())
 
                     .addField("Running shards:", String.format("`%s`", shardManager.getShardsRunning()), true);
@@ -223,11 +228,27 @@ public class EmbedBuilder{
         net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
                 .setTitle(title)
                 .setColor(Color.CYAN)
-                .setFooter(URL, null)
+                .setFooter(URL, iconURL)
                 .setTimestamp(Instant.now())
 
                 .addField("Application Info:", String.format("`%s`", JDAInfo.VERSION), true);
 
+
+        //TODO: Permission check if the bot can send embed messages
+        event.getChannel().sendMessage(builder.build()).queue();
+
+    }
+
+
+    public void nowPlayingCommand(GuildMessageReceivedEvent event, String songname) {
+
+        String title = "Now playing";
+
+
+        net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
+                .setColor(Color.BLUE)
+                .setFooter(URL, iconURL)
+                .addField("queued:", Reactions.PLAY + " `" + songname + "`", false);
 
         //TODO: Permission check if the bot can send embed messages
         event.getChannel().sendMessage(builder.build()).queue();

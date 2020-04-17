@@ -24,7 +24,6 @@ import net.cloudybyte.bot.core.Constants;
 import net.cloudybyte.bot.core.audio.PlayerManager;
 import net.cloudybyte.bot.core.audio.TrackScheduler;
 import net.cloudybyte.bot.core.command.ICommand;
-import net.cloudybyte.bot.core.data.MySQLManager;
 import net.cloudybyte.bot.util.Colors;
 import net.cloudybyte.bot.util.EmbedBuilder;
 import net.cloudybyte.bot.util.GuildTrackScheduleHandler;
@@ -38,7 +37,6 @@ import org.slf4j.LoggerFactory;
 import javax.annotation.Nullable;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.sql.ResultSet;
 import java.util.List;
 
 
@@ -79,31 +77,23 @@ public class PlayCommand implements ICommand, AudioEventListener {
         VoiceChannel vc = event.getMember().getVoiceState().getChannel();
         AudioManager audioManager = event.getGuild().getAudioManager();
 
-        long guildid = event.getGuild().getIdLong();
 
         AudioPlayerManager playerManager = new DefaultAudioPlayerManager();
         AudioSourceManagers.registerRemoteSources(playerManager);
         AudioPlayer player = playerManager.createPlayer();
-        TrackScheduler trackScheduler = new TrackScheduler(player, guildid);
+        TrackScheduler trackScheduler = new TrackScheduler(player);
         GuildTrackScheduleHandler.addTrackScheduler(event.getGuild(), trackScheduler);
         JoinCommand joinCommand = new JoinCommand();
-        MySQLManager mySQLManager = new MySQLManager(Constants.DBHost, Constants.DBport, Constants.DBUser, Constants.DBpw, Constants.DBName);
 
 
         String BLUE = Colors.BLUE;
         String RESET = Colors.RESET;
 
-
-        //Check for args
         if (args.isEmpty()) {
             embedBuilder.warn(event, "Arguments error", "Please provide a song name");
             return;
         }
 
-        //Connect to DB
-        mySQLManager.connect();
-
-        //Connect to VC if not already connected
         if (audioManager.getConnectionStatus().equals(ConnectionStatus.NOT_CONNECTED)) {
             joinCommand.joinVC(event.getMember(), event.getGuild(), event);
         }
@@ -111,7 +101,6 @@ public class PlayCommand implements ICommand, AudioEventListener {
 
         String input = String.join(" ", args);
 
-        //search YT
         if (!isURL(input)) {
             String ytSearched = searchYoutube(input);
             input = ytSearched;
@@ -125,36 +114,14 @@ public class PlayCommand implements ICommand, AudioEventListener {
 
         PlayerManager manager = PlayerManager.getInstance();
 
-        //Connect to VC (again)
         if (audioManager.getConnectedChannel() == null) {
             audioManager.openAudioConnection(event.getMember().getVoiceState().getChannel());
         }
-
-        //Play track
-        manager.loadAndPlay(event, input);
+        manager.loadAndPlay(event.getChannel(), input);
         logger.info(BLUE + "Queued " + args.get(0) + " in guild " + event.getGuild().getName() + " by " + event.getAuthor() + RESET);
 
-        //Set volume
 
-        try {
-           ResultSet resultSet = mySQLManager.select(null, "volumes", "guildid == '" + event.getGuild().getIdLong() + "' ", 1, null);
-           Integer[] volumes = mySQLManager.getInts(resultSet, "volume");
-           int volume = volumes[0];
-           manager.getGuildMusicManager(event.getGuild()).player.setVolume(volume);
-        } catch (MySQLManager.MySQL_NotConnectedQueryException | MySQLManager.MySQL_WrongDataTypeException e) {
-            e.printStackTrace();
-        } catch (MySQLManager.MySQL_NoEntryFoundException | ArrayIndexOutOfBoundsException e) {
-
-            try {
-                mySQLManager.insertandupdate("volumes", new String[]{"guildid", "volume"}, new Object[]{event.getGuild().getIdLong(), 100}, "volume", 100);
-                mySQLManager.disconnect();
-            } catch (MySQLManager.MySQL_NotConnectedQueryException mySQL_notConnectedQueryException) {
-                mySQL_notConnectedQueryException.printStackTrace();
-            }
-            manager.getGuildMusicManager(event.getGuild()).player.setVolume(100);
-        }
-        mySQLManager.disconnect();
-
+        manager.getGuildMusicManager(event.getGuild()).player.setVolume(100);
 
 
     }

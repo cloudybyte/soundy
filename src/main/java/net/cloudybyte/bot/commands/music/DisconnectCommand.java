@@ -6,7 +6,9 @@ import io.sentry.SentryClient;
 import io.sentry.SentryClientFactory;
 import net.cloudybyte.bot.core.Constants;
 import net.cloudybyte.bot.core.command.ICommand;
+import net.cloudybyte.bot.util.EmbedBuilder;
 import net.cloudybyte.bot.util.Reactions;
+import net.dv8tion.jda.api.audio.hooks.ConnectionStatus;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.VoiceChannel;
@@ -28,6 +30,17 @@ public class DisconnectCommand implements ICommand {
         VoiceChannel vc = member.getVoiceState().getChannel();
         AudioManager audioManager = guild.getAudioManager();
         SentryClient sentry = SentryClientFactory.sentryClient();
+        EmbedBuilder embedBuilder = new EmbedBuilder();
+
+        if (audioManager.getConnectionStatus().equals(ConnectionStatus.NOT_CONNECTED)) {
+            embedBuilder.error(event, "Not connected", "I am currently not connected to any voice channel!");
+            return;
+        }
+
+        if(!(event.getMember().getVoiceState().getChannel() == audioManager.getConnectedChannel())){
+            embedBuilder.error(event, "Not connected", "We are not in the same voice channel!");
+            return;
+        }
 
         try {
             audioManager.closeAudioConnection();
