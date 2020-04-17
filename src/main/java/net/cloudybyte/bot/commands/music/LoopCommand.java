@@ -13,6 +13,7 @@ import net.cloudybyte.bot.core.data.MySQLManager;
 import net.cloudybyte.bot.util.Colors;
 import net.cloudybyte.bot.util.EmbedBuilder;
 import net.cloudybyte.bot.util.GuildTrackScheduleHandler;
+import net.cloudybyte.bot.util.Reactions;
 import net.dv8tion.jda.api.entities.VoiceChannel;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.managers.AudioManager;
@@ -24,7 +25,7 @@ import java.util.List;
 import static net.cloudybyte.bot.util.Colors.*;
 
 public class LoopCommand implements ICommand {
-    MySQLManager mySQLManager = new MySQLManager(Constants.DBHost, Constants.DBport, Constants.DBUser, Constants.DBpw, Constants.DBName);
+    MySQLManager mySQLManager = new MySQLManager("92.60.39.215", "3306", "soundy", "soundy_i_c_!", "soundy");
 
     @Override
     public void handle(List<String> args, GuildMessageReceivedEvent event) {
@@ -48,9 +49,8 @@ public class LoopCommand implements ICommand {
         mySQLManager.connect();
         try {
             ResultSet resultSet = mySQLManager.select(new String[]{"looped"}, "tracklooping", "guildid == '" + event.getGuild().getIdLong() + "' ", 1, null);
-            Integer[] loopingArray = mySQLManager.getInts(resultSet, "looping");
+            Integer[] loopingArray = mySQLManager.getInts(resultSet, "looped");
             Integer looping = loopingArray[0];
-            System.out.println("looping = " + looping);
         } catch (MySQLManager.MySQL_NotConnectedQueryException e) {
             embedBuilder.error(event, "DB Error", "There was an internal DB error, please join the support server to get additional support. Errorcode: 1");
         } catch (MySQLManager.MySQL_WrongDataTypeException e) {
@@ -60,11 +60,50 @@ public class LoopCommand implements ICommand {
         }
         catch (ArrayIndexOutOfBoundsException e){
             try {
-                mySQLManager.insert("tracklooping", new String[]{"guildid", "looped"}, new Object[]{event.getGuild().getIdLong(), 1});
+                mySQLManager.insert("tracklooping", new String[]{"guildid", "looped"}, new Object[]{event.getGuild().getIdLong(), 0});
+
             } catch (MySQLManager.MySQL_NotConnectedQueryException mySQL_notConnectedQueryException) {
                 embedBuilder.error(event, "DB Error", "There was an internal DB error, please join the support server to get additional support. Errorcode: 4");
             }
         }
+
+        try {
+            ResultSet resultSet = mySQLManager.select(new String[]{"looped"}, "tracklooping", "guildid == '" + event.getGuild().getIdLong() + "' ", 1, null);
+            Integer[] loopingArray = mySQLManager.getInts(resultSet, "looped");
+            try {
+                Integer looping = loopingArray[0];
+                if (looping.equals(0) && args.isEmpty()) {
+                    mySQLManager.update("tracklooping", new String[]{"guildid", "looped"}, new Object[]{event.getGuild().getIdLong(), 1}, "guildid == '" + event.getGuild().getIdLong() + "' ");
+                    event.getMessage().addReaction(Reactions.REPEAT_ONE).queue();
+                    return;
+                }
+                if (looping.equals(1) && args.isEmpty()) {
+                    mySQLManager.update("tracklooping", new String[]{"guildid", "looped"}, new Object[]{event.getGuild().getIdLong(), 0}, "guildid == '" + event.getGuild().getIdLong() + "' ");
+                    event.getMessage().addReaction(Reactions.ARROW_FORWARD).queue();
+                }
+            } catch (ArrayIndexOutOfBoundsException e){
+                System.out.println(RED + "ARRAY OUT OF BOUNDS EXCEPTION" + RESET);
+            }
+
+
+
+
+
+
+        } catch (MySQLManager.MySQL_NotConnectedQueryException e) {
+            embedBuilder.error(event, "DB Error", "There was an internal DB error, please join the support server to get additional support. Errorcode: 5");
+        } catch (MySQLManager.MySQL_WrongDataTypeException e) {
+            embedBuilder.error(event, "DB Error", "There was an internal DB error, please join the support server to get additional support. Errorcode: 6");
+        } catch (MySQLManager.MySQL_NoEntryFoundException e) {
+            embedBuilder.error(event, "DB Error", "There was an internal DB error, please join the support server to get additional support. Errorcode: 7");
+        }
+        catch (ArrayIndexOutOfBoundsException e){
+                embedBuilder.error(event, "DB Error", "There was an internal DB error, please join the support server to get additional support. Errorcode: 8");
+        }
+
+
+
+
 
 
 

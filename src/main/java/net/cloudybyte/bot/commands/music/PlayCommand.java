@@ -87,7 +87,7 @@ public class PlayCommand implements ICommand, AudioEventListener {
         TrackScheduler trackScheduler = new TrackScheduler(player, guildid);
         GuildTrackScheduleHandler.addTrackScheduler(event.getGuild(), trackScheduler);
         JoinCommand joinCommand = new JoinCommand();
-        MySQLManager mySQLManager = new MySQLManager(Constants.DBHost, Constants.DBport, Constants.DBUser, Constants.DBpw, Constants.DBName);
+        MySQLManager mySQLManager = new MySQLManager("92.60.39.215", "3306", "soundy", "soundy_i_c_!", "soundy");
 
 
         String BLUE = Colors.BLUE;

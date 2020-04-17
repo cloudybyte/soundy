@@ -23,9 +23,10 @@ public class TrackScheduler extends AudioEventAdapter{
     private final BlockingQueue<AudioTrack> queue;
     private final long guildid;
     AudioTrack lastTrack;
-    MySQLManager mySQLManager = new MySQLManager(Constants.DBHost, Constants.DBport, Constants.DBUser, Constants.DBUser, Constants.DBName);
+    MySQLManager mySQLManager = new MySQLManager("92.60.39.215", "3306", "soundy", "soundy_i_c_!", "soundy");
 
     private boolean trackLoop = false;
+    private boolean queueLoop = false;
 
     /**
      * @param player The audio player this scheduler uses
@@ -66,34 +67,69 @@ public class TrackScheduler extends AudioEventAdapter{
     @Override
     public void onTrackEnd(AudioPlayer player, AudioTrack track, AudioTrackEndReason endReason) {
         // Only start the next track if the end reason is suitable for it (FINISHED or LOAD_FAILED)
+       // mySQLManager.connect();
 
-
-        this.lastTrack = track.makeClone();
         System.out.println(GREEN + "Track ended!" + RESET);
         System.out.println(GREEN + "trackLoop = " + trackLoop + RESET);
 
-     /*   mySQLManager.connect();
-        ResultSet resultSet = mySQLManager.select() */
+        try {
+
+            mySQLManager.connect();
+            ResultSet resultSet = mySQLManager.select(new String[]{"looped"}, "tracklooping", "guildid == '" + guildid + "' ", 1, null);
+
+            Integer[] loopingArray = mySQLManager.getInts(resultSet, "looped");
+            Integer looping = loopingArray[0];
+
+            if (looping.equals(0)){
+                trackLoop = false;
+                queueLoop = false;
+            }
+            if (looping.equals(1)){
+                trackLoop = true;
+                queueLoop = false;
+            }
+            if (looping.equals(2)){
+                trackLoop = false;
+                queueLoop = true;
+            }
 
 
+            if(endReason.mayStartNext && trackLoop){
+                System.out.println(BLUE + "Track looping enabled!" + RESET );
+                player.playTrack(track.makeClone());
+            } else if (endReason.mayStartNext && queueLoop) {
+                System.out.println(GREEN + "Queue looping enabled!" + RESET);
+                queue(track.makeClone());
+            } else if (endReason.mayStartNext) {
+                System.out.println(GREEN + "NEXT TRACK STARTING SOON" + RESET);
+                nextTrack();
+            }
 
-
-        if(endReason.mayStartNext && trackLoop){
-            System.out.println(BLUE + "Track looping enabled!" + RESET );
-            player.playTrack(track.makeClone());
-        } else if (endReason.mayStartNext) {
-            System.out.println(GREEN + "NEXT TRACK STARTING SOON" + RESET);
-            nextTrack();
+        } catch (MySQLManager.MySQL_NotConnectedQueryException e) {
+            e.printStackTrace();
+        } catch (MySQLManager.MySQL_WrongDataTypeException e) {
+            e.printStackTrace();
+        } catch (MySQLManager.MySQL_NoEntryFoundException e) {
+            e.printStackTrace();
+        } catch (ArrayIndexOutOfBoundsException e) {
+            e.printStackTrace();
         }
-        System.out.println("LOL");
+
     }
 
 
-    public boolean isTrackLooped() {
+        public void skipTrack() {
+            //Starting the track with noInterrupt set to true will stop the current track and start the next one
+            player.startTrack(queue.poll(), true);
+        }
+
+
+
+        public boolean isTrackLooped() {
         return trackLoop;
     }
 
-    public void setTrackLoop(boolean trackLoop) {
-        this.trackLoop = trackLoop;
-    }
+        public boolean isQueueLooped() {
+        return queueLoop;
+        }
 }

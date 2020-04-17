@@ -64,7 +64,7 @@ public class PlayerManager {
         playerManager.loadItemOrdered(musicManager, trackURL, new AudioLoadResultHandler() {
             @Override
             public void trackLoaded(AudioTrack track) {
-                embedBuilder.nowPlayingCommand(event, track.getInfo().title);
+                embedBuilder.queuedCommand(event, track.getInfo().title);
                 log.info(GREEN + "Track was loaded! Now playing: " + trackURL + " Title: " + track.getInfo().title + RESET);
                 play(musicManager, track);
             }

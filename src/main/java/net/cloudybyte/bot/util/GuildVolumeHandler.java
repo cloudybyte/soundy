@@ -6,7 +6,7 @@ import net.dv8tion.jda.api.entities.Guild;
 
 
 public class GuildVolumeHandler {
-    MySQLManager mySQLManager = new MySQLManager(Constants.DBHost, Constants.DBport, Constants.DBUser, Constants.DBpw, Constants.DBName);
+    MySQLManager mySQLManager = new MySQLManager("92.60.39.215", "3306", "soundy", "soundy_i_c_!", "soundy");
 
     public void setVolume(Guild guild, Integer volume) throws MySQLManager.MySQL_NotConnectedQueryException {
         mySQLManager.connect();

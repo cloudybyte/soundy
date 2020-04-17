@@ -4,6 +4,7 @@ plugins {
     id 'com.github.johnrengelman.shadow' version '4.0.4'
 }
 
+apply plugin: 'java-library'
 
 apply plugin: 'jacoco'
 
@@ -17,6 +18,7 @@ sourceCompatibility = targetCompatibility = 1.8
 repositories {
     mavenCentral()
     jcenter()
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
@@ -30,8 +32,8 @@ dependencies {
     compile 'io.sentry:sentry-log4j:1.7.27'
     compile 'io.sentry:sentry:1.7.27'
     compile group: 'com.google.apis', name: 'google-api-services-youtube', version: 'v3-rev212-1.25.0'
-    implementation files('lib/mysql-connector8.0.19.jar')
-    implementation 'mysql:mysql-connector-java:8.0.19'
+    implementation 'org.mariadb.jdbc:mariadb-java-client:2.6.0'
+    compile 'org.discordbots:DBL-Java-Library:2.0.1'
 
 }
 

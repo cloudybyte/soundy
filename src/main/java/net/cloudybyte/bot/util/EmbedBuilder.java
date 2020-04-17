@@ -240,7 +240,7 @@ public class EmbedBuilder{
     }
 
 
-    public void nowPlayingCommand(GuildMessageReceivedEvent event, String songname) {
+    public void queuedCommand(GuildMessageReceivedEvent event, String songname) {
 
         String title = "Now playing";
 
@@ -249,6 +249,20 @@ public class EmbedBuilder{
                 .setColor(Color.BLUE)
                 .setFooter(URL, iconURL)
                 .addField("queued:", Reactions.PLAY + " `" + songname + "`", false);
+
+        //TODO: Permission check if the bot can send embed messages
+        event.getChannel().sendMessage(builder.build()).queue();
+
+    }
+    public void nowPlayingCommand(GuildMessageReceivedEvent event, String songname) {
+
+        String title = "Now playing";
+
+
+        net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
+                .setColor(Color.BLUE)
+                .setFooter(URL, iconURL)
+                .addField("now playing:", Reactions.PLAY + " `" + songname + "`", false);
 
         //TODO: Permission check if the bot can send embed messages
         event.getChannel().sendMessage(builder.build()).queue();

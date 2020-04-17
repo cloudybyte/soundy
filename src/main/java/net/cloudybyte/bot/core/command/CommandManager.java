@@ -38,6 +38,7 @@ public class CommandManager {
         addCommand(new ShutdownCommand());
         addCommand(new VolumeCommand());
         addCommand(new LoopCommand());
+        addCommand(new SkipCommand());
     }
 
 

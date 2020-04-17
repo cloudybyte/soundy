@@ -613,3 +613,417 @@ java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
 	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
 	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
 	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+15:05:07.409 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:05:07.805 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:05:08.088 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:05:08.089 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+15:05:08.091 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:05:12.780 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued yungblud in guild GGM by U:cloudybyte(301780655019130880)[0m
+15:05:13.860 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=oOWBsmgjmPo Title: YUNGBLUD - Parents (Official Music Video)[0m
+15:05:14.894 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$262/0x000000080044f840@49f5c37d
+15:05:14.905 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+15:05:14.906 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+15:05:14.933 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+15:07:05.847 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:07:06.275 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:07:06.577 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:07:06.577 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+15:07:06.577 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:07:11.787 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued yungblud in guild GGM by U:cloudybyte(301780655019130880)[0m
+15:07:12.936 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=oOWBsmgjmPo Title: YUNGBLUD - Parents (Official Music Video)[0m
+15:07:14.200 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$265/0x000000080044a440@6072cfc4
+15:07:14.210 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+15:07:14.211 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+15:07:14.240 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+15:09:13.093 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:09:13.493 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:09:13.772 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:09:13.773 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+15:09:13.773 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:09:22.276 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued yungblud in guild GGM by U:cloudybyte(301780655019130880)[0m
+15:09:23.433 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=oOWBsmgjmPo Title: YUNGBLUD - Parents (Official Music Video)[0m
+15:09:24.503 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$262/0x000000080044f840@59469033
+15:09:24.512 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+15:09:24.513 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+15:09:24.541 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+15:09:47.187 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:09:47.914 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:09:48.270 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:09:48.271 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+15:09:48.271 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:10:00.267 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued yungblud in guild GGM by U:cloudybyte(301780655019130880)[0m
+15:10:01.363 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=oOWBsmgjmPo Title: YUNGBLUD - Parents (Official Music Video)[0m
+15:10:02.407 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$262/0x0000000800449840@671a8a50
+15:10:02.417 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+15:10:02.417 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+15:10:02.447 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+15:27:35.687 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:27:36.090 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:27:36.419 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:27:36.420 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+15:27:36.421 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:27:45.109 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued yungblud in guild GGM by U:cloudybyte(301780655019130880)[0m
+15:27:46.394 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=oOWBsmgjmPo Title: YUNGBLUD - Parents (Official Music Video)[0m
+15:27:47.444 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$262/0x0000000800449840@6ad817b6
+15:27:47.452 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+15:27:47.453 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+15:27:47.482 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+15:28:15.050 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.AbstractList$SubList.get(AbstractList.java:784)
+	at net.cloudybyte.bot.commands.music.LoopCommand.handle(LoopCommand.java:76)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:68)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:57)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+15:30:56.872 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:30:57.251 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:30:57.558 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:30:57.559 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+15:30:57.559 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:31:11.559 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued yungblud in guild GGM by U:cloudybyte(301780655019130880)[0m
+15:31:12.690 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=oOWBsmgjmPo Title: YUNGBLUD - Parents (Official Music Video)[0m
+15:31:13.686 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$262/0x000000080044f840@470e6461
+15:31:13.696 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+15:31:13.696 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+15:31:13.724 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+15:31:16.473 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.AbstractList$SubList.get(AbstractList.java:784)
+	at net.cloudybyte.bot.commands.music.LoopCommand.handle(LoopCommand.java:75)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:68)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:57)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+15:31:46.556 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:31:46.958 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:31:47.223 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:31:47.224 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+15:31:47.225 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:31:56.268 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued yungblud in guild GGM by U:cloudybyte(301780655019130880)[0m
+15:31:57.540 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=oOWBsmgjmPo Title: YUNGBLUD - Parents (Official Music Video)[0m
+15:31:58.620 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$262/0x000000080044f840@60c8b7c0
+15:31:58.629 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+15:31:58.630 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+15:31:58.662 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+15:39:12.153 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:39:12.550 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:39:12.897 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:39:12.897 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+15:39:12.898 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:40:29.662 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued yungblud in guild GGM by U:cloudybyte(301780655019130880)[0m
+15:40:30.670 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=oOWBsmgjmPo Title: YUNGBLUD - Parents (Official Music Video)[0m
+15:40:31.742 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$263/0x0000000800449c40@39a21793
+15:40:31.751 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+15:40:31.751 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+15:40:31.780 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+15:51:39.428 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:51:39.821 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:51:40.125 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:51:40.126 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+15:51:40.126 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:51:50.412 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued how in guild GGM by U:cloudybyte(301780655019130880)[0m
+15:51:51.432 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=vXdv9dD2_mM Title: how to win at spelling[0m
+15:51:52.263 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$260/0x0000000800449040@48e71bb5
+15:51:52.273 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+15:51:52.273 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+15:51:52.300 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+15:52:19.981 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:52:20.392 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:52:20.671 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:52:20.672 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+15:52:20.672 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:52:25.780 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued how in guild GGM by U:cloudybyte(301780655019130880)[0m
+15:52:26.734 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=vXdv9dD2_mM Title: how to win at spelling[0m
+15:52:27.878 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$260/0x0000000800449040@4646083d
+15:52:27.887 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+15:52:27.887 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+15:52:27.916 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+15:52:49.257 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued how in guild GGM by U:cloudybyte(301780655019130880)[0m
+15:52:49.771 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=vXdv9dD2_mM Title: how to win at spelling[0m
+15:52:55.921 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued how in guild GGM by U:cloudybyte(301780655019130880)[0m
+15:52:56.650 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=vXdv9dD2_mM Title: how to win at spelling[0m
+17:05:29.845 [main] WARN  io.sentry.dsn.Dsn - *** Couldn't find a suitable DSN, Sentry operations will do nothing! See documentation: https://docs.sentry.io/clients/java/ ***
+17:05:50.540 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+17:05:50.936 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+17:05:51.282 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+17:05:51.283 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+17:05:51.285 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+17:06:38.616 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued yungblud in guild GGM by U:cloudybyte(301780655019130880)[0m
+17:06:39.734 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=oOWBsmgjmPo Title: YUNGBLUD - Parents (Official Music Video)[0m
+17:06:42.949 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$266/0x0000000800446040@1e0cbf6
+17:06:42.959 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+17:06:42.959 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+17:06:42.987 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+19:38:20.760 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+19:38:21.250 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+19:38:21.604 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+19:38:21.605 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+19:38:21.606 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+19:38:49.260 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+19:38:49.769 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+19:38:50.171 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+19:38:50.172 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+19:38:50.172 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+19:39:11.618 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued yungblud in guild GGM by U:cloudybyte(301780655019130880)[0m
+19:39:13.311 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=oOWBsmgjmPo Title: YUNGBLUD - Parents (Official Music Video)[0m
+19:39:18.066 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$264/0x0000000800446040@60979c6b
+19:39:18.078 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+19:39:18.079 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+19:39:18.109 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+19:42:50.629 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued yungblud in guild GGM by U:cloudybyte(301780655019130880)[0m
+19:42:51.747 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=oOWBsmgjmPo Title: YUNGBLUD - Parents (Official Music Video)[0m
+19:46:05.229 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+19:46:05.644 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+19:46:05.928 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+19:46:05.929 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+19:46:05.929 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+19:46:15.371 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued yungblud in guild GGM by U:cloudybyte(301780655019130880)[0m
+19:46:16.596 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=oOWBsmgjmPo Title: YUNGBLUD - Parents (Official Music Video)[0m
+20:06:42.741 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+20:06:43.165 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+20:06:43.467 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+20:06:43.468 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+20:06:43.468 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+20:06:48.046 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.lang.IllegalArgumentException: Provided VoiceChannel may not be null
+	at net.dv8tion.jda.internal.utils.Checks.notNull(Checks.java:56)
+	at net.dv8tion.jda.internal.managers.AudioManagerImpl.openAudioConnection(AudioManagerImpl.java:75)
+	at net.cloudybyte.bot.commands.music.PlayCommand.handle(PlayCommand.java:130)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:68)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:57)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+20:06:51.964 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued yungblud in guild GGM by U:cloudybyte(301780655019130880)[0m
+20:06:53.136 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=oOWBsmgjmPo Title: YUNGBLUD - Parents (Official Music Video)[0m
+20:06:57.087 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$244/0x000000080040d840@3c8f201f
+20:06:57.097 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+20:06:57.097 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+20:06:57.122 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+20:09:27.606 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+20:09:27.991 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+20:09:28.301 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+20:09:28.302 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+20:09:28.302 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+20:09:57.402 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued yungblud in guild GGM by U:cloudybyte(301780655019130880)[0m
+20:09:58.656 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=oOWBsmgjmPo Title: YUNGBLUD - Parents (Official Music Video)[0m
+20:13:52.296 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+20:13:52.700 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+20:13:53.007 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+20:13:53.007 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+20:13:53.007 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+20:14:05.774 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued yungblud in guild GGM by U:cloudybyte(301780655019130880)[0m
+20:14:07.365 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=oOWBsmgjmPo Title: YUNGBLUD - Parents (Official Music Video)[0m
+20:14:08.564 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$246/0x0000000800417040@1d2575e8
+20:14:08.576 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+20:14:08.576 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+20:14:08.606 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+20:15:24.396 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+20:15:24.799 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+20:15:25.148 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+20:15:25.148 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+20:15:25.148 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+20:15:33.360 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued yungblud in guild GGM by U:cloudybyte(301780655019130880)[0m
+20:15:34.553 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=oOWBsmgjmPo Title: YUNGBLUD - Parents (Official Music Video)[0m
+20:15:35.713 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$246/0x0000000800417840@355afd21
+20:15:35.724 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+20:15:35.724 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+20:15:35.753 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+20:35:20.733 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+20:35:21.155 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+20:35:21.431 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+20:35:21.432 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+20:35:21.432 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+20:35:33.429 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued yungblud in guild GGM by U:cloudybyte(301780655019130880)[0m
+20:35:34.765 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=oOWBsmgjmPo Title: YUNGBLUD - Parents (Official Music Video)[0m
+20:35:35.951 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$246/0x0000000800417040@3334fc53
+20:35:35.960 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+20:35:35.960 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+20:35:35.989 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+20:36:29.665 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+20:36:30.073 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+20:36:30.355 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+20:36:30.355 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+20:36:30.355 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+20:36:37.131 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued yungblud in guild GGM by U:cloudybyte(301780655019130880)[0m
+20:36:38.362 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=oOWBsmgjmPo Title: YUNGBLUD - Parents (Official Music Video)[0m
+20:36:39.620 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$246/0x0000000800417040@6ded3f5c
+20:36:39.629 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+20:36:39.630 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+20:36:39.659 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+20:36:50.391 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.AbstractList$SubList.get(AbstractList.java:784)
+	at net.cloudybyte.bot.commands.music.LoopCommand.handle(LoopCommand.java:80)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:68)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:57)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+20:37:14.394 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+20:37:14.817 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+20:37:15.105 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+20:37:15.105 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+20:37:15.105 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+20:37:21.230 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued yungblud in guild GGM by U:cloudybyte(301780655019130880)[0m
+20:37:22.523 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=oOWBsmgjmPo Title: YUNGBLUD - Parents (Official Music Video)[0m
+20:37:23.844 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$246/0x0000000800417040@6aa4180c
+20:37:23.855 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+20:37:23.855 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+20:37:23.888 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+20:38:18.894 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued how in guild GGM by U:cloudybyte(301780655019130880)[0m
+20:38:19.604 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=vXdv9dD2_mM Title: how to win at spelling[0m
+20:40:06.435 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+20:40:06.845 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+20:40:07.130 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+20:40:07.131 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+20:40:07.131 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+20:40:19.127 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+20:40:19.537 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+20:40:19.839 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+20:40:19.840 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+20:40:19.840 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+20:40:32.792 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued how in guild GGM by U:cloudybyte(301780655019130880)[0m
+20:40:33.823 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=vXdv9dD2_mM Title: how to win at spelling[0m
+20:40:34.790 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$241/0x0000000800415440@661fb467
+20:40:34.800 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+20:40:34.801 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+20:40:34.828 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+20:41:23.200 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+20:41:23.605 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+20:41:23.982 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+20:41:23.983 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+20:41:23.983 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+20:41:35.409 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued how in guild GGM by U:cloudybyte(301780655019130880)[0m
+20:41:36.368 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=vXdv9dD2_mM Title: how to win at spelling[0m
+20:41:37.110 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$241/0x0000000800417440@50c69d42
+20:41:37.119 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+20:41:37.119 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+20:41:37.148 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+21:54:12.643 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+21:54:13.033 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+21:54:13.327 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+21:54:13.328 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+21:54:13.328 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+21:54:26.908 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued your in guild nexottest by U:cloudybyte(301780655019130880)[0m
+21:54:27.904 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=OFHw07-FRrc Title: Yungblud | Before They Were Famous | Former Disney Star on The Lodge[0m
+21:54:28.896 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$241/0x0000000800417440@74d9a1ba
+21:54:28.906 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+21:54:28.906 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+21:54:28.938 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+21:54:40.245 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued parents in guild nexottest by U:cloudybyte(301780655019130880)[0m
+21:54:41.192 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=oOWBsmgjmPo Title: YUNGBLUD - Parents (Official Music Video)[0m
+21:54:53.285 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued your in guild nexottest by U:cloudybyte(301780655019130880)[0m
+21:54:54.339 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=V5XOwWOAQBQ Title: Hollywood Undead - Your Life (Official Video)[0m
+21:56:13.777 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+21:56:14.173 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+21:56:14.457 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+21:56:14.457 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+21:56:14.458 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+21:56:22.846 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued parents in guild nexottest by U:cloudybyte(301780655019130880)[0m
+21:56:23.971 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=oOWBsmgjmPo Title: YUNGBLUD - Parents (Official Music Video)[0m
+21:56:25.293 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$246/0x0000000800417040@621c7ffb
+21:56:25.306 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+21:56:25.306 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+21:56:25.339 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+21:56:27.480 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued your in guild nexottest by U:cloudybyte(301780655019130880)[0m
+21:56:28.647 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=V5XOwWOAQBQ Title: Hollywood Undead - Your Life (Official Video)[0m
+21:58:16.984 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+21:58:17.373 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+21:58:17.676 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+21:58:17.677 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+21:58:17.677 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+21:58:27.788 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued parents in guild nexottest by U:cloudybyte(301780655019130880)[0m
+21:58:28.952 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=oOWBsmgjmPo Title: YUNGBLUD - Parents (Official Music Video)[0m
+21:58:30.319 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$246/0x0000000800417040@1336a49b
+21:58:30.331 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+21:58:30.331 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+21:58:30.363 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+21:58:32.605 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued your in guild nexottest by U:cloudybyte(301780655019130880)[0m
+21:58:33.393 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=V5XOwWOAQBQ Title: Hollywood Undead - Your Life (Official Video)[0m
+22:02:15.475 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+22:02:15.869 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+22:02:16.152 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+22:02:16.153 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+22:02:16.153 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+22:02:27.170 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued parents in guild nexottest by U:cloudybyte(301780655019130880)[0m
+22:02:28.432 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=oOWBsmgjmPo Title: YUNGBLUD - Parents (Official Music Video)[0m
+22:02:29.501 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$246/0x0000000800417040@48d5f6aa
+22:02:29.511 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+22:02:29.511 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+22:02:29.551 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+22:02:35.433 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued your in guild nexottest by U:cloudybyte(301780655019130880)[0m
+22:02:36.370 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=V5XOwWOAQBQ Title: Hollywood Undead - Your Life (Official Video)[0m
+22:02:57.360 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued parents in guild nexottest by U:cloudybyte(301780655019130880)[0m
+22:02:58.272 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=oOWBsmgjmPo Title: YUNGBLUD - Parents (Official Music Video)[0m
