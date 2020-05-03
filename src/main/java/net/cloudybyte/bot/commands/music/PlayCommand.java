@@ -12,6 +12,7 @@ import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
 import com.google.api.client.json.jackson2.JacksonFactory;
 import com.google.api.services.youtube.YouTube;
 import com.google.api.services.youtube.model.SearchResult;
+import com.mongodb.*;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayerManager;
 import com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager;
@@ -21,6 +22,7 @@ import com.sedmelluq.discord.lavaplayer.source.AudioSourceManagers;
 import io.sentry.SentryClient;
 import io.sentry.SentryClientFactory;
 import net.cloudybyte.bot.core.Constants;
+import net.cloudybyte.bot.core.audio.GuildMusicManager;
 import net.cloudybyte.bot.core.audio.PlayerManager;
 import net.cloudybyte.bot.core.audio.TrackScheduler;
 import net.cloudybyte.bot.core.command.ICommand;
@@ -38,8 +40,9 @@ import org.slf4j.LoggerFactory;
 import javax.annotation.Nullable;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.sql.ResultSet;
+import java.net.UnknownHostException;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 
 public class PlayCommand implements ICommand, AudioEventListener {
@@ -76,6 +79,15 @@ public class PlayCommand implements ICommand, AudioEventListener {
         EmbedBuilder embedBuilder = new EmbedBuilder();
 
 
+        PlayerManager playerManager = PlayerManager.getInstance();
+        GuildMusicManager musicManager = playerManager.getGuildMusicManager(event.getGuild());
+        AudioPlayer player = musicManager.player;
+        TrackScheduler scheduler = musicManager.scheduler;
+        if (player.isPaused()){
+            player.setPaused(false);
+            return;
+        }
+
         VoiceChannel vc = event.getMember().getVoiceState().getChannel();
         AudioManager audioManager = event.getGuild().getAudioManager();
 
@@ -87,7 +99,8 @@ public class PlayCommand implements ICommand, AudioEventListener {
         TrackScheduler trackScheduler = new TrackScheduler(player, guildid);
         GuildTrackScheduleHandler.addTrackScheduler(event.getGuild(), trackScheduler);
         JoinCommand joinCommand = new JoinCommand();
-        MySQLManager mySQLManager = new MySQLManager("92.60.39.215", "3306", "soundy", "soundy_i_c_!", "soundy");
+
+
 
 
         String BLUE = Colors.BLUE;
@@ -101,7 +114,26 @@ public class PlayCommand implements ICommand, AudioEventListener {
         }
 
         //Connect to DB
-        mySQLManager.connect();
+        MongoClient mongoClient = null;
+        try {
+            mongoClient = new MongoClient(new MongoClientURI(Constants.DBUri));
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
+        DB database = mongoClient.getDB("soundy");
+        DBCollection collection = database.getCollection("volumes");
+
+
+        //search for guild in db
+        DBObject query = new BasicDBObject("guildid", guildid);
+        BasicDBObject select = new BasicDBObject();
+        select.put("volume", 1);
+        DBCursor cursor = collection.find(query, select);
+        try {
+            BasicDBObject obj = (BasicDBObject)cursor.next();
+
+
+
 
         //Connect to VC if not already connected
         if (audioManager.getConnectionStatus().equals(ConnectionStatus.NOT_CONNECTED)) {
@@ -136,30 +168,50 @@ public class PlayCommand implements ICommand, AudioEventListener {
 
         //Set volume
 
-        try {
-           ResultSet resultSet = mySQLManager.select(null, "volumes", "guildid == '" + event.getGuild().getIdLong() + "' ", 1, null);
-           Integer[] volumes = mySQLManager.getInts(resultSet, "volume");
-           int volume = volumes[0];
-           manager.getGuildMusicManager(event.getGuild()).player.setVolume(volume);
-        } catch (MySQLManager.MySQL_NotConnectedQueryException | MySQLManager.MySQL_WrongDataTypeException e) {
-            e.printStackTrace();
-        } catch (MySQLManager.MySQL_NoEntryFoundException | ArrayIndexOutOfBoundsException e) {
 
-            try {
-                mySQLManager.insertandupdate("volumes", new String[]{"guildid", "volume"}, new Object[]{event.getGuild().getIdLong(), 100}, "volume", 100);
-                mySQLManager.disconnect();
-            } catch (MySQLManager.MySQL_NotConnectedQueryException mySQL_notConnectedQueryException) {
-                mySQL_notConnectedQueryException.printStackTrace();
+            System.out.println("obj.getString(\"volume\") = " + obj.getString("volume"));
+            Integer volume = Integer.parseInt(obj.getString("volume"));
+           manager.getGuildMusicManager(event.getGuild()).player.setVolume(volume);
+
+
+        } catch (NoSuchElementException e){
+            PlayerManager manager = PlayerManager.getInstance();
+            collection.update(new BasicDBObject("guildid", guildid), new BasicDBObject("$set", new BasicDBObject("volume", 100)), true, false);
+            //Connect to VC if not already connected
+            if (audioManager.getConnectionStatus().equals(ConnectionStatus.NOT_CONNECTED)) {
+                joinCommand.joinVC(event.getMember(), event.getGuild(), event);
             }
+
+
+            String input = String.join(" ", args);
+
+            //search YT
+            if (!isURL(input)) {
+                String ytSearched = searchYoutube(input);
+                input = ytSearched;
+
+                if (ytSearched == null) {
+                    embedBuilder.warn(event, "Search error", "Nothing found");
+
+                    return;
+                }
+            }
+
+
+            //Connect to VC (again)
+            if (audioManager.getConnectedChannel() == null) {
+                audioManager.openAudioConnection(event.getMember().getVoiceState().getChannel());
+            }
+
+            //Play track
+            manager.loadAndPlay(event, input);
+            logger.info(BLUE + "Queued " + args.get(0) + " in guild " + event.getGuild().getName() + " by " + event.getAuthor() + RESET);
             manager.getGuildMusicManager(event.getGuild()).player.setVolume(100);
         }
-        mySQLManager.disconnect();
-
-
-
     }
 
 
+    @SuppressWarnings("BooleanMethodIsAlwaysInverted")
     private boolean isURL(String input) {
         try {
             new URL(input);
@@ -189,7 +241,6 @@ public class PlayCommand implements ICommand, AudioEventListener {
 
 
                 return "https://www.youtube.com/watch?v=" + videoID;
-
 
             }
         } catch (Exception e) {

@@ -1,6 +1,7 @@
 package net.cloudybyte.bot.commands;
 
 
+import com.sun.org.apache.bcel.internal.Const;
 import net.cloudybyte.bot.core.Constants;
 import net.cloudybyte.bot.core.command.CommandManager;
 import net.cloudybyte.bot.core.command.ICommand;
@@ -53,7 +54,8 @@ public class HelpCommand implements ICommand {
 
         EmbedBuilder builder = new EmbedBuilder()
                     .setTitle("A list of all my commands:")
-                    .setColor(Color.white);
+                    .setColor(Color.white)
+                    .setFooter(Constants.SupportURL, Constants.iconURL);
 
         StringBuilder descriptionBuilder = builder.getDescriptionBuilder();
 

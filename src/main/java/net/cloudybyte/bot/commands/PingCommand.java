@@ -6,7 +6,6 @@ import io.sentry.SentryClientFactory;
 import net.cloudybyte.bot.core.Constants;
 import net.cloudybyte.bot.core.command.ICommand;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
-import net.dv8tion.jda.api.exceptions.GuildUnavailableException;
 import net.dv8tion.jda.api.exceptions.InsufficientPermissionException;
 
 import java.util.List;

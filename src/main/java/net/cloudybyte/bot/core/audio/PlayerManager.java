@@ -1,6 +1,7 @@
 package net.cloudybyte.bot.core.audio;
 
 import com.sedmelluq.discord.lavaplayer.player.AudioLoadResultHandler;
+import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayerManager;
 import com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager;
 import com.sedmelluq.discord.lavaplayer.source.AudioSourceManagers;
@@ -10,7 +11,6 @@ import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 import io.sentry.SentryClient;
 import io.sentry.SentryClientFactory;
 import net.cloudybyte.bot.util.EmbedBuilder;
-import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.TextChannel;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
@@ -71,19 +71,25 @@ public class PlayerManager {
 
             @Override
             public void playlistLoaded(AudioPlaylist playlist) {
+                PlayerManager playerManager = PlayerManager.getInstance();
+                GuildMusicManager musicManager = playerManager.getGuildMusicManager(event.getGuild());
+                TrackScheduler scheduler = musicManager.scheduler;
+                AudioPlayer player = musicManager.player;
                 AudioTrack firstTrack = playlist.getSelectedTrack();
 
                 if (firstTrack == null) {
                     firstTrack = playlist.getTracks().get(0);
                 }
-                channel.sendMessage("Adding to queue: " + firstTrack.getInfo().title + " (first track of playlist " + playlist.getName() + " )").queue();
+                musicManager.scheduler.getQueue().addAll(playlist.getTracks());
+                channel.sendMessage("Adding to queue: " + firstTrack.getInfo().title + " (first track of playlist ``" + playlist.getName() + "`` )").queue();
+                scheduler.getQueue().addAll(playlist.getTracks());
 
-                play(musicManager, firstTrack);
+                play(musicManager, scheduler.getQueue().poll());
             }
 
             @Override
             public void noMatches() {
-                channel.sendMessage("Nothing found by " + trackURL).queue();
+                embedBuilder.error(event, "search error","Nothing found by " + trackURL);
             }
 
             @Override
@@ -100,7 +106,6 @@ public class PlayerManager {
         musicManager.scheduler.queue(track);
     }
 
-
     public static synchronized PlayerManager getInstance() {
 
 
@@ -109,6 +114,5 @@ public class PlayerManager {
         }
         return INSTANCE;
     }
-
 
 }

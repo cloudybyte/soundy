@@ -4,7 +4,6 @@ package net.cloudybyte.bot.commands;
 import net.cloudybyte.bot.core.Constants;
 import net.cloudybyte.bot.core.command.ICommand;
 import net.cloudybyte.bot.util.EmbedBuilder;
-import net.dv8tion.jda.api.JDAInfo;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 
 import java.lang.management.ManagementFactory;

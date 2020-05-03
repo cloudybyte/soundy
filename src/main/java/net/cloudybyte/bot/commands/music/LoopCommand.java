@@ -1,141 +1,181 @@
 package net.cloudybyte.bot.commands.music;
 
-import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
-import com.sedmelluq.discord.lavaplayer.player.AudioPlayerManager;
-import com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager;
-import com.sedmelluq.discord.lavaplayer.source.AudioSourceManagers;
+import com.mongodb.*;
 import io.sentry.SentryClient;
 import io.sentry.SentryClientFactory;
 import net.cloudybyte.bot.core.Constants;
-import net.cloudybyte.bot.core.audio.TrackScheduler;
 import net.cloudybyte.bot.core.command.ICommand;
-import net.cloudybyte.bot.core.data.MySQLManager;
-import net.cloudybyte.bot.util.Colors;
 import net.cloudybyte.bot.util.EmbedBuilder;
-import net.cloudybyte.bot.util.GuildTrackScheduleHandler;
 import net.cloudybyte.bot.util.Reactions;
-import net.dv8tion.jda.api.entities.VoiceChannel;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
-import net.dv8tion.jda.api.managers.AudioManager;
-import org.jetbrains.annotations.NotNull;
 
-import java.sql.ResultSet;
+import java.net.UnknownHostException;
+import java.util.Arrays;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 import static net.cloudybyte.bot.util.Colors.*;
 
 public class LoopCommand implements ICommand {
-    MySQLManager mySQLManager = new MySQLManager("92.60.39.215", "3306", "soundy", "soundy_i_c_!", "soundy");
 
     @Override
     public void handle(List<String> args, GuildMessageReceivedEvent event) {
-        System.out.println(BLUE + "LoopCommand triggered!" + RESET);
         SentryClient sentry = SentryClientFactory.sentryClient();
         EmbedBuilder embedBuilder = new EmbedBuilder();
+        long guildid = event.getGuild().getIdLong();
 
-        VoiceChannel vc = event.getMember().getVoiceState().getChannel();
-        AudioManager audioManager = event.getGuild().getAudioManager();
+        System.out.println("1");
 
-
-
-        /*
-        *   Values and meanings:
-        *   0 -> not looped
-        *   1 -> track looped
-        *   2 -> queue looped
-        */
-
-        
-        mySQLManager.connect();
+        MongoClient mongoClient = null;
         try {
-            ResultSet resultSet = mySQLManager.select(new String[]{"looped"}, "tracklooping", "guildid == '" + event.getGuild().getIdLong() + "' ", 1, null);
-            Integer[] loopingArray = mySQLManager.getInts(resultSet, "looped");
-            Integer looping = loopingArray[0];
-        } catch (MySQLManager.MySQL_NotConnectedQueryException e) {
-            embedBuilder.error(event, "DB Error", "There was an internal DB error, please join the support server to get additional support. Errorcode: 1");
-        } catch (MySQLManager.MySQL_WrongDataTypeException e) {
-            embedBuilder.error(event, "DB Error", "There was an internal DB error, please join the support server to get additional support. Errorcode: 2");
-        } catch (MySQLManager.MySQL_NoEntryFoundException e) {
-            embedBuilder.error(event, "DB Error", "There was an internal DB error, please join the support server to get additional support. Errorcode: 3");
+            mongoClient = new MongoClient(new MongoClientURI(Constants.DBUri));
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
         }
-        catch (ArrayIndexOutOfBoundsException e){
-            try {
-                mySQLManager.insert("tracklooping", new String[]{"guildid", "looped"}, new Object[]{event.getGuild().getIdLong(), 0});
 
-            } catch (MySQLManager.MySQL_NotConnectedQueryException mySQL_notConnectedQueryException) {
-                embedBuilder.error(event, "DB Error", "There was an internal DB error, please join the support server to get additional support. Errorcode: 4");
-            }
-        }
+
+
+
+/*        MongoCredential mongoCredential = MongoCredential.createScramSha1Credential(this.username, this.dbname,
+                this.password.toCharArray());
+        MongoClient mongoClient = new MongoClient(new ServerAddress(dbhost, this.dbport), Arrays.asList(mongoCredential));
+
+ */
+        DB database = mongoClient.getDB("soundy");
+        DBCollection collection = database.getCollection("trackLooping");
+
 
         try {
-            ResultSet resultSet = mySQLManager.select(new String[]{"looped"}, "tracklooping", "guildid == '" + event.getGuild().getIdLong() + "' ", 1, null);
-            Integer[] loopingArray = mySQLManager.getInts(resultSet, "looped");
+
+            //search for guild in db
+            DBObject query = new BasicDBObject("guildid", guildid);
+            BasicDBObject select = new BasicDBObject();
+            select.put("looped", 1);
+            DBCursor cursor = collection.find(query, select);
+            System.out.println("Constants.DBUri = " + Constants.DBUri);
+            BasicDBObject obj = (BasicDBObject) cursor.next();
+
+
+            /*
+             *   Values and meanings:
+             *   0 -> not looped
+             *   1 -> track looped
+             *   2 -> queue looped
+             */
+
+            System.out.println("2");
+
             try {
-                Integer looping = loopingArray[0];
-                if (looping.equals(0) && args.isEmpty()) {
-                    mySQLManager.update("tracklooping", new String[]{"guildid", "looped"}, new Object[]{event.getGuild().getIdLong(), 1}, "guildid == '" + event.getGuild().getIdLong() + "' ");
-                    event.getMessage().addReaction(Reactions.REPEAT_ONE).queue();
-                    return;
+
+                try {
+                    System.out.println("obj.getString(\"looping\") = " + obj.getString("looped"));
+                    Integer looping = Integer.parseInt(obj.getString("looped"));
+
+                    System.out.println("looping = " + looping);
+                    System.out.println("3");
+                    if (args.isEmpty()) {
+                        if (looping.equals(0)) {
+                            embedBuilder.info(event, "Looping Info", "Looping is turned off right now");
+                        } else if (looping.equals(1)) {
+                            embedBuilder.info(event, "Looping Info", "I am looping the current song");
+                        } else if (looping.equals(2)) {
+                            embedBuilder.info(event, "Looping Info", "I am looping the queue");
+                        }
+                        return;
+                    }
+                    System.out.println("4");
+
+                    if ((looping.equals(0) || looping.equals(1)) && args.get(0).equals("queue")) {
+                        collection.update(new BasicDBObject("guildid", guildid), new BasicDBObject("$set", new BasicDBObject("looped", 2)), true, false);
+                        event.getMessage().addReaction(Reactions.REPEAT_QUEUE).queue();
+
+                    } else if (looping.equals(2) && args.get(0).equals("queue")) {
+                        collection.update(new BasicDBObject("guildid", guildid), new BasicDBObject("$set", new BasicDBObject("looped", 0)), true, false);
+                        event.getMessage().addReaction(Reactions.ARROW_FORWARD).queue();
+
+                    } else if (args.get(0).equals("off")) {
+                        collection.update(new BasicDBObject("guildid", guildid), new BasicDBObject("$set", new BasicDBObject("looped", 0)), true, false);
+                        event.getMessage().addReaction(Reactions.ARROW_FORWARD).queue();
+
+                    } else if (looping.equals(1) && args.get(0).equals("song")) {
+                        collection.update(new BasicDBObject("guildid", guildid), new BasicDBObject("$set", new BasicDBObject("looped", 0)), true, false);
+                        event.getMessage().addReaction(Reactions.ARROW_FORWARD).queue();
+
+                    } else if ((looping.equals(2) || looping.equals(0)) && args.get(0).equals("song")) {
+                        collection.update(new BasicDBObject("guildid", guildid), new BasicDBObject("$set", new BasicDBObject("looped", 1)), true, false);
+                        event.getMessage().addReaction(Reactions.REPEAT_ONE).queue();
+                    }
+
+                } catch (ArrayIndexOutOfBoundsException e) {
+                    System.out.println(RED + "ARRAY OUT OF BOUNDS EXCEPTION" + RESET);
                 }
-                if (looping.equals(1) && args.isEmpty()) {
-                    mySQLManager.update("tracklooping", new String[]{"guildid", "looped"}, new Object[]{event.getGuild().getIdLong(), 0}, "guildid == '" + event.getGuild().getIdLong() + "' ");
-                    event.getMessage().addReaction(Reactions.ARROW_FORWARD).queue();
+            } catch (NullPointerException e) {
+                collection.update(new BasicDBObject("guildid", guildid), new BasicDBObject("$set", new BasicDBObject("looped", 0)), true, false);
+                embedBuilder.info(event, "Looping Info", "Looping is turned off right now");
+            }
+        }catch (NoSuchElementException e){
+            //Insert element
+            collection.update(new BasicDBObject("guildid", guildid), new BasicDBObject("$set", new BasicDBObject("looped", 0)), true, false);
+            //search for guild in db
+            DBObject query = new BasicDBObject("guildid", guildid);
+            BasicDBObject select = new BasicDBObject();
+            select.put("looped", 1);
+            DBCursor cursor = collection.find(query, select);
+            BasicDBObject obj = (BasicDBObject) cursor.next();
+
+
+            try {
+
+                try {
+                    System.out.println("obj.getString(\"looping\") = " + obj.getString("looped"));
+                    Integer looping = Integer.parseInt(obj.getString("looped"));
+
+                    System.out.println("looping = " + looping);
+                    System.out.println("3");
+            if (args.isEmpty()) {
+                if (looping.equals(0)) {
+                    embedBuilder.info(event, "Looping Info", "Looping is turned off right now");
+                } else if (looping.equals(1)) {
+                    embedBuilder.info(event, "Looping Info", "I am looping the current song");
+                } else if (looping.equals(2)) {
+                    embedBuilder.info(event, "Looping Info", "I am looping the queue");
                 }
-            } catch (ArrayIndexOutOfBoundsException e){
-                System.out.println(RED + "ARRAY OUT OF BOUNDS EXCEPTION" + RESET);
+                return;
+            }
+            System.out.println("4");
+
+            if ((looping.equals(0) || looping.equals(1)) && args.get(0).equals("queue")) {
+                collection.update(new BasicDBObject("guildid", guildid), new BasicDBObject("$set", new BasicDBObject("looped", 2)), true, false);
+                event.getMessage().addReaction(Reactions.REPEAT_QUEUE).queue();
+
+            } else if (looping.equals(2) && args.get(0).equals("queue")) {
+                collection.update(new BasicDBObject("guildid", guildid), new BasicDBObject("$set", new BasicDBObject("looped", 0)), true, false);
+                event.getMessage().addReaction(Reactions.ARROW_FORWARD).queue();
+
+            } else if (args.get(0).equals("off")) {
+                collection.update(new BasicDBObject("guildid", guildid), new BasicDBObject("$set", new BasicDBObject("looped", 0)), true, false);
+                event.getMessage().addReaction(Reactions.ARROW_FORWARD).queue();
+
+            } else if (looping.equals(1) && args.get(0).equals("song")) {
+                collection.update(new BasicDBObject("guildid", guildid), new BasicDBObject("$set", new BasicDBObject("looped", 0)), true, false);
+                event.getMessage().addReaction(Reactions.ARROW_FORWARD).queue();
+
+            } else if ((looping.equals(2) || looping.equals(0)) && args.get(0).equals("song")) {
+                collection.update(new BasicDBObject("guildid", guildid), new BasicDBObject("$set", new BasicDBObject("looped", 1)), true, false);
+                event.getMessage().addReaction(Reactions.REPEAT_ONE).queue();
             }
 
-
-
-
-
-
-        } catch (MySQLManager.MySQL_NotConnectedQueryException e) {
-            embedBuilder.error(event, "DB Error", "There was an internal DB error, please join the support server to get additional support. Errorcode: 5");
-        } catch (MySQLManager.MySQL_WrongDataTypeException e) {
-            embedBuilder.error(event, "DB Error", "There was an internal DB error, please join the support server to get additional support. Errorcode: 6");
-        } catch (MySQLManager.MySQL_NoEntryFoundException e) {
-            embedBuilder.error(event, "DB Error", "There was an internal DB error, please join the support server to get additional support. Errorcode: 7");
+        } catch (ArrayIndexOutOfBoundsException ex) {
+            System.out.println(RED + "ARRAY OUT OF BOUNDS EXCEPTION" + RESET);
         }
-        catch (ArrayIndexOutOfBoundsException e){
-                embedBuilder.error(event, "DB Error", "There was an internal DB error, please join the support server to get additional support. Errorcode: 8");
-        }
-
-
-
-
-
-
-
-
-
-
-
-    /*    AudioPlayerManager playerManager = new DefaultAudioPlayerManager();
-        AudioSourceManagers.registerRemoteSources(playerManager);
-        AudioPlayer player = playerManager.createPlayer();
-        TrackScheduler trackScheduler = GuildTrackScheduleHandler.getTrackScheduler(event, event.getGuild());
-        System.out.println("number one");
-        if (trackScheduler == null) return;
-        System.out.println("number two");
-        boolean trackLoop = trackScheduler.isTrackLooped();
-        System.out.println(RED + "2" + RESET);
-
-          if (!trackLoop) {
-            System.out.println(PURPLE + trackScheduler.isTrackLooped() + RESET);
-            trackScheduler.setTrackLoop(true);
-            System.out.println(RED + "3" + RESET);
-            System.out.println(PURPLE + trackScheduler.isTrackLooped() + RESET);
-            embedBuilder.info(event, "Looping turned on", "Hey! I just stepped onto the loop train!");
-        } else {
-            System.out.println(PURPLE + trackScheduler.isTrackLooped() + RESET);
-            trackScheduler.setTrackLoop(false);
-            System.out.println(RED + "4" + RESET);
-            System.out.println(PURPLE + trackScheduler.isTrackLooped() + RESET);
-            embedBuilder.info(event, "Looping turned off", "Ouch! I just fell off the looping train!");
-        }
-            */
+    } catch (NullPointerException ex) {
+        collection.update(new BasicDBObject("guildid", guildid), new BasicDBObject("$set", new BasicDBObject("looped", 0)), true, false);
+        embedBuilder.info(event, "Looping Info", "Looping is turned off right now");
     }
+        }
+
+    }
+
 
     @Override
     public String getHelp() {

@@ -1,0 +1,532 @@
+18:34:01.377 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+18:34:01.803 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+18:34:02.110 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+18:34:02.111 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+18:34:02.111 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+18:34:22.652 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+18:34:23.060 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+18:34:23.378 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+18:34:23.378 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+18:34:23.379 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+18:34:37.132 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued mayday in guild GGM by U:cloudybyte(301780655019130880)[0m
+18:34:38.348 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=DT61L8hbbJ4 Title: TheFatRat - MAYDAY feat. Laura Brehm[0m
+18:34:39.265 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.lang.NullPointerException: null
+	at net.cloudybyte.bot.util.GuildVolumeHandler.<init>(GuildVolumeHandler.java:15)
+	at net.cloudybyte.bot.commands.music.VolumeCommand.handle(VolumeCommand.java:28)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:74)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:63)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+18:34:39.466 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$244/0x0000000800416840@473b0ae8
+18:34:39.482 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+18:34:39.482 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+18:34:39.518 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+18:38:04.987 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+18:38:05.399 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+18:38:05.723 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+18:38:05.723 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+18:38:05.724 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+18:38:46.779 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+18:38:47.174 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+18:38:47.500 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+18:38:47.501 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+18:38:47.501 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+18:38:58.542 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.lang.NullPointerException: null
+	at net.cloudybyte.bot.util.GuildVolumeHandler.<init>(GuildVolumeHandler.java:15)
+	at net.cloudybyte.bot.commands.music.VolumeCommand.handle(VolumeCommand.java:28)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:74)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:63)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+18:39:15.682 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+18:39:17.659 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+18:39:18.037 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+18:39:18.374 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+18:39:18.375 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+18:39:18.375 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+18:39:33.481 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.lang.NullPointerException: null
+	at net.cloudybyte.bot.util.GuildVolumeHandler.<init>(GuildVolumeHandler.java:19)
+	at net.cloudybyte.bot.commands.music.VolumeCommand.handle(VolumeCommand.java:28)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:74)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:63)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+18:42:46.620 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+18:42:47.050 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+18:42:47.395 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+18:42:47.396 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+18:42:47.396 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+18:52:11.812 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+18:52:12.206 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+18:52:12.502 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+18:52:12.503 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+18:52:12.503 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+19:07:16.154 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+19:07:16.543 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+19:07:17.040 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+19:07:17.041 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+19:07:17.041 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+19:22:10.359 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+19:22:10.742 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+19:22:11.046 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+19:22:11.046 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+19:22:11.046 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+20:51:00.691 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+20:51:01.096 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+20:51:01.384 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+20:51:01.385 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+20:51:01.385 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+20:52:19.525 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+20:52:19.936 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+20:52:20.239 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+20:52:20.240 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+20:52:20.240 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+20:55:20.947 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+20:55:21.384 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+20:55:21.701 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+20:55:21.702 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+20:55:21.702 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+20:55:47.174 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued source in guild soundy Support by U:cloudybyte(301780655019130880)[0m
+20:55:48.297 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=-Kza9C_hMBQ Title: Lucas & Steve - Source (Official Music Video)[0m
+20:55:49.522 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$249/0x0000000800417440@7bd0a73a
+20:55:49.531 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+20:55:49.532 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+20:55:49.561 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+20:57:27.052 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+20:57:27.441 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+20:57:27.797 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+20:57:27.797 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+20:57:27.797 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+20:57:35.160 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued source in guild soundy Support by U:cloudybyte(301780655019130880)[0m
+20:57:36.465 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=-Kza9C_hMBQ Title: Lucas & Steve - Source (Official Music Video)[0m
+20:57:37.478 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$249/0x0000000800417440@636f371b
+20:57:37.488 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+20:57:37.489 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+20:57:37.517 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+20:58:35.476 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+20:58:35.870 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+20:58:36.168 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+20:58:36.169 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+20:58:36.169 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+20:58:40.577 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued source in guild soundy Support by U:cloudybyte(301780655019130880)[0m
+20:58:41.704 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=-Kza9C_hMBQ Title: Lucas & Steve - Source (Official Music Video)[0m
+20:58:42.864 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$249/0x0000000800417440@72655630
+20:58:42.874 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+20:58:42.875 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+20:58:42.905 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+21:04:34.154 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+21:04:34.538 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+21:04:34.865 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+21:04:34.865 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+21:04:34.865 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+21:09:35.702 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+21:09:36.110 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+21:09:36.447 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+21:09:36.448 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+21:09:36.448 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+21:09:39.265 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.lang.NullPointerException: null
+	at net.cloudybyte.bot.commands.music.LoopCommand.handle(LoopCommand.java:67)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:74)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:63)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+21:12:09.661 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+21:12:10.058 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+21:12:10.345 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+21:12:10.346 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+21:12:10.346 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+21:23:45.080 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+21:23:45.484 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+21:23:45.783 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+21:23:45.784 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+21:23:45.784 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+21:23:55.911 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued source in guild soundy Support by U:cloudybyte(301780655019130880)[0m
+21:23:57.256 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=-Kza9C_hMBQ Title: Lucas & Steve - Source (Official Music Video)[0m
+21:23:57.507 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.lang.NumberFormatException: null
+	at java.base/java.lang.Integer.parseInt(Integer.java:614)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at net.cloudybyte.bot.commands.music.LoopCommand.handle(LoopCommand.java:71)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:74)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:63)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+21:23:58.554 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$273/0x0000000800456440@5e9f4fd8
+21:23:58.564 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+21:23:58.564 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+21:23:58.597 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+21:25:11.508 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+21:25:11.891 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+21:25:12.198 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+21:25:12.199 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+21:25:12.199 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+21:25:14.706 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued source in guild soundy Support by U:cloudybyte(301780655019130880)[0m
+21:25:15.844 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=-Kza9C_hMBQ Title: Lucas & Steve - Source (Official Music Video)[0m
+21:25:16.950 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$249/0x0000000800417440@23ad1716
+21:25:16.960 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+21:25:16.960 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+21:25:16.992 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+21:25:32.095 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=-Kza9C_hMBQ in guild soundy Support by U:cloudybyte(301780655019130880)[0m
+21:25:33.515 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=-Kza9C_hMBQ Title: Lucas & Steve - Source (Official Music Video)[0m
+21:25:49.858 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.lang.NumberFormatException: null
+	at java.base/java.lang.Integer.parseInt(Integer.java:614)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at net.cloudybyte.bot.commands.music.LoopCommand.handle(LoopCommand.java:71)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:74)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:63)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+21:26:32.523 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+21:26:32.922 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+21:26:33.222 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+21:26:33.223 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+21:26:33.223 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+21:26:48.495 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=-Kza9C_hMBQ in guild soundy Support by U:cloudybyte(301780655019130880)[0m
+21:26:49.641 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=-Kza9C_hMBQ Title: Lucas & Steve - Source (Official Music Video)[0m
+21:26:50.641 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$241/0x00000008003ff440@7ebf717e
+21:26:50.650 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+21:26:50.650 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+21:26:50.679 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+21:26:56.191 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.lang.NumberFormatException: null
+	at java.base/java.lang.Integer.parseInt(Integer.java:614)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at net.cloudybyte.bot.commands.music.LoopCommand.handle(LoopCommand.java:71)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:74)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:63)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+21:27:32.248 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+21:27:32.660 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+21:27:32.985 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+21:27:32.986 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+21:27:32.986 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+21:27:47.053 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued <https://www.youtube.com/watch?v=-Kza9C_hMBQ> in guild soundy Support by U:cloudybyte(301780655019130880)[0m
+21:27:48.079 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=-Kza9C_hMBQ Title: Lucas & Steve - Source (Official Music Video)[0m
+21:27:49.933 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$249/0x0000000800417440@2a42e386
+21:27:49.942 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+21:27:49.942 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+21:27:49.972 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+21:34:09.854 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=6zvIxD4FUTA&t=72s in guild soundy Support by U:????????(475687722955046913)[0m
+21:34:10.694 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=6zvIxD4FUTA&t=72s Title: ??????????????[0m
+22:13:55.067 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+22:13:55.483 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+22:13:55.790 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+22:13:55.791 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+22:13:55.791 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+22:14:55.989 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.util.NoSuchElementException: null
+	at com.mongodb.QueryResultIterator.next(QueryResultIterator.java:111)
+	at com.mongodb.DBCursor._next(DBCursor.java:510)
+	at com.mongodb.DBCursor.next(DBCursor.java:581)
+	at net.cloudybyte.bot.commands.music.PlayCommand.handle(PlayCommand.java:121)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:74)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:63)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+22:18:10.333 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+22:18:10.769 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+22:18:11.135 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+22:18:11.135 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+22:18:11.135 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+22:18:31.418 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=-Kza9C_hMBQ in guild soundy Support by U:cloudybyte(301780655019130880)[0m
+22:18:32.435 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=-Kza9C_hMBQ Title: Lucas & Steve - Source (Official Music Video)[0m
+22:18:40.450 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$259/0x0000000800430840@a0afbee
+22:18:40.460 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+22:18:40.460 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+22:18:40.491 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+22:21:18.159 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+22:21:18.577 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+22:21:18.899 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+22:21:18.900 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+22:21:18.900 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+22:21:25.796 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=-Kza9C_hMBQ in guild soundy Support by U:cloudybyte(301780655019130880)[0m
+22:21:27.071 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=-Kza9C_hMBQ Title: Lucas & Steve - Source (Official Music Video)[0m
+22:21:33.839 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$258/0x0000000800439c40@22330ba3
+22:21:33.849 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+22:21:33.849 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+22:21:33.877 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+22:21:39.928 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+22:21:40.328 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+22:21:40.645 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+22:21:40.645 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+22:21:40.645 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+22:21:47.008 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=-Kza9C_hMBQ in guild soundy Support by U:cloudybyte(301780655019130880)[0m
+22:21:48.019 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=-Kza9C_hMBQ Title: Lucas & Steve - Source (Official Music Video)[0m
+22:21:49.035 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$258/0x000000080043ec40@18f63261
+22:21:49.044 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+22:21:49.044 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+22:21:49.073 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+22:22:07.582 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.util.NoSuchElementException: null
+	at com.mongodb.QueryResultIterator.next(QueryResultIterator.java:111)
+	at com.mongodb.DBCursor._next(DBCursor.java:510)
+	at com.mongodb.DBCursor.next(DBCursor.java:581)
+	at net.cloudybyte.bot.commands.music.LoopCommand.handle(LoopCommand.java:54)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:74)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:63)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+22:26:18.304 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+22:26:18.694 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+22:26:18.982 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+22:26:18.983 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+22:26:18.983 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+22:26:24.397 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=-Kza9C_hMBQ in guild soundy Support by U:cloudybyte(301780655019130880)[0m
+22:26:25.419 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=-Kza9C_hMBQ Title: Lucas & Steve - Source (Official Music Video)[0m
+22:26:26.399 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$258/0x0000000800431440@1f6a5f61
+22:26:26.407 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+22:26:26.407 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+22:26:26.436 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+22:39:59.426 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+22:39:59.833 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+22:40:00.228 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+22:40:00.229 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+22:40:00.229 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+22:41:12.220 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=JJnWrA8lock in guild soundy Support by U:cloudybyte(301780655019130880)[0m
+22:41:13.038 [lava-daemon-pool-info-loader-2-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=JJnWrA8lock Title: list of cool things to do[0m
+22:41:13.704 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$257/0x000000080043f040@4c3362de
+22:41:13.713 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+22:41:13.714 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+22:41:13.743 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+22:41:27.099 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=vTJ-mlWjado in guild soundy Support by U:cloudybyte(301780655019130880)[0m
+22:41:27.772 [lava-daemon-pool-info-loader-2-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=vTJ-mlWjado Title: improv lessons[0m
+22:41:50.905 [lava-daemon-pool-native-udp-1-thread-1] ERROR c.s.d.lavaplayer.player.AudioPlayer - Handler of event com.sedmelluq.discord.lavaplayer.player.event.TrackEndEvent@3f09c3aa threw an exception.
+java.lang.NumberFormatException: null
+	at java.base/java.lang.Integer.parseInt(Integer.java:614)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at net.cloudybyte.bot.core.audio.TrackScheduler.onTrackEnd(TrackScheduler.java:94)
+	at com.sedmelluq.discord.lavaplayer.player.event.AudioEventAdapter.onEvent(AudioEventAdapter.java:74)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.dispatchEvent(DefaultAudioPlayer.java:368)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.handleTerminator(DefaultAudioPlayer.java:262)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.provide(DefaultAudioPlayer.java:241)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.provide(DefaultAudioPlayer.java:216)
+	at net.cloudybyte.bot.core.audio.AudioPlayerSendHandler.canProvide(AudioPlayerSendHandler.java:24)
+	at net.dv8tion.jda.internal.audio.AudioConnection$PacketProvider.getNextPacketRaw(AudioConnection.java:675)
+	at com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendSystem.populateQueue(NativeAudioSendSystem.java:36)
+	at com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendFactory.populateQueues(NativeAudioSendFactory.java:93)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+22:44:17.792 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+22:44:18.222 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+22:44:18.559 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+22:44:18.559 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+22:44:18.560 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+22:44:40.930 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=JJnWrA8lock in guild soundy Support by U:cloudybyte(301780655019130880)[0m
+22:44:41.726 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=JJnWrA8lock Title: list of cool things to do[0m
+22:44:42.475 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$256/0x000000080043f440@5dc2894f
+22:44:42.487 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+22:44:42.487 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+22:44:42.517 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+22:44:45.376 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=vTJ-mlWjado in guild soundy Support by U:cloudybyte(301780655019130880)[0m
+22:44:45.935 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=vTJ-mlWjado Title: improv lessons[0m
+22:44:47.502 [lava-daemon-pool-native-udp-1-thread-1] ERROR c.s.d.lavaplayer.player.AudioPlayer - Handler of event com.sedmelluq.discord.lavaplayer.player.event.TrackEndEvent@4c04b07d threw an exception.
+java.lang.NumberFormatException: null
+	at java.base/java.lang.Integer.parseInt(Integer.java:614)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at net.cloudybyte.bot.core.audio.TrackScheduler.onTrackEnd(TrackScheduler.java:95)
+	at com.sedmelluq.discord.lavaplayer.player.event.AudioEventAdapter.onEvent(AudioEventAdapter.java:74)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.dispatchEvent(DefaultAudioPlayer.java:368)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.handleTerminator(DefaultAudioPlayer.java:262)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.provide(DefaultAudioPlayer.java:241)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.provide(DefaultAudioPlayer.java:216)
+	at net.cloudybyte.bot.core.audio.AudioPlayerSendHandler.canProvide(AudioPlayerSendHandler.java:24)
+	at net.dv8tion.jda.internal.audio.AudioConnection$PacketProvider.getNextPacketRaw(AudioConnection.java:675)
+	at com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendSystem.populateQueue(NativeAudioSendSystem.java:36)
+	at com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendFactory.populateQueues(NativeAudioSendFactory.java:93)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+22:45:37.872 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+22:45:38.266 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+22:45:38.595 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+22:45:38.596 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+22:45:38.596 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+22:45:52.410 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=JJnWrA8lock in guild soundy Support by U:cloudybyte(301780655019130880)[0m
+22:45:53.335 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=JJnWrA8lock Title: list of cool things to do[0m
+22:45:54.107 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$256/0x0000000800431c40@c6de860
+22:45:54.117 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+22:45:54.117 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+22:45:54.159 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+22:45:57.461 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=vTJ-mlWjado in guild soundy Support by U:cloudybyte(301780655019130880)[0m
+22:45:58.045 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=vTJ-mlWjado Title: improv lessons[0m
+22:45:59.164 [lava-daemon-pool-native-udp-1-thread-1] ERROR c.s.d.lavaplayer.player.AudioPlayer - Handler of event com.sedmelluq.discord.lavaplayer.player.event.TrackEndEvent@54f7d723 threw an exception.
+java.lang.NumberFormatException: null
+	at java.base/java.lang.Integer.parseInt(Integer.java:614)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at net.cloudybyte.bot.core.audio.TrackScheduler.onTrackEnd(TrackScheduler.java:95)
+	at com.sedmelluq.discord.lavaplayer.player.event.AudioEventAdapter.onEvent(AudioEventAdapter.java:74)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.dispatchEvent(DefaultAudioPlayer.java:368)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.handleTerminator(DefaultAudioPlayer.java:262)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.provide(DefaultAudioPlayer.java:241)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.provide(DefaultAudioPlayer.java:216)
+	at net.cloudybyte.bot.core.audio.AudioPlayerSendHandler.canProvide(AudioPlayerSendHandler.java:24)
+	at net.dv8tion.jda.internal.audio.AudioConnection$PacketProvider.getNextPacketRaw(AudioConnection.java:675)
+	at com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendSystem.populateQueue(NativeAudioSendSystem.java:36)
+	at com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendFactory.populateQueues(NativeAudioSendFactory.java:93)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+22:46:36.634 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+22:46:37.072 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+22:46:37.430 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+22:46:37.431 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+22:46:37.431 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+22:46:41.558 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=JJnWrA8lock in guild soundy Support by U:cloudybyte(301780655019130880)[0m
+22:46:42.360 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=JJnWrA8lock Title: list of cool things to do[0m
+22:46:43.050 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$256/0x0000000800431c40@690994f3
+22:46:43.059 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+22:46:43.059 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+22:46:43.089 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+22:46:45.064 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=vTJ-mlWjado in guild soundy Support by U:cloudybyte(301780655019130880)[0m
+22:46:45.650 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=vTJ-mlWjado Title: improv lessons[0m

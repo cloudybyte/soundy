@@ -1,0 +1,65 @@
+12:11:13.658 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+12:11:14.029 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+12:11:14.315 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+12:11:14.315 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+12:11:14.316 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+12:13:24.493 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+12:13:24.883 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+12:13:25.201 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+12:13:25.202 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+12:13:25.202 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+12:14:28.017 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=aD7w_nGfjkc in guild nexottest by U:cloudybyte(301780655019130880)[0m
+12:14:29.261 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=aD7w_nGfjkc Title: Mike Candys & Jack Holiday - The Riddle Anthem Rework[0m
+12:14:38.818 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$259/0x000000080043e040@6bc91667
+12:14:38.829 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+12:14:38.829 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+12:14:38.856 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+12:15:04.501 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+12:15:04.917 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+12:15:05.226 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+12:15:05.227 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+12:15:05.227 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+12:15:10.322 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=aD7w_nGfjkc in guild nexottest by U:cloudybyte(301780655019130880)[0m
+12:15:11.551 [lava-daemon-pool-info-loader-2-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=aD7w_nGfjkc Title: Mike Candys & Jack Holiday - The Riddle Anthem Rework[0m
+12:15:12.561 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$261/0x0000000800450040@7bdbe131
+12:15:12.570 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+12:15:12.571 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+12:15:12.599 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+12:15:13.943 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.AbstractList$SubList.get(AbstractList.java:784)
+	at net.cloudybyte.bot.commands.music.FastForwardCommand.handle(FastForwardCommand.java:31)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:73)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:58)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+12:15:38.534 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+12:15:38.911 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+12:15:39.263 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+12:15:39.263 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+12:15:39.263 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+12:15:46.280 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=aD7w_nGfjkc in guild nexottest by U:cloudybyte(301780655019130880)[0m
+12:15:47.475 [lava-daemon-pool-info-loader-2-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=aD7w_nGfjkc Title: Mike Candys & Jack Holiday - The Riddle Anthem Rework[0m
+12:15:48.502 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$261/0x0000000800450040@20c494b9
+12:15:48.510 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+12:15:48.510 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+12:15:48.540 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.

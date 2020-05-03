@@ -1,10 +1,3 @@
-/*
- * Copyright (c) Ole Donnermeyer - All Rights Reserved
- * Unauthorized copying of this file, via any medium is strictly prohibited
- * Proprietary and confidential
- * Written by Ole Donnermeyer <ole.donnermeyer@gmx.net>, 2020
- */
-
 package net.cloudybyte.bot.commands.music;
 
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
@@ -17,9 +10,7 @@ import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 
 import java.util.List;
 
-public class SkipCommand implements ICommand {
-
-    EmbedBuilder embedBuilder = new EmbedBuilder();
+public class BassBoostCommand implements ICommand {
     @Override
     public void handle(List<String> args, GuildMessageReceivedEvent event) {
 
@@ -27,25 +18,18 @@ public class SkipCommand implements ICommand {
         GuildMusicManager musicManager = playerManager.getGuildMusicManager(event.getGuild());
         TrackScheduler scheduler = musicManager.scheduler;
         AudioPlayer player = musicManager.player;
+        EmbedBuilder embedBuilder = new EmbedBuilder();
 
 
-        if (player.getPlayingTrack() == null) {
-            embedBuilder.error(event, null, "\\*silence\\*");
-            return;
-        }
-        scheduler.nextTrack();
-        try {
-            embedBuilder.nowPlaying(event, musicManager.player.getPlayingTrack().getInfo().title);
-        }catch (NullPointerException ignored){}
     }
 
     @Override
     public String getHelp() {
-        return "Skips the current song";
+        return null;
     }
 
     @Override
     public String getInvoke() {
-        return "skip";
+        return null;
     }
 }

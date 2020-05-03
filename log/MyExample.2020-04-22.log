@@ -1,0 +1,27 @@
+17:14:35.515 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+17:14:35.912 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+17:14:36.255 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+17:14:36.256 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+17:14:36.256 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+17:16:27.652 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/playlist?list=PLo7FOXNe7Yt_vgrUFzw8XUQWrWdFhbhVs in guild GGM by U:cloudybyte(301780655019130880)[0m
+17:16:28.993 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$245/0x0000000800438c40@78b1463e
+17:16:29.005 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+17:16:29.005 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+17:16:29.035 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+17:17:36.678 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/playlist?list=PLmc0FwAPhZN5F8WjJw0xEN_tqqQrmU1xQ in guild GGM by U:NoRysq(318750418316296195)[0m
+17:21:13.059 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://soundcloud.com/user-188091790/moin/s-Ag28HvAybsq in guild GGM by U:cloudybyte(301780655019130880)[0m
+17:21:13.061 [lava-daemon-pool-info-loader-5-thread-1] INFO  c.s.d.l.s.s.SoundCloudClientIdTracker - Updating SoundCloud client ID (current is null).
+17:21:13.290 [lava-daemon-pool-info-loader-5-thread-1] INFO  c.s.d.l.s.s.SoundCloudClientIdTracker - Updating SoundCloud client ID succeeded, new ID is C4LjheM1nRRHhrum7d3eqovft5QxHlAe.
+17:21:13.552 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://soundcloud.com/user-188091790/moin/s-Ag28HvAybsq Title: moin[0m
+17:30:39.718 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://soundcloud.com/jakob-guglhoer/i-wanna-be-free in guild GGM by U:cloudybyte(301780655019130880)[0m
+17:30:39.952 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://soundcloud.com/jakob-guglhoer/i-wanna-be-free Title: I Wanna Be Free[0m
+17:32:46.013 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://soundcloud.com/user-188091790/moin/s-Ag28HvAybsq in guild GGM by U:cloudybyte(301780655019130880)[0m
+17:32:46.283 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://soundcloud.com/user-188091790/moin/s-Ag28HvAybsq Title: moin[0m
+17:33:55.830 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://soundcloud.com/user-188091790/moin/s-Ag28HvAybsq in guild GGM by U:cloudybyte(301780655019130880)[0m
+17:33:56.007 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://soundcloud.com/user-188091790/moin/s-Ag28HvAybsq Title: moin[0m
+17:35:57.794 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://soundcloud.com/user-188091790/moin/s-Ag28HvAybsq in guild GGM by U:cloudybyte(301780655019130880)[0m
+17:35:58.049 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://soundcloud.com/user-188091790/moin/s-Ag28HvAybsq Title: moin[0m
+17:39:04.808 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://soundcloud.com/user-188091790/moin/s-Ag28HvAybsq in guild GGM by U:cloudybyte(301780655019130880)[0m
+17:39:05.086 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://soundcloud.com/user-188091790/moin/s-Ag28HvAybsq Title: moin[0m
+17:39:35.481 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued trap in guild GGM by U:NoRysq(318750418316296195)[0m
+17:39:36.524 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=eJJ_aOTAPJc Title: Trap Nation: End of the Decade Mix[0m

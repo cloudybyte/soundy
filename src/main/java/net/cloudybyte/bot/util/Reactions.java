@@ -10,6 +10,8 @@ public class Reactions {
     public static final String OK_HAND = "\uD83D\uDC4C";
     public static final String REPEAT_ONE = "\uD83D\uDD02";
     public static final String ARROW_FORWARD = "➡️";
+    public static final String REPEAT_QUEUE = "\uD83D\uDD04";
+    public static final String FAST_FORWARD = "⏩";
 
 
 }

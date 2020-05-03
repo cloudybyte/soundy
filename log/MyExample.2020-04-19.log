@@ -1,0 +1,220 @@
+00:30:22.566 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+00:30:22.950 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+00:30:23.244 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+00:30:23.245 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+00:30:23.245 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+00:31:24.179 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+00:31:24.577 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+00:31:24.853 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+00:31:24.854 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+00:31:24.854 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+00:31:38.686 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued marshmello in guild nexottest by U:cloudybyte(301780655019130880)[0m
+00:31:39.730 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=v4-KVCT97wU Title: Marshmello x YUNGBLUD x blackbear - Tongue Tied (Official Music Video)[0m
+00:31:40.774 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$247/0x0000000800417440@32037c3c
+00:31:40.785 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+00:31:40.786 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+00:31:40.816 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+00:31:43.444 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued riot in guild nexottest by U:cloudybyte(301780655019130880)[0m
+00:31:44.062 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=PJTmVWzpDtc Title: Hollywood Undead - Riot [Lyrics Video][0m
+00:31:54.394 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued YUNGBLUD in guild nexottest by U:cloudybyte(301780655019130880)[0m
+00:31:55.207 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=tP-zl8ruUKE Title: YUNGBLUD - original me ft. dan reynolds of imagine dragons (Official Music Video)[0m
+00:44:22.236 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+00:44:22.611 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+00:44:22.925 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+00:44:22.925 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+00:44:22.925 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+00:44:35.950 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued YUNGBLUD in guild nexottest by U:cloudybyte(301780655019130880)[0m
+00:44:36.925 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=tP-zl8ruUKE Title: YUNGBLUD - original me ft. dan reynolds of imagine dragons (Official Music Video)[0m
+00:44:37.907 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$247/0x0000000800417440@35aa3ed6
+00:44:37.918 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+00:44:37.918 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+00:44:37.949 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+00:44:43.910 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued marshmello in guild nexottest by U:cloudybyte(301780655019130880)[0m
+00:44:44.838 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=v4-KVCT97wU Title: Marshmello x YUNGBLUD x blackbear - Tongue Tied (Official Music Video)[0m
+00:45:35.436 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued marshmello in guild nexottest by U:cloudybyte(301780655019130880)[0m
+00:45:36.139 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=v4-KVCT97wU Title: Marshmello x YUNGBLUD x blackbear - Tongue Tied (Official Music Video)[0m
+00:45:54.962 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued your in guild nexottest by U:cloudybyte(301780655019130880)[0m
+00:45:55.692 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=V5XOwWOAQBQ Title: Hollywood Undead - Your Life (Official Video)[0m
+00:46:25.945 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued riot in guild nexottest by U:cloudybyte(301780655019130880)[0m
+00:46:26.588 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=PJTmVWzpDtc Title: Hollywood Undead - Riot [Lyrics Video][0m
+12:57:06.587 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+12:57:06.998 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+12:57:07.271 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+12:57:07.272 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+12:57:07.272 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+12:58:10.120 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+12:58:10.492 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+12:58:10.795 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+12:58:10.796 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+12:58:10.796 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+12:58:40.489 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued Marshmello in guild nexottest by U:cloudybyte(301780655019130880)[0m
+12:58:41.712 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=v4-KVCT97wU Title: Marshmello x YUNGBLUD x blackbear - Tongue Tied (Official Music Video)[0m
+12:58:49.218 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued riot in guild nexottest by U:cloudybyte(301780655019130880)[0m
+12:58:49.965 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=PJTmVWzpDtc Title: Hollywood Undead - Riot [Lyrics Video][0m
+12:58:56.182 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued your in guild nexottest by U:cloudybyte(301780655019130880)[0m
+12:58:56.985 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=V5XOwWOAQBQ Title: Hollywood Undead - Your Life (Official Video)[0m
+12:59:44.950 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+12:59:45.325 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+12:59:45.621 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+12:59:45.621 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+12:59:45.622 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+12:59:56.916 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued Marshmello in guild nexottest by U:cloudybyte(301780655019130880)[0m
+12:59:58.071 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=v4-KVCT97wU Title: Marshmello x YUNGBLUD x blackbear - Tongue Tied (Official Music Video)[0m
+13:00:00.753 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued riot in guild nexottest by U:cloudybyte(301780655019130880)[0m
+13:00:01.536 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=PJTmVWzpDtc Title: Hollywood Undead - Riot [Lyrics Video][0m
+13:00:05.121 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued your in guild nexottest by U:cloudybyte(301780655019130880)[0m
+13:00:06.023 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=V5XOwWOAQBQ Title: Hollywood Undead - Your Life (Official Video)[0m
+13:01:08.269 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.lang.NullPointerException: null
+	at net.cloudybyte.bot.commands.music.QueueListCommand.handle(QueueListCommand.java:41)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:74)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:63)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+13:01:25.304 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=s8XIgR5OGJc&list=PLC1og_v3eb4hrv4wsqG1G5dsNZh9bIscJ in guild nexottest by U:cloudybyte(301780655019130880)[0m
+13:10:18.145 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+13:10:18.526 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+13:10:18.808 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+13:10:18.809 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+13:10:18.809 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+13:10:30.378 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/playlist?list=PLo7FOXNe7Yt_vgrUFzw8XUQWrWdFhbhVs in guild nexottest by U:cloudybyte(301780655019130880)[0m
+13:13:36.209 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+13:13:36.618 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+13:13:36.921 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+13:13:36.922 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+13:13:36.922 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+13:13:48.040 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/playlist?list=PLo7FOXNe7Yt_vgrUFzw8XUQWrWdFhbhVs in guild nexottest by U:cloudybyte(301780655019130880)[0m
+13:14:01.489 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.lang.NullPointerException: null
+	at net.cloudybyte.bot.commands.music.QueueListCommand.handle(QueueListCommand.java:41)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:74)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:63)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+13:17:34.312 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+13:17:34.708 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+13:17:35.078 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+13:17:35.079 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+13:17:35.079 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+13:17:53.140 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+13:17:53.539 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+13:17:53.863 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+13:17:53.864 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+13:17:53.864 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+13:18:21.480 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+13:18:21.877 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+13:18:22.155 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+13:18:22.156 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+13:18:22.156 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+13:19:07.183 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+13:19:07.578 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+13:19:07.952 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+13:19:07.953 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+13:19:07.953 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+13:19:44.015 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+13:19:44.404 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+13:19:44.675 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+13:19:44.676 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+13:19:44.676 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+13:20:25.791 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+13:20:26.168 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+13:20:26.448 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+13:20:26.449 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+13:20:26.449 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+13:21:09.832 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+13:21:10.217 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+13:21:10.507 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+13:21:10.508 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+13:21:10.508 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+13:23:50.068 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+13:23:50.450 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+13:23:50.840 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+13:23:50.841 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+13:23:50.841 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+13:24:00.861 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/playlist?list=PLo7FOXNe7Yt_vgrUFzw8XUQWrWdFhbhVs in guild nexottest by U:cloudybyte(301780655019130880)[0m
+13:24:12.758 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.lang.NullPointerException: null
+	at net.cloudybyte.bot.commands.music.QueueListCommand.handle(QueueListCommand.java:42)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:74)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:63)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+13:28:35.183 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+13:28:35.579 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+13:28:35.897 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+13:28:35.898 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+13:28:35.898 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+13:28:48.262 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/playlist?list=PLo7FOXNe7Yt_vgrUFzw8XUQWrWdFhbhVs in guild nexottest by U:cloudybyte(301780655019130880)[0m
+13:34:24.648 [JDA [0 / 1] MainWS-ReadThread] WARN  n.d.j.i.requests.WebSocketClient - Got disconnected from WebSocket. Attempting to resume session
+13:34:27.281 [JDA [0 / 1] MainWS-ReadThread] WARN  n.d.j.i.requests.WebSocketClient - Got disconnected from WebSocket. Appending to reconnect queue
+13:34:31.648 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+13:34:31.896 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished (Re)Loading!
+14:07:17.370 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+14:07:17.835 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+14:07:18.132 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+14:07:18.132 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+14:07:18.132 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+14:07:24.839 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued edx in guild GGM by U:cloudybyte(301780655019130880)[0m
+14:07:26.088 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=Ax0wibf4_PA Title: EDX - Daybreak (Original Club Mix)[0m
+14:07:32.226 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued neffex in guild GGM by U:cloudybyte(301780655019130880)[0m
+14:07:33.160 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=TAmhVFA1d8Q Title: NEFFEX - Summer ?? [Copyright Free][0m
+14:07:34.982 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$245/0x000000080040d440@215d17
+14:07:34.996 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+14:07:34.997 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+14:07:35.028 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+14:11:57.602 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+14:11:58.012 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+14:11:58.297 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+14:11:58.297 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as nightplay DEV#3047
+14:11:58.297 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+14:13:14.247 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued EDX in guild GGM by U:cloudybyte(301780655019130880)[0m
+14:13:15.327 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=Ax0wibf4_PA Title: EDX - Daybreak (Original Club Mix)[0m
+14:13:16.307 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$248/0x0000000800417040@1b7139ea
+14:13:16.319 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+14:13:16.319 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+14:13:16.356 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.

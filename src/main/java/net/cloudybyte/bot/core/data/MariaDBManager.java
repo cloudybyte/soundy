@@ -2,6 +2,7 @@ package net.cloudybyte.bot.core.data;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class MariaDBManager {
 
@@ -298,9 +299,9 @@ public class MariaDBManager {
         try {
             if (result.next()) {
                 if (result.getMetaData().getColumnTypeName(result.findColumn(column)).contains("TEXT") ||
-                        result.getMetaData().getColumnTypeName(result.findColumn(column)) == "VARCHAR" ||
-                        result.getMetaData().getColumnTypeName(result.findColumn(column)) == "CHAR" ||
-                        result.getMetaData().getColumnTypeName(result.findColumn(column)) == "TEXT") {
+                        Objects.equals(result.getMetaData().getColumnTypeName(result.findColumn(column)), "VARCHAR") ||
+                        Objects.equals(result.getMetaData().getColumnTypeName(result.findColumn(column)), "CHAR") ||
+                        Objects.equals(result.getMetaData().getColumnTypeName(result.findColumn(column)), "TEXT")) {
                     return result.getString(column);
                 } else {
                     throw new MySQL_WrongDataTypeException(
@@ -389,7 +390,7 @@ public class MariaDBManager {
     private Boolean getBool(ResultSet result, String column) throws MySQL_NoEntryFoundException, MySQL_WrongDataTypeException {
         try {
             if (result.next()) {
-                if (result.getMetaData().getColumnTypeName(result.findColumn(column)) == "BOOLEAN") {
+                if (Objects.equals(result.getMetaData().getColumnTypeName(result.findColumn(column)), "BOOLEAN")) {
                     return result.getBoolean(column);
                 } else {
                     throw new MySQL_WrongDataTypeException(
@@ -432,7 +433,7 @@ public class MariaDBManager {
     private Float getFloat(ResultSet result, String column) throws MySQL_NoEntryFoundException, MySQL_WrongDataTypeException {
         try {
             if (result.next()) {
-                if (result.getMetaData().getColumnTypeName(result.findColumn(column)) == "FLOAT") {
+                if (Objects.equals(result.getMetaData().getColumnTypeName(result.findColumn(column)), "FLOAT")) {
                     return result.getFloat(column);
                 } else {
                     throw new MySQL_WrongDataTypeException(
@@ -475,7 +476,7 @@ public class MariaDBManager {
     private Double getDouble(ResultSet result, String column) throws MySQL_NoEntryFoundException, MySQL_WrongDataTypeException {
         try {
             if (result.next()) {
-                if (result.getMetaData().getColumnTypeName(result.findColumn(column)) == "DOUBLE") {
+                if (Objects.equals(result.getMetaData().getColumnTypeName(result.findColumn(column)), "DOUBLE")) {
                     return result.getDouble(column);
                 } else {
                     throw new MySQL_WrongDataTypeException(
@@ -518,7 +519,7 @@ public class MariaDBManager {
     private Timestamp getDate(ResultSet result, String column) throws MySQL_NoEntryFoundException, MySQL_WrongDataTypeException {
         try {
             if (result.next()) {
-                if (result.getMetaData().getColumnTypeName(result.findColumn(column)) == "TIMESTAMP") {
+                if (Objects.equals(result.getMetaData().getColumnTypeName(result.findColumn(column)), "TIMESTAMP")) {
                     return result.getTimestamp(column);
                 } else {
                     throw new MySQL_WrongDataTypeException(
@@ -588,7 +589,7 @@ public class MariaDBManager {
     /**
      * Thrown if an error occurred whilst connecting to or disconnecting from a database
      */
-    private class MySQL_ConnectException extends Exception {
+    private static class MySQL_ConnectException extends Exception {
         public MySQL_ConnectException(String errMsg) {
             super(errMsg);
         }
@@ -597,7 +598,7 @@ public class MariaDBManager {
     /**
      * Thrown if there was a query without being connected to any database
      */
-    public class MySQL_NotConnectedQueryException extends Exception {
+    public static class MySQL_NotConnectedQueryException extends Exception {
         public MySQL_NotConnectedQueryException(String errMsg) {
             super(errMsg);
         }
@@ -607,7 +608,7 @@ public class MariaDBManager {
      * Thrown if the SQL data types are not matched with their corresponding Java data types
      * correctly
      */
-    public class MySQL_WrongDataTypeException extends Exception {
+    public static class MySQL_WrongDataTypeException extends Exception {
         public MySQL_WrongDataTypeException(String errMsg) {
             super(errMsg);
         }
@@ -616,7 +617,7 @@ public class MariaDBManager {
     /**
      * Thrown if no entry was found for specific ResultSet
      */
-    public class MySQL_NoEntryFoundException extends Exception {
+    public static class MySQL_NoEntryFoundException extends Exception {
         public MySQL_NoEntryFoundException(String errMsg) {
             super(errMsg);
         }

@@ -1,0 +1,464 @@
+11:46:34.223 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+11:46:34.626 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+11:46:34.970 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+11:46:34.971 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+11:46:34.971 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+12:14:48.719 [JDA [0 / 1] MainWS-ReadThread] WARN  n.d.j.i.requests.WebSocketClient - Got disconnected from WebSocket. Attempting to resume session
+12:14:51.353 [JDA [0 / 1] MainWS-ReadThread] WARN  n.d.j.i.requests.WebSocketClient - Got disconnected from WebSocket. Appending to reconnect queue
+12:14:55.748 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+12:14:56.037 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished (Re)Loading!
+14:31:05.888 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+14:31:06.302 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+14:31:06.602 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+14:31:06.603 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+14:31:06.603 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+14:31:23.434 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued +play in guild GGM by U:cloudybyte(301780655019130880)[0m
+14:31:24.485 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=xKmNkLyQaWo Title: SANTA der BOSS feat. EXSL95 (Offizielles Musikvideo)[0m
+14:31:28.597 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$265/0x0000000800467040@6e058152
+14:31:28.609 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+14:31:28.609 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+14:31:28.643 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+14:33:03.903 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=JJnWrA8lock in guild GGM by U:cloudybyte(301780655019130880)[0m
+14:33:04.438 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=JJnWrA8lock Title: list of cool things to do[0m
+14:33:37.214 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.lang.IllegalArgumentException: Provided VoiceChannel may not be null
+	at net.dv8tion.jda.internal.utils.Checks.notNull(Checks.java:56)
+	at net.dv8tion.jda.internal.managers.AudioManagerImpl.openAudioConnection(AudioManagerImpl.java:75)
+	at net.cloudybyte.bot.commands.music.PlayCommand.handle(PlayCommand.java:193)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:74)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:63)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+14:33:51.751 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=K45_l4QDtxw in guild GGM by U:cloudybyte(301780655019130880)[0m
+14:33:52.350 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=K45_l4QDtxw Title: ideas[0m
+14:34:14.156 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=JJnWrA8lock in guild GGM by U:cloudybyte(301780655019130880)[0m
+14:34:14.706 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=JJnWrA8lock Title: list of cool things to do[0m
+14:34:20.244 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=K45_l4QDtxw in guild GGM by U:cloudybyte(301780655019130880)[0m
+14:34:20.835 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=K45_l4QDtxw Title: ideas[0m
+14:36:11.117 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+14:36:11.560 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+14:36:11.855 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+14:36:11.856 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+14:36:11.856 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+14:36:21.971 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=JJnWrA8lock in guild GGM by U:cloudybyte(301780655019130880)[0m
+14:36:22.865 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=JJnWrA8lock Title: list of cool things to do[0m
+14:36:23.496 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$256/0x0000000800431c40@4813487c
+14:36:23.508 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+14:36:23.508 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+14:36:23.541 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+14:36:26.673 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=K45_l4QDtxw in guild GGM by U:cloudybyte(301780655019130880)[0m
+14:36:27.207 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=K45_l4QDtxw Title: ideas[0m
+14:36:42.976 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=K45_l4QDtxw in guild GGM by U:cloudybyte(301780655019130880)[0m
+14:36:43.667 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=K45_l4QDtxw Title: ideas[0m
+14:38:41.402 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=JJnWrA8lock in guild GGM by U:cloudybyte(301780655019130880)[0m
+14:38:41.935 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=JJnWrA8lock Title: list of cool things to do[0m
+14:38:45.843 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=K45_l4QDtxw in guild GGM by U:cloudybyte(301780655019130880)[0m
+14:38:46.415 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=K45_l4QDtxw Title: ideas[0m
+14:39:19.693 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+14:39:20.048 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+14:39:20.336 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+14:39:20.337 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+14:39:20.337 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+14:39:27.203 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=JJnWrA8lock in guild GGM by U:cloudybyte(301780655019130880)[0m
+14:39:28.063 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=JJnWrA8lock Title: list of cool things to do[0m
+14:39:28.657 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$256/0x0000000800431c40@166df55f
+14:39:28.666 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+14:39:28.667 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+14:39:28.695 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+14:39:31.638 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=K45_l4QDtxw in guild GGM by U:cloudybyte(301780655019130880)[0m
+14:39:32.184 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=K45_l4QDtxw Title: ideas[0m
+14:39:47.441 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=K45_l4QDtxw in guild GGM by U:cloudybyte(301780655019130880)[0m
+14:39:47.991 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=K45_l4QDtxw Title: ideas[0m
+14:40:54.351 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+14:40:54.711 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+14:40:55.013 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+14:40:55.013 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+14:40:55.014 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+14:40:58.941 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=K45_l4QDtxw in guild GGM by U:cloudybyte(301780655019130880)[0m
+14:40:59.741 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=K45_l4QDtxw Title: ideas[0m
+14:41:00.475 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$256/0x000000080043ec40@3b6f7a21
+14:41:00.488 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+14:41:00.488 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+14:41:00.519 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+14:41:17.244 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=JJnWrA8lock in guild GGM by U:cloudybyte(301780655019130880)[0m
+14:41:17.913 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=JJnWrA8lock Title: list of cool things to do[0m
+14:51:04.860 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+14:51:05.255 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+14:51:05.555 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+14:51:05.555 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+14:51:05.555 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+14:52:08.630 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+14:52:08.998 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+14:52:09.308 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+14:52:09.309 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+14:52:09.309 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+14:52:57.603 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+14:52:57.970 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+14:52:58.372 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+14:52:58.373 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+14:52:58.373 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+14:53:02.760 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.lang.NullPointerException: null
+	at net.cloudybyte.bot.listeners.AutoDisconnect.onGuildVoiceLeave(AutoDisconnect.java:16)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:574)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.VoiceStateUpdateHandler.handleGuildVoiceState(VoiceStateUpdateHandler.java:143)
+	at net.dv8tion.jda.internal.handle.VoiceStateUpdateHandler.handleInternally(VoiceStateUpdateHandler.java:50)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+14:54:19.078 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+14:54:19.493 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+14:54:19.820 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+14:54:19.821 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+14:54:19.822 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:14:51.435 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:14:51.832 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:14:52.148 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:14:52.149 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+15:14:52.149 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:15:12.109 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+com.mongodb.CommandFailureException: { "serverUsed" : "92.60.39.215:27017" , "ok" : 0.0 , "errmsg" : "auth failed" , "code" : 18 , "codeName" : "AuthenticationFailed"}
+	at com.mongodb.CommandResult.getException(CommandResult.java:76)
+	at com.mongodb.CommandResult.throwOnError(CommandResult.java:131)
+	at com.mongodb.DBPort$NativeAuthenticator.authenticate(DBPort.java:652)
+	at com.mongodb.DBPort.authenticate(DBPort.java:364)
+	at com.mongodb.DBPort.checkAuth(DBPort.java:375)
+	at com.mongodb.DBTCPConnector.innerCall(DBTCPConnector.java:291)
+	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:271)
+	at com.mongodb.DBCollectionImpl.find(DBCollectionImpl.java:84)
+	at com.mongodb.DBCollectionImpl.find(DBCollectionImpl.java:66)
+	at com.mongodb.DBCursor._check(DBCursor.java:458)
+	at com.mongodb.DBCursor._next(DBCursor.java:508)
+	at com.mongodb.DBCursor.next(DBCursor.java:581)
+	at net.cloudybyte.bot.commands.music.PlayCommand.handle(PlayCommand.java:123)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:74)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:63)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+15:16:11.525 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:16:11.877 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:16:12.383 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:16:12.384 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+15:16:12.384 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:16:16.616 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+com.mongodb.CommandFailureException: { "serverUsed" : "92.60.39.215:27017" , "ok" : 0.0 , "errmsg" : "auth failed" , "code" : 18 , "codeName" : "AuthenticationFailed"}
+	at com.mongodb.CommandResult.getException(CommandResult.java:76)
+	at com.mongodb.CommandResult.throwOnError(CommandResult.java:131)
+	at com.mongodb.DBPort$NativeAuthenticator.authenticate(DBPort.java:652)
+	at com.mongodb.DBPort.authenticate(DBPort.java:364)
+	at com.mongodb.DBPort.checkAuth(DBPort.java:375)
+	at com.mongodb.DBTCPConnector.innerCall(DBTCPConnector.java:291)
+	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:271)
+	at com.mongodb.DBCollectionImpl.find(DBCollectionImpl.java:84)
+	at com.mongodb.DBCollectionImpl.find(DBCollectionImpl.java:66)
+	at com.mongodb.DBCursor._check(DBCursor.java:458)
+	at com.mongodb.DBCursor._next(DBCursor.java:508)
+	at com.mongodb.DBCursor.next(DBCursor.java:581)
+	at net.cloudybyte.bot.commands.music.LoopCommand.handle(LoopCommand.java:57)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:74)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:63)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+15:18:02.857 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:18:03.344 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:18:03.671 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:18:03.672 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+15:18:03.672 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:18:06.686 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+com.mongodb.CommandFailureException: { "serverUsed" : "92.60.39.215:27017" , "ok" : 0.0 , "errmsg" : "auth failed" , "code" : 18 , "codeName" : "AuthenticationFailed"}
+	at com.mongodb.CommandResult.getException(CommandResult.java:76)
+	at com.mongodb.CommandResult.throwOnError(CommandResult.java:131)
+	at com.mongodb.DBPort$NativeAuthenticator.authenticate(DBPort.java:652)
+	at com.mongodb.DBPort.authenticate(DBPort.java:364)
+	at com.mongodb.DBPort.checkAuth(DBPort.java:375)
+	at com.mongodb.DBTCPConnector.innerCall(DBTCPConnector.java:291)
+	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:271)
+	at com.mongodb.DBCollectionImpl.find(DBCollectionImpl.java:84)
+	at com.mongodb.DBCollectionImpl.find(DBCollectionImpl.java:66)
+	at com.mongodb.DBCursor._check(DBCursor.java:458)
+	at com.mongodb.DBCursor._next(DBCursor.java:508)
+	at com.mongodb.DBCursor.next(DBCursor.java:581)
+	at net.cloudybyte.bot.commands.music.LoopCommand.handle(LoopCommand.java:57)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:74)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:63)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+15:18:31.127 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:18:31.488 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:18:31.762 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:18:31.763 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+15:18:31.763 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:18:35.104 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+com.mongodb.CommandFailureException: { "serverUsed" : "92.60.39.215:27017" , "ok" : 0.0 , "errmsg" : "auth failed" , "code" : 18 , "codeName" : "AuthenticationFailed"}
+	at com.mongodb.CommandResult.getException(CommandResult.java:76)
+	at com.mongodb.CommandResult.throwOnError(CommandResult.java:131)
+	at com.mongodb.DBPort$NativeAuthenticator.authenticate(DBPort.java:652)
+	at com.mongodb.DBPort.authenticate(DBPort.java:364)
+	at com.mongodb.DBPort.checkAuth(DBPort.java:375)
+	at com.mongodb.DBTCPConnector.innerCall(DBTCPConnector.java:291)
+	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:271)
+	at com.mongodb.DBCollectionImpl.find(DBCollectionImpl.java:84)
+	at com.mongodb.DBCollectionImpl.find(DBCollectionImpl.java:66)
+	at com.mongodb.DBCursor._check(DBCursor.java:458)
+	at com.mongodb.DBCursor._next(DBCursor.java:508)
+	at com.mongodb.DBCursor.next(DBCursor.java:581)
+	at net.cloudybyte.bot.commands.music.LoopCommand.handle(LoopCommand.java:58)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:74)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:63)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+15:20:42.218 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:20:42.586 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:20:42.873 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:20:42.874 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+15:20:42.874 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:29:54.205 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:29:54.561 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:29:54.858 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:29:54.859 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+15:29:54.859 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:30:22.122 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/watch?v=JJnWrA8lock in guild GGM by U:cloudybyte(301780655019130880)[0m
+15:30:22.936 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=JJnWrA8lock Title: list of cool things to do[0m
+15:30:23.634 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$256/0x000000080043ec40@726f99f2
+15:30:23.647 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+15:30:23.648 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+15:30:23.676 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+15:57:43.710 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:57:44.127 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:57:44.493 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:57:44.494 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+15:57:44.494 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:58:14.898 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:58:15.258 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:58:15.584 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:58:15.584 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+15:58:15.584 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:58:18.748 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+com.mongodb.CommandFailureException: { "serverUsed" : "92.60.39.215:27017" , "ok" : 0.0 , "errmsg" : "auth failed" , "code" : 18 , "codeName" : "AuthenticationFailed"}
+	at com.mongodb.CommandResult.getException(CommandResult.java:76)
+	at com.mongodb.CommandResult.throwOnError(CommandResult.java:131)
+	at com.mongodb.DBPort$NativeAuthenticator.authenticate(DBPort.java:652)
+	at com.mongodb.DBPort.authenticate(DBPort.java:364)
+	at com.mongodb.DBPort.checkAuth(DBPort.java:375)
+	at com.mongodb.DBTCPConnector.innerCall(DBTCPConnector.java:291)
+	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:271)
+	at com.mongodb.DBCollectionImpl.find(DBCollectionImpl.java:84)
+	at com.mongodb.DBCollectionImpl.find(DBCollectionImpl.java:66)
+	at com.mongodb.DBCursor._check(DBCursor.java:458)
+	at com.mongodb.DBCursor._next(DBCursor.java:508)
+	at com.mongodb.DBCursor.next(DBCursor.java:581)
+	at net.cloudybyte.bot.commands.music.LoopCommand.handle(LoopCommand.java:47)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:72)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:58)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+15:59:13.446 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:59:13.806 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:59:14.114 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:59:14.115 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+15:59:14.115 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:59:18.606 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+com.mongodb.CommandFailureException: { "serverUsed" : "92.60.39.215:27017" , "supportedMechanisms" : [ "MONGODB-CR" , "MONGODB-X509" , "SCRAM-SHA-1"] , "ok" : 0.0 , "errmsg" : "Unsupported mechanism PLAIN" , "code" : 2 , "codeName" : "BadValue"}
+	at com.mongodb.CommandResult.getException(CommandResult.java:76)
+	at com.mongodb.CommandResult.throwOnError(CommandResult.java:131)
+	at com.mongodb.DBPort$SaslAuthenticator.authenticate(DBPort.java:565)
+	at com.mongodb.DBPort.authenticate(DBPort.java:364)
+	at com.mongodb.DBPort.checkAuth(DBPort.java:375)
+	at com.mongodb.DBTCPConnector.innerCall(DBTCPConnector.java:291)
+	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:271)
+	at com.mongodb.DBCollectionImpl.find(DBCollectionImpl.java:84)
+	at com.mongodb.DBCollectionImpl.find(DBCollectionImpl.java:66)
+	at com.mongodb.DBCursor._check(DBCursor.java:458)
+	at com.mongodb.DBCursor._next(DBCursor.java:508)
+	at com.mongodb.DBCursor.next(DBCursor.java:581)
+	at net.cloudybyte.bot.commands.music.LoopCommand.handle(LoopCommand.java:47)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:72)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:58)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+16:00:21.409 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+16:00:21.774 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+16:00:22.097 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+16:00:22.098 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+16:00:22.098 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+16:00:25.126 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.lang.IllegalArgumentException: Unsupported authMechanism: SCRAM-SHA-1
+	at com.mongodb.MongoClientURI.createCredentials(MongoClientURI.java:461)
+	at com.mongodb.MongoClientURI.<init>(MongoClientURI.java:254)
+	at com.mongodb.MongoClientURI.<init>(MongoClientURI.java:165)
+	at net.cloudybyte.bot.commands.music.LoopCommand.handle(LoopCommand.java:31)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:72)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:58)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+16:06:24.601 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+16:06:24.968 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+16:06:25.320 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+16:06:25.321 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+16:06:25.321 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+16:06:32.540 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+com.mongodb.CommandFailureException: { "serverUsed" : "92.60.39.215:27017" , "ok" : 0.0 , "errmsg" : "auth failed" , "code" : 18 , "codeName" : "AuthenticationFailed"}
+	at com.mongodb.CommandResult.getException(CommandResult.java:76)
+	at com.mongodb.CommandResult.throwOnError(CommandResult.java:131)
+	at com.mongodb.DBPort$NativeAuthenticator.authenticate(DBPort.java:652)
+	at com.mongodb.DBPort.authenticate(DBPort.java:364)
+	at com.mongodb.DBPort.checkAuth(DBPort.java:375)
+	at com.mongodb.DBTCPConnector.innerCall(DBTCPConnector.java:291)
+	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:271)
+	at com.mongodb.DBCollectionImpl.find(DBCollectionImpl.java:84)
+	at com.mongodb.DBCollectionImpl.find(DBCollectionImpl.java:66)
+	at com.mongodb.DBCursor._check(DBCursor.java:458)
+	at com.mongodb.DBCursor._next(DBCursor.java:508)
+	at com.mongodb.DBCursor.next(DBCursor.java:581)
+	at net.cloudybyte.bot.commands.music.LoopCommand.handle(LoopCommand.java:55)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:72)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:58)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)

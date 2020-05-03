@@ -1,13 +1,7 @@
-/*
- * Copyright (c) Ole Donnermeyer - All Rights Reserved
- * Unauthorized copying of this file, via any medium is strictly prohibited
- * Proprietary and confidential
- * Written by Ole Donnermeyer <ole.donnermeyer@gmx.net>, 2020
- */
-
 package net.cloudybyte.bot.commands.music;
 
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
+import net.cloudybyte.bot.core.Constants;
 import net.cloudybyte.bot.core.audio.GuildMusicManager;
 import net.cloudybyte.bot.core.audio.PlayerManager;
 import net.cloudybyte.bot.core.audio.TrackScheduler;
@@ -17,35 +11,33 @@ import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 
 import java.util.List;
 
-public class SkipCommand implements ICommand {
-
-    EmbedBuilder embedBuilder = new EmbedBuilder();
+public class NowPlayingCommand implements ICommand {
     @Override
     public void handle(List<String> args, GuildMessageReceivedEvent event) {
-
         PlayerManager playerManager = PlayerManager.getInstance();
         GuildMusicManager musicManager = playerManager.getGuildMusicManager(event.getGuild());
         TrackScheduler scheduler = musicManager.scheduler;
         AudioPlayer player = musicManager.player;
+        EmbedBuilder embedBuilder = new EmbedBuilder();
 
-
-        if (player.getPlayingTrack() == null) {
-            embedBuilder.error(event, null, "\\*silence\\*");
+        if (player.getPlayingTrack() == null){
+            embedBuilder.error(event, "\\*silence\\*", "I do not hear anything, do you?");
             return;
         }
-        scheduler.nextTrack();
-        try {
-            embedBuilder.nowPlaying(event, musicManager.player.getPlayingTrack().getInfo().title);
-        }catch (NullPointerException ignored){}
+        boolean isStream = player.getPlayingTrack().getInfo().isStream;
+
+        embedBuilder.nowPlayingCommand(event, player.getPlayingTrack().getInfo().title,player.getPlayingTrack().getPosition() ,player.getPlayingTrack().getInfo().length, isStream);
+
     }
 
     @Override
     public String getHelp() {
-        return "Skips the current song";
+        return "returns the playing song\n" +
+        "Usage: `" + Constants.PREFIX + "np`";
     }
 
     @Override
     public String getInvoke() {
-        return "skip";
+        return "np";
     }
 }

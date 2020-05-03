@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="MySQL - soundy@92.60.39.215" read-only="true" uuid="b3afefde-2cfa-43c6-8543-1449028965bb">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://92.60.39.215:3306/soundy</jdbc-url>
+      <driver-properties>
+        <property name="serverTimezone" value="CET" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="soundy@localhost" uuid="ed14fd3f-b384-43ca-b692-3128d89bd95a">
+      <driver-ref>mongo</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.dbschema.MongoJdbcDriver</jdbc-driver>
+      <jdbc-url>mongodb://localhost:27017/soundy</jdbc-url>
+    </data-source>
+  </component>
+</project>

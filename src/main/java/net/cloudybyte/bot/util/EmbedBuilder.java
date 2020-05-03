@@ -1,9 +1,9 @@
 package net.cloudybyte.bot.util;
 
 import com.sun.management.OperatingSystemMXBean;
-import com.sun.org.apache.bcel.internal.Const;
 import net.cloudybyte.bot.core.Constants;
 import net.cloudybyte.bot.core.data.MySQLManager;
+import net.dv8tion.jda.api.entities.Role;
 import net.dv8tion.jda.api.sharding.ShardManager;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDAInfo;
@@ -13,32 +13,22 @@ import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import java.awt.*;
 import java.time.Instant;
 
-public class EmbedBuilder{
+public class EmbedBuilder {
 
     private static final String URL = Constants.URL;
     private static final String iconURL = Constants.iconURL;
     public JDAInfo jdaInfo = new JDAInfo();
-    private ShardManager shardManager;
-    private OperatingSystemMXBean operatingSystemMXBean;
     public JDA jda;
     MySQLManager mySQLManager = new MySQLManager("localhost", "3306", "root", "", "soundy");
-
-
-
-
-
-
-
-
-
+    private ShardManager shardManager;
+    private OperatingSystemMXBean operatingSystemMXBean;
 
     public void info(GuildMessageReceivedEvent event, String title, String content) {
 
         net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
                 .setTitle(title)
-                .setColor(Color.white)
-                .setFooter(URL, iconURL)
-                .setTimestamp(Instant.now());
+                .setColor(Role.DEFAULT_COLOR_RAW)
+                .setFooter(URL, iconURL);
 
         StringBuilder descriptionBuilder = builder.getDescriptionBuilder();
 
@@ -55,8 +45,7 @@ public class EmbedBuilder{
         net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
                 .setTitle(title)
                 .setColor(Color.green)
-                .setFooter(URL, iconURL)
-                .setTimestamp(Instant.now());
+                .setFooter(URL, iconURL);
 
         StringBuilder descriptionBuilder = builder.getDescriptionBuilder();
 
@@ -72,8 +61,7 @@ public class EmbedBuilder{
         net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
                 .setTitle(title)
                 .setColor(Color.orange)
-                .setFooter(URL, iconURL)
-                .setTimestamp(Instant.now());
+                .setFooter(URL, iconURL);
 
         StringBuilder descriptionBuilder = builder.getDescriptionBuilder();
 
@@ -89,8 +77,7 @@ public class EmbedBuilder{
         net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
                 .setTitle(title)
                 .setColor(Color.red)
-                .setFooter(URL, iconURL)
-                .setTimestamp(Instant.now());
+                .setFooter(URL, iconURL);
 
         StringBuilder descriptionBuilder = builder.getDescriptionBuilder();
 
@@ -103,8 +90,8 @@ public class EmbedBuilder{
 
     public void welcome(GuildMessageReceivedEvent event, Guild guild) {
 
-        String title = String.format("**Hey!** My name is %s and I am the best music bot on Discord! **Seriously!**", guild.getJDA().getSelfUser().getName());
-        String content = String.format("**-** My prefix is: `" + Constants.PREFIX + "`") + String.format("**-** I got many commands! Request a list by typing: `" + Constants.PREFIX + "help`") + String.format("**-** You wanna start listening to some music right now? Use **`%splay`**", Constants.PREFIX) + "**-** Need help? Join the support at **https://discord.gg/HwXHPVK**";
+        String title = "**Hey!**";
+        String content = "**-** My prefix is: `" + Constants.PREFIX + "`" + "**-** I got many commands! Request a list by typing: `" + Constants.PREFIX + "help`" + String.format("**-** You wanna start listening to some music right now? Use **`%splay`**", Constants.PREFIX) + "**-** Need help? Join the support server at **https://discord.gg/HXXAqwb**";
 
         net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
                 .setTitle(title)
@@ -120,11 +107,6 @@ public class EmbedBuilder{
         event.getChannel().sendMessage(builder.build()).queue();
 
     }
-
-
-
-
-
 
 
     public void InfoCommand(GuildMessageReceivedEvent event, Guild guild) {
@@ -150,14 +132,9 @@ public class EmbedBuilder{
     }
 
 
-
-
-
     public void StatsCommand(GuildMessageReceivedEvent event, Guild guild) {
 
         String title = "Status information";
-
-        mySQLManager.connect();
 
         net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
                 .setTitle(title)
@@ -168,10 +145,10 @@ public class EmbedBuilder{
                 .addField("Guilds:", String.format("`%s` guilds", event.getJDA().getShardManager().getGuilds().size()), true)
                 .addField("Users:", String.format("`%s` users", event.getJDA().getShardManager().getUsers().size()), true)
                 .addField("Shards:", String.format("`%s` shards", event.getJDA().getShardManager().getShards().size()), true)
-              //  .addField("DB ping:", String.format("`%sms`", mySQLManager.query("/* ping */ SELECT 1") ), true)
+                //  .addField("DB ping:", String.format("`%sms`", mySQLManager.query("/* ping */ SELECT 1") ), true)
                 .addField("Threads:", String.format("`%s` threads", Thread.getAllStackTraces().size()), true);
 
-              //  .addField("CPU load:", String.format("`%s`)", Math.round(operatingSystemMXBean.getSystemCpuLoad() * 100)) + "%", true)
+        //  .addField("CPU load:", String.format("`%s`)", Math.round(operatingSystemMXBean.getSystemCpuLoad() * 100)) + "%", true)
 
         //TODO: Permission check if the bot can send embed messages
         event.getChannel().sendMessage(builder.build()).queue();
@@ -181,7 +158,6 @@ public class EmbedBuilder{
     public void shardAveragePing(GuildMessageReceivedEvent event) {
 
         String title = "Average Ping";
-
 
 
         net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
@@ -199,30 +175,28 @@ public class EmbedBuilder{
     }
 
 
-        public void shardNumberRunning(GuildMessageReceivedEvent event){
+    public void shardNumberRunning(GuildMessageReceivedEvent event) {
 
-            String title = "Number of shards running:";
-
-
-
-            net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
-                    .setTitle(title)
-                    .setColor(Color.CYAN)
-                    .setFooter(URL, iconURL)
-                    .setTimestamp(Instant.now())
-
-                    .addField("Running shards:", String.format("`%s`", shardManager.getShardsRunning()), true);
+        String title = "Number of shards running:";
 
 
-            //TODO: Permission check if the bot can send embed messages
-            event.getChannel().sendMessage(builder.build()).queue();
+        net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
+                .setTitle(title)
+                .setColor(Color.CYAN)
+                .setFooter(URL, iconURL)
+                .setTimestamp(Instant.now())
 
-        }
+                .addField("Running shards:", String.format("`%s`", shardManager.getShardsRunning()), true);
 
-    public void shardApplicationInfo(GuildMessageReceivedEvent event){
+
+        //TODO: Permission check if the bot can send embed messages
+        event.getChannel().sendMessage(builder.build()).queue();
+
+    }
+
+    public void shardApplicationInfo(GuildMessageReceivedEvent event) {
 
         String title = "Application Info:";
-
 
 
         net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
@@ -254,7 +228,8 @@ public class EmbedBuilder{
         event.getChannel().sendMessage(builder.build()).queue();
 
     }
-    public void nowPlayingCommand(GuildMessageReceivedEvent event, String songname) {
+
+    public void nowPlaying(GuildMessageReceivedEvent event, String songname) {
 
         String title = "Now playing";
 
@@ -267,6 +242,48 @@ public class EmbedBuilder{
         //TODO: Permission check if the bot can send embed messages
         event.getChannel().sendMessage(builder.build()).queue();
 
+    }
+
+    public void nowPlayingCommand(GuildMessageReceivedEvent event, String songname, Long progress, Long length, boolean isSteam) {
+
+        String title = "Now playing";
+
+        if (isSteam) {
+            net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
+                    .setColor(Color.magenta)
+                    .setFooter(URL, iconURL)
+                    .addField("streaming:", Reactions.PLAY + " `" + songname + "`", false);
+
+            //TODO: Permission check if the bot can send embed messages
+            event.getChannel().sendMessage(builder.build()).queue();
+        } else {
+
+
+            net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
+                    .setColor(Color.BLUE)
+                    .setFooter(URL, iconURL)
+                    .addField("now playing:", Reactions.PLAY + " `" + songname + "`", false)
+                    .addField("progress:", FormatUtil.formatProgressBar(progress, length), false);
+
+            //TODO: Permission check if the bot can send embed messages
+            event.getChannel().sendMessage(builder.build()).queue();
+
+        }
+
+    }
+
+
+    public void changePrefixSuccess(GuildMessageReceivedEvent event, String newPrefix) {
+        String title = "changed prefix";
+
+
+        net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
+                .setColor(Color.green)
+                .setFooter(URL, iconURL)
+                .addField(title, String.format("changed prefix to`%s`", newPrefix), false);
+
+        //TODO: Permission check if the bot can send embed messages
+        event.getChannel().sendMessage(builder.build()).queue();
     }
 
 

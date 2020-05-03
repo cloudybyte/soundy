@@ -1,0 +1,12 @@
+version: '1'
+services:
+  bot:
+    build: .
+    restart: always
+    networks:
+      - core
+    volumes:
+      - "$PWD:/opt/soundy/bot"
+    command: java -jar soundybot.jar
+networks:
+  core:

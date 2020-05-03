@@ -34,7 +34,14 @@ dependencies {
     compile group: 'com.google.apis', name: 'google-api-services-youtube', version: 'v3-rev212-1.25.0'
     implementation 'org.mariadb.jdbc:mariadb-java-client:2.6.0'
     compile 'org.discordbots:DBL-Java-Library:2.0.1'
+    compile 'xyz.discordboats:Boats4J:1.0.2'
+    compile 'org.mongodb:mongo-java-driver:2.12.3'
+    compileOnly 'org.projectlombok:lombok:1.18.12'
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+    compile 'com.patreon:patreon:0.4.2'
 
+    testCompileOnly 'org.projectlombok:lombok:1.18.12'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
 }
 
 task codeCoverageReport(type: JacocoReport) {

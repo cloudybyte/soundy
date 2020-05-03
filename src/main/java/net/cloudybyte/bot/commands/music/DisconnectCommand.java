@@ -5,6 +5,8 @@ package net.cloudybyte.bot.commands.music;
 import io.sentry.SentryClient;
 import io.sentry.SentryClientFactory;
 import net.cloudybyte.bot.core.Constants;
+import net.cloudybyte.bot.core.audio.GuildMusicManager;
+import net.cloudybyte.bot.core.audio.PlayerManager;
 import net.cloudybyte.bot.core.command.ICommand;
 import net.cloudybyte.bot.util.EmbedBuilder;
 import net.cloudybyte.bot.util.Reactions;
@@ -31,6 +33,11 @@ public class DisconnectCommand implements ICommand {
         AudioManager audioManager = guild.getAudioManager();
         SentryClient sentry = SentryClientFactory.sentryClient();
         EmbedBuilder embedBuilder = new EmbedBuilder();
+        PlayerManager playerManager = PlayerManager.getInstance();
+        GuildMusicManager guildMusicManager = playerManager.getGuildMusicManager(event.getGuild());
+
+
+
 
         if (audioManager.getConnectionStatus().equals(ConnectionStatus.NOT_CONNECTED)) {
             embedBuilder.error(event, "Not connected", "I am currently not connected to any voice channel!");
@@ -45,6 +52,9 @@ public class DisconnectCommand implements ICommand {
         try {
             audioManager.closeAudioConnection();
             event.getMessage().addReaction(Reactions.BYE).queue();
+            guildMusicManager.scheduler.getQueue().clear();
+            guildMusicManager.player.stopTrack();
+            guildMusicManager.player.setPaused(false);
         }
         catch (IllegalArgumentException e){
             sentry.sendException(e);

@@ -1,14 +1,14 @@
 package net.cloudybyte.bot.core.command;
 
 
+import net.cloudybyte.bot.WelcomeCommand;
 import net.cloudybyte.bot.commands.HelpCommand;
 import net.cloudybyte.bot.commands.PingCommand;
 import net.cloudybyte.bot.commands.StatsCommand;
 import net.cloudybyte.bot.commands.UptimeCommand;
-import net.cloudybyte.bot.commands.management.ShardCommand;
-import net.cloudybyte.bot.commands.management.ShutdownCommand;
+import net.cloudybyte.bot.commands.owner.ShardCommand;
+import net.cloudybyte.bot.commands.owner.ShutdownCommand;
 import net.cloudybyte.bot.commands.music.*;
-import net.cloudybyte.bot.core.Constants;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import org.jetbrains.annotations.NotNull;
 
@@ -39,6 +39,10 @@ public class CommandManager {
         addCommand(new VolumeCommand());
         addCommand(new LoopCommand());
         addCommand(new SkipCommand());
+        addCommand(new NowPlayingCommand());
+        addCommand(new WelcomeCommand());
+        addCommand(new QueueListCommand());
+        addCommand(new FastForwardCommand());
     }
 
 
@@ -57,9 +61,9 @@ public class CommandManager {
     }
 
 
-    public void handleCommand(GuildMessageReceivedEvent event) {
+    public void handleCommand(GuildMessageReceivedEvent event, String prefix) {
         final String[] split = event.getMessage().getContentRaw().replaceFirst(
-                "(?i)" + Pattern.quote(Constants.PREFIX), "").split("\\s+");
+                "(?i)" + Pattern.quote(prefix), "").split("\\s+");
         final String invoke = split[0].toLowerCase();
 
 
