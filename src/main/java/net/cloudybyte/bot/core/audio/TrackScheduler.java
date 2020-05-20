@@ -6,12 +6,17 @@ import com.sedmelluq.discord.lavaplayer.player.event.AudioEventAdapter;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrackEndReason;
 
+import com.stripe.Stripe;
+import com.stripe.model.Customer;
 import net.cloudybyte.bot.core.Constants;
 
 import java.net.UnknownHostException;
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Map;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.ThreadLocalRandom;
 
 import static net.cloudybyte.bot.util.Colors.*;
 
@@ -27,6 +32,7 @@ public class TrackScheduler extends AudioEventAdapter {
 
     private boolean trackLoop = false;
     private boolean queueLoop = false;
+    private boolean shuffle = false;
 
     /**
      * @param player The audio player this scheduler uses
@@ -46,6 +52,9 @@ public class TrackScheduler extends AudioEventAdapter {
         // Calling startTrack with the noInterrupt set to true will start the track only if nothing is currently playing. If
         // something is playing, it returns false and does nothing. In that case the player was already playing so this
         // track goes to the queue instead.
+
+
+
         if (!player.startTrack(track, true)) {
             queue.offer(track);
         }
@@ -61,7 +70,10 @@ public class TrackScheduler extends AudioEventAdapter {
     public void nextTrack() {
         // Start the next track, regardless of if something is already playing or not. In case queue was empty, we are
         // giving null to startTrack, which is a valid argument and will simply stop the player.
-        player.startTrack(queue.poll(), false);
+        AudioTrack track = queue.poll();
+        if (track == null){return;}
+       // if(track.getInfo().length > 3558000 && )
+        player.startTrack(track, false);
     }
 
     @Override
@@ -69,38 +81,58 @@ public class TrackScheduler extends AudioEventAdapter {
         // Only start the next track if the end reason is suitable for it (FINISHED or LOAD_FAILED)
 
         MongoClient mongoClient = null;
-        try {
-            mongoClient = new MongoClient(new MongoClientURI(Constants.DBUri));
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
-        }
+        mongoClient = new MongoClient(new MongoClientURI(Constants.DBUri));
         DB database = mongoClient.getDB("soundy");
-        DBCollection collection = database.getCollection("trackLooping");
+        DBCollection loopingCollection = database.getCollection("trackLooping");
+        DBCollection shuffledCollection = database.getCollection("shuffled");
 
         //search for guild in db
         DBObject query = new BasicDBObject("guildid", guildid);
-        BasicDBObject select = new BasicDBObject();
-        select.put("looped", 1);
-        DBCursor cursor = collection.find(query, select);
+        //Build selector for the looping query
+        BasicDBObject loopingSelect = new BasicDBObject();
+        loopingSelect.put("looped", 1);
+        DBCursor loopingCursor = loopingCollection.find(query, loopingSelect);
 
-        BasicDBObject obj = (BasicDBObject) cursor.next();
-        System.out.println("obj.getString(\"looped\") = " + obj.getString("looped"));
-        Integer looped = Integer.parseInt(obj.getString("looped"));
+        BasicDBObject loopingObj = (BasicDBObject) loopingCursor.next();
+        Integer looped = Integer.parseInt(loopingObj.getString("looped"));
+
+
+        //Build selector for the looping query
+        BasicDBObject shuffleSelect = new BasicDBObject();
+        loopingSelect.put("shuffled", 1);
+        DBCursor shuffleCursor = loopingCollection.find(query, shuffleSelect);
+
+        BasicDBObject shuffleObj = (BasicDBObject) shuffleCursor.next();
+        Integer shuffled = Integer.parseInt(shuffleObj.getString("shuffled"));
 
 
         System.out.println(GREEN + "Track ended!" + RESET);
         System.out.println("looped = " + looped);
+        System.out.println("shuffled = " + shuffled);
 
 
-        if (looped.equals(0)) {
-            trackLoop = false;
-            queueLoop = false;
-        } else if (looped.equals(1)) {
-            trackLoop = true;
-            queueLoop = false;
-        } else if (looped.equals(2)) {
-            trackLoop = false;
-            queueLoop = true;
+        switch (looped) {
+            case 0:
+                trackLoop = false;
+                queueLoop = false;
+                break;
+
+            case 1:
+                trackLoop = true;
+                queueLoop = false;
+                break;
+            case 2:
+                trackLoop = false;
+                queueLoop = true;
+                break;
+        }
+
+        switch (shuffled){
+            case 0:
+                shuffle = false;
+                break;
+            case 1:
+                shuffle = true;
         }
 
 
@@ -111,11 +143,17 @@ public class TrackScheduler extends AudioEventAdapter {
             System.out.println(GREEN + "Queue looping enabled!" + RESET);
             queue.add(track.makeClone());
             nextTrack();
+        } else if (endReason.mayStartNext && shuffle) {
+            System.out.println(GREEN + "Shuffle!" + RESET);
+            final int index = ThreadLocalRandom.current().nextInt(getQueue().size());
+            AudioTrack nextTrack = ((LinkedList<AudioTrack>) getQueue()).get(index);
+            ((LinkedList<AudioTrack>) getQueue()).remove(index);
+            player.startTrack(nextTrack, false);
         } else if (endReason.mayStartNext) {
             System.out.println(GREEN + "NEXT TRACK STARTING SOON" + RESET);
             nextTrack();
         }
-
+        mongoClient.close();
 
     }
 

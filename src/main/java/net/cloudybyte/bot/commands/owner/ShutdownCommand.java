@@ -1,4 +1,4 @@
-package net.cloudybyte.bot.commands.management;
+package net.cloudybyte.bot.commands.owner;
 
 
 import net.cloudybyte.bot.core.Constants;

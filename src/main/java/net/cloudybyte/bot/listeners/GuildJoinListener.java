@@ -30,7 +30,6 @@ public class GuildJoinListener extends ListenerAdapter {
         if (textChannel != null) {
             textChannel.sendMessage(embedUtil.welcome(event, event.getGuild())).queue();
         }
-
     }
 }
 

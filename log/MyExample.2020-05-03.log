@@ -1,0 +1,10 @@
+18:53:17.227 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+18:53:17.645 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+18:53:17.961 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+18:53:17.961 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+18:53:17.961 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+18:56:42.361 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+18:56:42.773 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+18:56:43.113 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+18:56:43.114 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+18:56:43.114 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m

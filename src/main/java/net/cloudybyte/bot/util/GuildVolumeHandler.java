@@ -5,6 +5,7 @@ import net.cloudybyte.bot.core.Constants;
 import net.dv8tion.jda.api.entities.Guild;
 
 import java.net.UnknownHostException;
+import java.util.Set;
 
 
 public class GuildVolumeHandler {
@@ -22,6 +23,8 @@ public class GuildVolumeHandler {
 
         //update value
         collection.update(new BasicDBObject("guildid", guildid), new BasicDBObject("$set", new BasicDBObject("volume", volume)), true, false);
+
+        mongoClient.close();
 
     }
 

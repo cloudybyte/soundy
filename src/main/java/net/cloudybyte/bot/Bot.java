@@ -4,17 +4,17 @@ import com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendFactory;
 import io.sentry.Sentry;
 import net.cloudybyte.bot.core.Constants;
 import net.cloudybyte.bot.core.botlists.BotsForDiscord;
-import net.cloudybyte.bot.core.premiumcheck.PatreonChecker;
+import net.cloudybyte.bot.core.premiumcheck.PremiumTierCache;
 import net.cloudybyte.bot.listeners.AutoDisconnect;
 import net.cloudybyte.bot.listeners.GuildLeaveListener;
 import net.cloudybyte.bot.listeners.ReadyListener;
+import net.dv8tion.jda.api.audio.hooks.ConnectionStatus;
 import net.dv8tion.jda.api.sharding.DefaultShardManagerBuilder;
 import net.dv8tion.jda.api.sharding.ShardManager;
 import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Activity;
 
 import javax.security.auth.login.LoginException;
-import java.io.IOException;
 
 
 public class Bot {
@@ -24,7 +24,6 @@ public class Bot {
     private Listener Listener;
     private ShardManager shardManager;
     BotsForDiscord botsForDiscord = new BotsForDiscord();
-    PatreonChecker patreonChecker = new PatreonChecker();
 
 
     private Bot(String[] args) {
@@ -44,9 +43,6 @@ public class Bot {
     //  builder.addEventListeners(new GuildJoinListener());
         builder.addEventListeners(new GuildLeaveListener());
         builder.addEventListeners(new AutoDisconnect());
-
-       // patreonChecker.initializePatreons();
-
 
         try {
             shardManager = builder.build();

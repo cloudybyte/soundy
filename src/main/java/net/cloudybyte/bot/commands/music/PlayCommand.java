@@ -22,11 +22,9 @@ import com.sedmelluq.discord.lavaplayer.source.AudioSourceManagers;
 import io.sentry.SentryClient;
 import io.sentry.SentryClientFactory;
 import net.cloudybyte.bot.core.Constants;
-import net.cloudybyte.bot.core.audio.GuildMusicManager;
 import net.cloudybyte.bot.core.audio.PlayerManager;
 import net.cloudybyte.bot.core.audio.TrackScheduler;
 import net.cloudybyte.bot.core.command.ICommand;
-import net.cloudybyte.bot.core.data.MySQLManager;
 import net.cloudybyte.bot.util.Colors;
 import net.cloudybyte.bot.util.EmbedBuilder;
 import net.cloudybyte.bot.util.GuildTrackScheduleHandler;
@@ -79,14 +77,14 @@ public class PlayCommand implements ICommand, AudioEventListener {
         EmbedBuilder embedBuilder = new EmbedBuilder();
 
 
-        PlayerManager playerManager = PlayerManager.getInstance();
+     /*   PlayerManager playerManager = PlayerManager.getInstance();
         GuildMusicManager musicManager = playerManager.getGuildMusicManager(event.getGuild());
         AudioPlayer player = musicManager.player;
         TrackScheduler scheduler = musicManager.scheduler;
         if (player.isPaused()){
             player.setPaused(false);
             return;
-        }
+        } */
 
         VoiceChannel vc = event.getMember().getVoiceState().getChannel();
         AudioManager audioManager = event.getGuild().getAudioManager();
@@ -115,11 +113,7 @@ public class PlayCommand implements ICommand, AudioEventListener {
 
         //Connect to DB
         MongoClient mongoClient = null;
-        try {
-            mongoClient = new MongoClient(new MongoClientURI(Constants.DBUri));
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
-        }
+        mongoClient = new MongoClient(new MongoClientURI(Constants.DBUri));
         DB database = mongoClient.getDB("soundy");
         DBCollection collection = database.getCollection("volumes");
 
@@ -182,7 +176,6 @@ public class PlayCommand implements ICommand, AudioEventListener {
                 joinCommand.joinVC(event.getMember(), event.getGuild(), event);
             }
 
-
             String input = String.join(" ", args);
 
             //search YT
@@ -207,6 +200,7 @@ public class PlayCommand implements ICommand, AudioEventListener {
             manager.loadAndPlay(event, input);
             logger.info(BLUE + "Queued " + args.get(0) + " in guild " + event.getGuild().getName() + " by " + event.getAuthor() + RESET);
             manager.getGuildMusicManager(event.getGuild()).player.setVolume(100);
+            mongoClient.close();
         }
     }
 

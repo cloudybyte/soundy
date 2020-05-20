@@ -59,9 +59,12 @@ public class HelpCommand implements ICommand {
 
         StringBuilder descriptionBuilder = builder.getDescriptionBuilder();
 
-        manager.getCommands().forEach(
+        /*manager.getCommands().forEach(
                 (command) -> descriptionBuilder.append('`').append(command.getInvoke()).append("`\n")
-                );
+                );*/
+        descriptionBuilder.append("See https://docs.soundy.gq/ for a list of all commands and troubleshooting info");
+
+
         descriptionBuilder.append("If you have problems, please join the support guild: ");
         //TODO: Permission check if the bot can send embed messages
         event.getChannel().sendMessage(builder.build()).queue();
@@ -70,7 +73,7 @@ public class HelpCommand implements ICommand {
     @Override
     public String getHelp() {
         return "Shows a list of all commands\n" +
-                "Usage: `" + Constants.PREFIX + getInvoke() + " [command]`";
+                "Usage: `" + Constants.PREFIX + getInvoke() + "`";
     }
 
     @Override

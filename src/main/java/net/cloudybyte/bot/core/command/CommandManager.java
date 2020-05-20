@@ -6,9 +6,12 @@ import net.cloudybyte.bot.commands.HelpCommand;
 import net.cloudybyte.bot.commands.PingCommand;
 import net.cloudybyte.bot.commands.StatsCommand;
 import net.cloudybyte.bot.commands.UptimeCommand;
+import net.cloudybyte.bot.commands.music.Playlist.SavePlaylist;
+import net.cloudybyte.bot.commands.owner.PremiumCheckCommand;
 import net.cloudybyte.bot.commands.owner.ShardCommand;
 import net.cloudybyte.bot.commands.owner.ShutdownCommand;
 import net.cloudybyte.bot.commands.music.*;
+import net.cloudybyte.bot.commands.owner.addtocustomerdb;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import org.jetbrains.annotations.NotNull;
 
@@ -43,6 +46,10 @@ public class CommandManager {
         addCommand(new WelcomeCommand());
         addCommand(new QueueListCommand());
         addCommand(new FastForwardCommand());
+        addCommand(new BassBoostCommand());
+        addCommand(new PremiumCheckCommand());
+        addCommand(new addtocustomerdb());
+        addCommand(new ShuffleCommand());
     }
 
 

@@ -27,20 +27,9 @@ public class LoopCommand implements ICommand {
         System.out.println("1");
 
         MongoClient mongoClient = null;
-        try {
-            mongoClient = new MongoClient(new MongoClientURI(Constants.DBUri));
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
-        }
+        mongoClient = new MongoClient(new MongoClientURI(Constants.DBUri));
 
 
-
-
-/*        MongoCredential mongoCredential = MongoCredential.createScramSha1Credential(this.username, this.dbname,
-                this.password.toCharArray());
-        MongoClient mongoClient = new MongoClient(new ServerAddress(dbhost, this.dbport), Arrays.asList(mongoCredential));
-
- */
         DB database = mongoClient.getDB("soundy");
         DBCollection collection = database.getCollection("trackLooping");
 
@@ -73,13 +62,20 @@ public class LoopCommand implements ICommand {
 
                     System.out.println("looping = " + looping);
                     System.out.println("3");
+
+
                     if (args.isEmpty()) {
-                        if (looping.equals(0)) {
-                            embedBuilder.info(event, "Looping Info", "Looping is turned off right now");
-                        } else if (looping.equals(1)) {
-                            embedBuilder.info(event, "Looping Info", "I am looping the current song");
-                        } else if (looping.equals(2)) {
-                            embedBuilder.info(event, "Looping Info", "I am looping the queue");
+                        switch (looping) {
+                            case 0:
+                                embedBuilder.info(event, "Looping Info", "Looping is turned off right now");
+                                break;
+                            case 1:
+                                embedBuilder.info(event, "Looping Info", "I am looping the current song");
+                                break;
+                            case 2:
+                                embedBuilder.info(event, "Looping Info", "I am looping the queue");
+                                break;
+
                         }
                         return;
                     }
