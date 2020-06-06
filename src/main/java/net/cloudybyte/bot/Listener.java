@@ -1,6 +1,7 @@
 package net.cloudybyte.bot;
 
 
+import com.jagrosh.jdautilities.commons.waiter.EventWaiter;
 import net.cloudybyte.bot.core.Constants;
 import net.cloudybyte.bot.core.command.CommandManager;
 import net.cloudybyte.bot.core.data.PrefixCache;
@@ -13,8 +14,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Listener extends ListenerAdapter {
-
-    private final CommandManager manager = new CommandManager();
+    EventWaiter eventWaiter = new EventWaiter();
+    private final CommandManager manager = new CommandManager(eventWaiter);
     private final Logger logger = LoggerFactory.getLogger(Listener.class);
 
 

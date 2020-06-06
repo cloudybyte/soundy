@@ -1,0 +1,60 @@
+16:58:35.577 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Initializing cache
+16:58:35.579 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Cache initialized!
+16:58:35.653 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Building shardManager
+16:58:36.368 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+16:58:36.754 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+16:58:38.193 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+16:58:38.193 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+16:58:38.193 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+16:59:30.814 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Initializing cache
+16:59:30.815 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Cache initialized!
+16:59:30.883 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Building shardManager
+16:59:31.533 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+16:59:31.893 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+16:59:32.266 [main] INFO  net.cloudybyte.bot.Bot - [CORE] shardManager built!
+16:59:32.431 [pool-3-thread-1] INFO  n.c.bot.core.botlists.PostStats - [BOTLISTS] Posted stats to Botlist! (TopGG)
+16:59:32.876 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+16:59:32.877 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+16:59:32.877 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+17:04:32.476 [pool-3-thread-1] INFO  n.c.bot.core.botlists.PostStats - [BOTLISTS] Posted stats to Botlist! (TopGG)
+17:09:32.428 [pool-3-thread-1] INFO  n.c.bot.core.botlists.PostStats - [BOTLISTS] Posted stats to Botlist! (TopGG)
+17:17:03.790 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Initializing cache
+17:17:03.792 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Cache initialized!
+17:17:03.859 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Building shardManager
+17:17:04.499 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+17:17:04.861 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+17:17:05.398 [main] INFO  net.cloudybyte.bot.Bot - [CORE] shardManager built!
+17:17:05.551 [pool-3-thread-1] INFO  n.c.bot.core.botlists.PostStats - [BOTLISTS] Posted stats to Botlist! (TopGG)
+17:17:07.257 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+17:17:07.258 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+17:17:07.258 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+17:17:42.100 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Initializing cache
+17:17:42.102 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Cache initialized!
+17:17:42.169 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Building shardManager
+17:17:42.815 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+17:17:43.178 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+17:17:43.404 [main] INFO  net.cloudybyte.bot.Bot - [CORE] shardManager built!
+17:17:43.536 [pool-3-thread-1] INFO  n.c.bot.core.botlists.PostStats - [BOTLISTS] Posted stats to Botlist! (TopGG)
+17:17:44.131 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+17:17:44.132 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+17:17:44.132 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+17:18:12.427 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Initializing cache
+17:18:12.429 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Cache initialized!
+17:18:12.496 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Building shardManager
+17:18:13.142 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+17:18:13.501 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+17:18:13.943 [main] INFO  net.cloudybyte.bot.Bot - [CORE] shardManager built!
+17:18:14.100 [pool-3-thread-1] INFO  n.c.bot.core.botlists.PostStats - [BOTLISTS] Posted stats to Botlist! (TopGG)
+17:18:15.913 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+17:18:15.913 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+17:18:15.914 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+18:54:13.483 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Initializing cache
+18:54:13.651 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Cache initialized!
+18:54:13.725 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Building shardManager
+18:54:14.474 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+18:54:14.496 [main] INFO  net.cloudybyte.bot.Bot - [CORE] shardManager built!
+18:54:14.662 [pool-3-thread-1] INFO  n.c.bot.core.botlists.PostStats - [BOTLISTS] Posted stats to Botlist! (TopGG)
+18:54:14.857 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+18:54:15.826 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+18:54:15.827 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+18:54:15.827 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m

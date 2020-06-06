@@ -8,6 +8,9 @@
 package net.cloudybyte.bot.commands.music;
 
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
+import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
+import com.sedmelluq.discord.lavaplayer.track.AudioTrackEndReason;
+import com.sedmelluq.discord.lavaplayer.track.AudioTrackInfo;
 import net.cloudybyte.bot.core.audio.GuildMusicManager;
 import net.cloudybyte.bot.core.audio.PlayerManager;
 import net.cloudybyte.bot.core.audio.TrackScheduler;
@@ -16,6 +19,7 @@ import net.cloudybyte.bot.util.EmbedBuilder;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 
 import java.util.List;
+import java.util.concurrent.BlockingQueue;
 
 public class SkipCommand implements ICommand {
 
@@ -27,13 +31,15 @@ public class SkipCommand implements ICommand {
         GuildMusicManager musicManager = playerManager.getGuildMusicManager(event.getGuild());
         TrackScheduler scheduler = musicManager.scheduler;
         AudioPlayer player = musicManager.player;
+        BlockingQueue<AudioTrack> queue = scheduler.getQueue();
+        AudioTrackEndReason finished = AudioTrackEndReason.FINISHED;
 
 
         if (player.getPlayingTrack() == null) {
             embedBuilder.error(event, null, "\\*silence\\*");
             return;
         }
-        scheduler.nextTrack();
+        scheduler.onTrackEnd(player, queue.poll(), finished);
         try {
             embedBuilder.nowPlaying(event, musicManager.player.getPlayingTrack().getInfo().title);
         }catch (NullPointerException ignored){}

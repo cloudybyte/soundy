@@ -13,6 +13,9 @@ public class Reactions {
     public static final String REPEAT_QUEUE = "\uD83D\uDD04";
     public static final String FAST_FORWARD = "⏩";
     public static final String SHUFFLE = "\uD83D\uDD00";
+    public static final String CHECK_MARK = "✅";
+    public static final String CROSS = "❌";
+    public static final String EXCLAMATION = "❗";
 
 
 }

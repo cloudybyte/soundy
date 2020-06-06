@@ -1,0 +1,631 @@
+01:27:42.769 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+01:27:43.161 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+01:27:43.749 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+01:27:43.750 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+01:27:43.751 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+01:28:12.505 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+01:28:12.924 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+01:28:13.252 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+01:28:13.253 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+01:28:13.253 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+01:28:57.155 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+01:28:57.569 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+01:28:57.901 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+01:28:57.901 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+01:28:57.901 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+01:29:26.674 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+01:29:27.091 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+01:29:27.455 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+01:29:27.456 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+01:29:27.456 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+01:30:16.653 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+01:30:17.026 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+01:30:17.382 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+01:30:17.383 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+01:30:17.383 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:36:19.489 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:36:19.870 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:36:20.799 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:36:20.800 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+15:36:20.800 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:41:44.063 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.lang.NullPointerException: null
+	at net.cloudybyte.bot.core.data.cache.AlwaysOnCache.put(AlwaysOnCache.java:20)
+	at net.cloudybyte.bot.commands.premium.AlwaysOnCommand.handle(AlwaysOnCommand.java:24)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:82)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:58)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+15:42:32.619 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:42:32.992 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:42:33.911 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:42:33.911 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+15:42:33.911 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:43:29.567 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:43:29.920 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:43:31.728 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:43:31.728 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+15:43:31.729 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:44:35.725 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:44:36.117 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:44:37.514 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:44:37.515 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+15:44:37.515 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:45:02.675 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:45:03.048 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:45:03.976 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:45:03.977 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+15:45:03.977 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:46:56.910 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:46:57.274 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:46:58.206 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:46:58.207 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+15:46:58.207 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:47:45.382 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+15:47:45.747 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+15:47:46.679 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+15:47:46.680 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+15:47:46.680 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+15:47:47.718 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.lang.IllegalArgumentException: Provided text for message may not be null
+	at net.dv8tion.jda.internal.utils.Checks.notNull(Checks.java:56)
+	at net.dv8tion.jda.internal.utils.Checks.notEmpty(Checks.java:61)
+	at net.dv8tion.jda.api.entities.MessageChannel.sendMessage(MessageChannel.java:344)
+	at net.dv8tion.jda.internal.entities.TextChannelImpl.sendMessage(TextChannelImpl.java:333)
+	at net.cloudybyte.bot.commands.premium.AlwaysOnCommand.handle(AlwaysOnCommand.java:19)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:82)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:58)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+16:03:48.444 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+16:03:48.841 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+16:03:51.005 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+16:03:51.007 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+16:03:51.007 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+16:05:13.966 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:05:14.015 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:05:14.018 [cluster-ClusterId{value='5ec68a99ad5c252de4aa7a8c', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:27017
+16:05:14.022 [cluster-ClusterId{value='5ec68a99ad5c252de4aa7a8c', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2667100}
+16:05:14.030 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:2}] to localhost:27017
+16:05:14.668 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued greeen in guild GothBoiClicc by U:cloudybyte(301780655019130880)[0m
+16:05:14.669 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:2}] to localhost:27017 because the pool has been closed.
+16:05:15.582 [lava-daemon-pool-info-loader-2-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=trryp3FsrII Title: GReeeN - Kommissar [Musikvideo] prod. Slick[0m
+16:05:51.950 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:05:51.951 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:05:51.953 [cluster-ClusterId{value='5ec68abfad5c252de4aa7a8d', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:3}] to localhost:27017
+16:05:51.954 [cluster-ClusterId{value='5ec68abfad5c252de4aa7a8d', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=356700}
+16:05:51.956 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:4}] to localhost:27017
+16:05:51.967 [JDA [0 / 1] MainWS-ReadThread] ERROR c.s.d.lavaplayer.player.AudioPlayer - Handler of event com.sedmelluq.discord.lavaplayer.player.event.TrackEndEvent@16a76746 threw an exception.
+java.util.NoSuchElementException: null
+	at com.mongodb.DBCursor.next(DBCursor.java:193)
+	at net.cloudybyte.bot.core.audio.TrackScheduler.onTrackEnd(TrackScheduler.java:96)
+	at com.sedmelluq.discord.lavaplayer.player.event.AudioEventAdapter.onEvent(AudioEventAdapter.java:74)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.dispatchEvent(DefaultAudioPlayer.java:368)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.stopWithReason(DefaultAudioPlayer.java:139)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.stopTrack(DefaultAudioPlayer.java:127)
+	at net.cloudybyte.bot.commands.music.DisconnectCommand.handle(DisconnectCommand.java:56)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:82)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:58)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+16:47:58.197 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+16:47:58.736 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+16:48:00.497 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+16:48:00.497 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+16:48:00.497 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+16:49:20.238 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:49:20.292 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:49:20.295 [cluster-ClusterId{value='5ec694f0afa55673c2e60744', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:5}] to localhost:27017
+16:49:20.299 [cluster-ClusterId{value='5ec694f0afa55673c2e60744', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2541000}
+16:49:20.308 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:6}] to localhost:27017
+16:49:20.595 [ForkJoinPool.commonPool-worker-19] ERROR n.d.jda.api.requests.RestAction - RestAction queue returned failure: [ErrorResponseException] 50013: Missing Permissions
+net.dv8tion.jda.api.exceptions.ContextException: null
+	at net.dv8tion.jda.api.exceptions.ContextException.here(ContextException.java:52)
+	at net.dv8tion.jda.api.requests.Request.<init>(Request.java:64)
+	at net.dv8tion.jda.internal.requests.RestActionImpl.queue(RestActionImpl.java:167)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:311)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:280)
+	at net.cloudybyte.bot.commands.music.JoinCommand.joinVC(JoinCommand.java:63)
+	at net.cloudybyte.bot.commands.music.PlayCommand.handle(PlayCommand.java:176)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:82)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:58)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+16:49:21.192 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued enter in guild Volt Europa by U:cloudybyte(301780655019130880)[0m
+16:49:21.193 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:6}] to localhost:27017 because the pool has been closed.
+16:49:22.509 [lava-daemon-pool-info-loader-5-thread-1] WARN  c.s.d.l.p.DefaultAudioPlayerManager - Load result handler for https://www.youtube.com/watch?v=CD-E-LDc384 threw an exception
+net.dv8tion.jda.api.exceptions.InsufficientPermissionException: Cannot perform action due to a lack of Permission. Missing permission: MESSAGE_EMBED_LINKS
+	at net.dv8tion.jda.internal.entities.AbstractChannelImpl.checkPermission(AbstractChannelImpl.java:296)
+	at net.dv8tion.jda.internal.entities.AbstractChannelImpl.checkPermission(AbstractChannelImpl.java:288)
+	at net.dv8tion.jda.internal.entities.TextChannelImpl.sendMessage(TextChannelImpl.java:344)
+	at net.cloudybyte.bot.util.EmbedBuilder.queuedCommand(EmbedBuilder.java:228)
+	at net.cloudybyte.bot.core.audio.PlayerManager$1.trackLoaded(PlayerManager.java:67)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItemOnce(DefaultAudioPlayerManager.java:443)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItem(DefaultAudioPlayerManager.java:419)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$createItemLoader$0(DefaultAudioPlayerManager.java:218)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at com.sedmelluq.discord.lavaplayer.tools.OrderedExecutor$ChannelRunnable.executeQueue(OrderedExecutor.java:98)
+	at com.sedmelluq.discord.lavaplayer.tools.OrderedExecutor$ChannelRunnable.run(OrderedExecutor.java:87)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+16:49:53.760 [ForkJoinPool.commonPool-worker-19] ERROR n.d.jda.api.requests.RestAction - RestAction queue returned failure: [ErrorResponseException] 50013: Missing Permissions
+net.dv8tion.jda.api.exceptions.ContextException: null
+	at net.dv8tion.jda.api.exceptions.ContextException.here(ContextException.java:52)
+	at net.dv8tion.jda.api.requests.Request.<init>(Request.java:64)
+	at net.dv8tion.jda.internal.requests.RestActionImpl.queue(RestActionImpl.java:167)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:311)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:280)
+	at net.cloudybyte.bot.commands.music.DisconnectCommand.handle(DisconnectCommand.java:54)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:82)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:58)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+16:49:58.525 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:49:58.526 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:49:58.529 [cluster-ClusterId{value='5ec69516afa55673c2e60745', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:7}] to localhost:27017
+16:49:58.529 [cluster-ClusterId{value='5ec69516afa55673c2e60745', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=380900}
+16:49:58.532 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:8}] to localhost:27017
+16:49:58.708 [ForkJoinPool.commonPool-worker-19] ERROR n.d.jda.api.requests.RestAction - RestAction queue returned failure: [ErrorResponseException] 50013: Missing Permissions
+net.dv8tion.jda.api.exceptions.ContextException: null
+	at net.dv8tion.jda.api.exceptions.ContextException.here(ContextException.java:52)
+	at net.dv8tion.jda.api.requests.Request.<init>(Request.java:64)
+	at net.dv8tion.jda.internal.requests.RestActionImpl.queue(RestActionImpl.java:167)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:311)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:280)
+	at net.cloudybyte.bot.commands.music.JoinCommand.joinVC(JoinCommand.java:63)
+	at net.cloudybyte.bot.commands.music.PlayCommand.handle(PlayCommand.java:134)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:82)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:58)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+16:49:58.956 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued enter in guild Volt Europa by U:cloudybyte(301780655019130880)[0m
+16:49:59.812 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=CD-E-LDc384 Title: Metallica: Enter Sandman (Official Music Video)[0m
+16:50:00.641 [lava-daemon-pool-playback-4-thread-1] ERROR c.s.d.l.t.p.LocalAudioTrackExecutor - Error in playback of CD-E-LDc384
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Something broke when playing the track.
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:43)
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:117)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$1(DefaultAudioPlayerManager.java:349)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException: null
+	at java.base/java.net.URI$Parser.parse(URI.java:3106)
+	at java.base/java.net.URI.<init>(URI.java:600)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeTrackFormat.getUrl(YoutubeTrackFormat.java:66)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeSignatureCipherManager.resolveFormatUrl(YoutubeSignatureCipherManager.java:97)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.loadBestFormatWithUrl(YoutubeAudioTrack.java:87)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.process(YoutubeAudioTrack.java:42)
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:105)
+	... 4 common frames omitted
+16:50:00.657 [lava-daemon-pool-native-udp-2-thread-1] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:50:00.658 [lava-daemon-pool-native-udp-2-thread-1] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:50:00.660 [cluster-ClusterId{value='5ec69518afa55673c2e60746', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:9}] to localhost:27017
+16:50:00.661 [cluster-ClusterId{value='5ec69518afa55673c2e60746', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=302500}
+16:50:00.663 [lava-daemon-pool-native-udp-2-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:10}] to localhost:27017
+16:50:00.665 [lava-daemon-pool-native-udp-2-thread-1] ERROR c.s.d.lavaplayer.player.AudioPlayer - Handler of event com.sedmelluq.discord.lavaplayer.player.event.TrackEndEvent@3da25201 threw an exception.
+java.util.NoSuchElementException: null
+	at com.mongodb.DBCursor.next(DBCursor.java:193)
+	at net.cloudybyte.bot.core.audio.TrackScheduler.onTrackEnd(TrackScheduler.java:96)
+	at com.sedmelluq.discord.lavaplayer.player.event.AudioEventAdapter.onEvent(AudioEventAdapter.java:74)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.dispatchEvent(DefaultAudioPlayer.java:368)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.handleTerminator(DefaultAudioPlayer.java:262)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.provide(DefaultAudioPlayer.java:241)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.provide(DefaultAudioPlayer.java:216)
+	at net.cloudybyte.bot.core.audio.AudioPlayerSendHandler.canProvide(AudioPlayerSendHandler.java:24)
+	at net.dv8tion.jda.internal.audio.AudioConnection$PacketProvider.getNextPacketRaw(AudioConnection.java:675)
+	at com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendSystem.populateQueue(NativeAudioSendSystem.java:36)
+	at com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendFactory.populateQueues(NativeAudioSendFactory.java:93)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+16:50:24.666 [ForkJoinPool.commonPool-worker-19] ERROR n.d.jda.api.requests.RestAction - RestAction queue returned failure: [ErrorResponseException] 50013: Missing Permissions
+net.dv8tion.jda.api.exceptions.ContextException: null
+	at net.dv8tion.jda.api.exceptions.ContextException.here(ContextException.java:52)
+	at net.dv8tion.jda.api.requests.Request.<init>(Request.java:64)
+	at net.dv8tion.jda.internal.requests.RestActionImpl.queue(RestActionImpl.java:167)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:311)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:280)
+	at net.cloudybyte.bot.commands.music.DisconnectCommand.handle(DisconnectCommand.java:54)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:82)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:58)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+16:50:34.689 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:50:34.690 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:50:34.692 [cluster-ClusterId{value='5ec6953aafa55673c2e60747', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:11}] to localhost:27017
+16:50:34.693 [cluster-ClusterId{value='5ec6953aafa55673c2e60747', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=252600}
+16:50:34.695 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:12}] to localhost:27017
+16:50:34.874 [ForkJoinPool.commonPool-worker-19] ERROR n.d.jda.api.requests.RestAction - RestAction queue returned failure: [ErrorResponseException] 50013: Missing Permissions
+net.dv8tion.jda.api.exceptions.ContextException: null
+	at net.dv8tion.jda.api.exceptions.ContextException.here(ContextException.java:52)
+	at net.dv8tion.jda.api.requests.Request.<init>(Request.java:64)
+	at net.dv8tion.jda.internal.requests.RestActionImpl.queue(RestActionImpl.java:167)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:311)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:280)
+	at net.cloudybyte.bot.commands.music.JoinCommand.joinVC(JoinCommand.java:63)
+	at net.cloudybyte.bot.commands.music.PlayCommand.handle(PlayCommand.java:134)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:82)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:58)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+16:50:35.091 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued enter in guild Volt Europa by U:cloudybyte(301780655019130880)[0m
+16:50:35.950 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=CD-E-LDc384 Title: Metallica: Enter Sandman (Official Music Video)[0m
+16:51:05.758 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:51:05.760 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:51:05.762 [cluster-ClusterId{value='5ec69559afa55673c2e60748', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:13}] to localhost:27017
+16:51:05.762 [cluster-ClusterId{value='5ec69559afa55673c2e60748', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=417000}
+16:51:05.765 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:14}] to localhost:27017
+16:51:05.767 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$261/0x000000080048dc40@5f0e1fcd
+16:51:05.770 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:10, serverValue:14}] to localhost:27017 because the pool has been closed.
+16:51:05.778 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+16:51:05.779 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+16:51:05.809 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+16:51:05.935 [ForkJoinPool.commonPool-worker-19] ERROR n.d.jda.api.requests.RestAction - RestAction queue returned failure: [ErrorResponseException] 50013: Missing Permissions
+net.dv8tion.jda.api.exceptions.ContextException: null
+	at net.dv8tion.jda.api.exceptions.ContextException.here(ContextException.java:52)
+	at net.dv8tion.jda.api.requests.Request.<init>(Request.java:64)
+	at net.dv8tion.jda.internal.requests.RestActionImpl.queue(RestActionImpl.java:167)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:311)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:280)
+	at net.cloudybyte.bot.commands.music.VolumeCommand.volumeCommand(VolumeCommand.java:77)
+	at net.cloudybyte.bot.commands.music.VolumeCommand.handle(VolumeCommand.java:37)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:82)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:58)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+16:51:12.010 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:51:12.011 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:51:12.013 [cluster-ClusterId{value='5ec69560afa55673c2e60749', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:11, serverValue:15}] to localhost:27017
+16:51:12.014 [cluster-ClusterId{value='5ec69560afa55673c2e60749', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=247800}
+16:51:12.016 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:12, serverValue:16}] to localhost:27017
+16:51:12.092 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:12, serverValue:16}] to localhost:27017 because the pool has been closed.
+16:51:12.283 [ForkJoinPool.commonPool-worker-19] ERROR n.d.jda.api.requests.RestAction - RestAction queue returned failure: [ErrorResponseException] 50013: Missing Permissions
+net.dv8tion.jda.api.exceptions.ContextException: null
+	at net.dv8tion.jda.api.exceptions.ContextException.here(ContextException.java:52)
+	at net.dv8tion.jda.api.requests.Request.<init>(Request.java:64)
+	at net.dv8tion.jda.internal.requests.RestActionImpl.queue(RestActionImpl.java:167)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:311)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:280)
+	at net.cloudybyte.bot.commands.music.VolumeCommand.volumeCommand(VolumeCommand.java:77)
+	at net.cloudybyte.bot.commands.music.VolumeCommand.handle(VolumeCommand.java:37)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:82)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:58)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+16:51:12.859 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:51:12.860 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:51:12.862 [cluster-ClusterId{value='5ec69560afa55673c2e6074a', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:13, serverValue:17}] to localhost:27017
+16:51:12.863 [cluster-ClusterId{value='5ec69560afa55673c2e6074a', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=325700}
+16:51:12.865 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:14, serverValue:18}] to localhost:27017
+16:51:12.866 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:14, serverValue:18}] to localhost:27017 because the pool has been closed.
+16:51:12.867 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:51:12.868 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:51:12.870 [cluster-ClusterId{value='5ec69560afa55673c2e6074b', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:15, serverValue:19}] to localhost:27017
+16:51:12.870 [cluster-ClusterId{value='5ec69560afa55673c2e6074b', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=279300}
+16:51:12.872 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:16, serverValue:20}] to localhost:27017
+16:51:12.874 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:16, serverValue:20}] to localhost:27017 because the pool has been closed.
+16:51:13.095 [ForkJoinPool.commonPool-worker-19] ERROR n.d.jda.api.requests.RestAction - RestAction queue returned failure: [ErrorResponseException] 50013: Missing Permissions
+net.dv8tion.jda.api.exceptions.ContextException: null
+	at net.dv8tion.jda.api.exceptions.ContextException.here(ContextException.java:52)
+	at net.dv8tion.jda.api.requests.Request.<init>(Request.java:64)
+	at net.dv8tion.jda.internal.requests.RestActionImpl.queue(RestActionImpl.java:167)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:311)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:280)
+	at net.cloudybyte.bot.commands.music.VolumeCommand.volumeCommand(VolumeCommand.java:77)
+	at net.cloudybyte.bot.commands.music.VolumeCommand.handle(VolumeCommand.java:29)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:82)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:58)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+16:51:13.518 [ForkJoinPool.commonPool-worker-19] ERROR n.d.jda.api.requests.RestAction - RestAction queue returned failure: [ErrorResponseException] 50013: Missing Permissions
+net.dv8tion.jda.api.exceptions.ContextException: null
+	at net.dv8tion.jda.api.exceptions.ContextException.here(ContextException.java:52)
+	at net.dv8tion.jda.api.requests.Request.<init>(Request.java:64)
+	at net.dv8tion.jda.internal.requests.RestActionImpl.queue(RestActionImpl.java:167)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:311)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:280)
+	at net.cloudybyte.bot.commands.music.VolumeCommand.volumeCommand(VolumeCommand.java:77)
+	at net.cloudybyte.bot.commands.music.VolumeCommand.handle(VolumeCommand.java:37)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:82)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:58)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+16:52:56.866 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:52:56.868 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:52:56.870 [cluster-ClusterId{value='5ec695c8afa55673c2e6074c', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:17, serverValue:21}] to localhost:27017
+16:52:56.871 [cluster-ClusterId{value='5ec695c8afa55673c2e6074c', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=539800}
+16:52:56.874 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:18, serverValue:22}] to localhost:27017
+16:52:57.348 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued aint in guild Volt Europa by U:Mr. Super Guy(613834884347199531)[0m
+16:52:58.116 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=HKtsdZs9LJo Title: Cage The Elephant - Ain't No Rest For The Wicked[0m
+16:53:12.344 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:53:12.345 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:53:12.500 [cluster-ClusterId{value='5ec695d8afa55673c2e6074d', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:19, serverValue:23}] to localhost:27017
+16:53:12.501 [cluster-ClusterId{value='5ec695d8afa55673c2e6074d', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=301400}
+16:53:12.503 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:20, serverValue:24}] to localhost:27017
+16:53:12.504 [JDA [0 / 1] MainWS-ReadThread] ERROR c.s.d.lavaplayer.player.AudioPlayer - Handler of event com.sedmelluq.discord.lavaplayer.player.event.TrackEndEvent@7fef92f8 threw an exception.
+java.util.NoSuchElementException: null
+	at com.mongodb.DBCursor.next(DBCursor.java:193)
+	at net.cloudybyte.bot.core.audio.TrackScheduler.onTrackEnd(TrackScheduler.java:96)
+	at com.sedmelluq.discord.lavaplayer.player.event.AudioEventAdapter.onEvent(AudioEventAdapter.java:74)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.dispatchEvent(DefaultAudioPlayer.java:368)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.stopWithReason(DefaultAudioPlayer.java:139)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.stopTrack(DefaultAudioPlayer.java:127)
+	at net.cloudybyte.bot.commands.music.DisconnectCommand.handle(DisconnectCommand.java:56)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:82)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:58)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+16:53:38.068 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:53:38.069 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:53:38.245 [cluster-ClusterId{value='5ec695f2afa55673c2e6074e', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:21, serverValue:25}] to localhost:27017
+16:53:38.245 [cluster-ClusterId{value='5ec695f2afa55673c2e6074e', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=389700}
+16:53:38.248 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:22, serverValue:26}] to localhost:27017
+16:53:38.723 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued aint in guild Volt Europa by U:Mr. Super Guy(613834884347199531)[0m
+16:53:39.412 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=HKtsdZs9LJo Title: Cage The Elephant - Ain't No Rest For The Wicked[0m
+16:53:43.765 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:53:43.766 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:53:43.768 [cluster-ClusterId{value='5ec695f7afa55673c2e6074f', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:23, serverValue:27}] to localhost:27017
+16:53:43.768 [cluster-ClusterId{value='5ec695f7afa55673c2e6074f', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=183600}
+16:53:43.770 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:24, serverValue:28}] to localhost:27017
+16:53:43.771 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:24, serverValue:28}] to localhost:27017 because the pool has been closed.
+16:53:43.772 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:53:43.772 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:53:43.774 [cluster-ClusterId{value='5ec695f7afa55673c2e60750', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:25, serverValue:29}] to localhost:27017
+16:53:43.775 [cluster-ClusterId{value='5ec695f7afa55673c2e60750', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=254900}
+16:53:43.777 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:26, serverValue:30}] to localhost:27017
+16:53:43.778 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:26, serverValue:30}] to localhost:27017 because the pool has been closed.
+16:54:02.416 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:54:02.417 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:54:02.418 [cluster-ClusterId{value='5ec6960aafa55673c2e60751', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:27, serverValue:31}] to localhost:27017
+16:54:02.419 [cluster-ClusterId{value='5ec6960aafa55673c2e60751', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=279100}
+16:54:02.421 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:28, serverValue:32}] to localhost:27017
+16:54:53.122 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:54:53.123 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:54:53.125 [cluster-ClusterId{value='5ec6963dafa55673c2e60752', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:29, serverValue:33}] to localhost:27017
+16:54:53.126 [cluster-ClusterId{value='5ec6963dafa55673c2e60752', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=467800}
+16:54:53.129 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:30, serverValue:34}] to localhost:27017
+16:54:53.130 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:30, serverValue:34}] to localhost:27017 because the pool has been closed.
+16:56:19.786 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:56:19.787 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:56:19.790 [cluster-ClusterId{value='5ec69693afa55673c2e60753', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:31, serverValue:35}] to localhost:27017
+16:56:19.791 [cluster-ClusterId{value='5ec69693afa55673c2e60753', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=413100}
+16:56:19.794 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:32, serverValue:36}] to localhost:27017
+16:56:20.295 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued lone in guild Volt Europa by U:Mr. Super Guy(613834884347199531)[0m
+16:56:21.094 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=UbQgXeY_zi4 Title: Caravan Palace - Lone Digger[0m
+16:56:25.772 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:56:25.773 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:56:25.835 [cluster-ClusterId{value='5ec69699afa55673c2e60754', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:33, serverValue:37}] to localhost:27017
+16:56:25.835 [cluster-ClusterId{value='5ec69699afa55673c2e60754', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=244800}
+16:56:25.837 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:34, serverValue:38}] to localhost:27017
+16:56:25.838 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:34, serverValue:38}] to localhost:27017 because the pool has been closed.
+16:56:44.324 [lava-daemon-pool-native-udp-4-thread-1] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:56:44.325 [lava-daemon-pool-native-udp-4-thread-1] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:56:44.326 [cluster-ClusterId{value='5ec696acafa55673c2e60755', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:35, serverValue:39}] to localhost:27017
+16:56:44.327 [cluster-ClusterId{value='5ec696acafa55673c2e60755', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=153800}
+16:56:44.328 [lava-daemon-pool-native-udp-4-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:36, serverValue:40}] to localhost:27017
+16:56:44.330 [lava-daemon-pool-native-udp-4-thread-1] ERROR c.s.d.lavaplayer.player.AudioPlayer - Handler of event com.sedmelluq.discord.lavaplayer.player.event.TrackEndEvent@5a67ac2b threw an exception.
+java.lang.NumberFormatException: null
+	at java.base/java.lang.Integer.parseInt(Integer.java:614)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at net.cloudybyte.bot.core.audio.TrackScheduler.onTrackEnd(TrackScheduler.java:106)
+	at com.sedmelluq.discord.lavaplayer.player.event.AudioEventAdapter.onEvent(AudioEventAdapter.java:74)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.dispatchEvent(DefaultAudioPlayer.java:368)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.handleTerminator(DefaultAudioPlayer.java:262)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.provide(DefaultAudioPlayer.java:241)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.provide(DefaultAudioPlayer.java:216)
+	at net.cloudybyte.bot.core.audio.AudioPlayerSendHandler.canProvide(AudioPlayerSendHandler.java:24)
+	at net.dv8tion.jda.internal.audio.AudioConnection$PacketProvider.getNextPacketRaw(AudioConnection.java:675)
+	at com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendSystem.populateQueue(NativeAudioSendSystem.java:36)
+	at com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendFactory.populateQueues(NativeAudioSendFactory.java:93)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+16:57:03.024 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:57:03.024 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:57:03.026 [cluster-ClusterId{value='5ec696bfafa55673c2e60756', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:37, serverValue:41}] to localhost:27017
+16:57:03.026 [cluster-ClusterId{value='5ec696bfafa55673c2e60756', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=145900}
+16:57:03.028 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:38, serverValue:42}] to localhost:27017
+16:57:03.508 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued boys in guild Volt Europa by U:Mr. Super Guy(613834884347199531)[0m
+16:57:04.246 [lava-daemon-pool-info-loader-5-thread-1] INFO  n.c.bot.core.audio.PlayerManager - [0;32mTrack was loaded! Now playing: https://www.youtube.com/watch?v=TNXrKBt76zI Title: Fontaines D.C. - Boys In The Better Land (Darklands Version)[0m

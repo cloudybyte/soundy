@@ -84,7 +84,7 @@ public class TrackScheduler extends AudioEventAdapter {
         mongoClient = new MongoClient(new MongoClientURI(Constants.DBUri));
         DB database = mongoClient.getDB("soundy");
         DBCollection loopingCollection = database.getCollection("trackLooping");
-        DBCollection shuffledCollection = database.getCollection("shuffled");
+     //   DBCollection shuffledCollection = database.getCollection("shuffled");
 
         //search for guild in db
         DBObject query = new BasicDBObject("guildid", guildid);
@@ -98,17 +98,17 @@ public class TrackScheduler extends AudioEventAdapter {
 
 
         //Build selector for the looping query
-        BasicDBObject shuffleSelect = new BasicDBObject();
-        loopingSelect.put("shuffled", 1);
-        DBCursor shuffleCursor = loopingCollection.find(query, shuffleSelect);
+     //   BasicDBObject shuffleSelect = new BasicDBObject();
+      //  loopingSelect.put("shuffled", 1);
+      //  DBCursor shuffleCursor = loopingCollection.find(query, shuffleSelect);
 
-        BasicDBObject shuffleObj = (BasicDBObject) shuffleCursor.next();
-        Integer shuffled = Integer.parseInt(shuffleObj.getString("shuffled"));
+   //     BasicDBObject shuffleObj = (BasicDBObject) shuffleCursor.next();
+        //   Integer shuffled = Integer.parseInt(shuffleObj.getString("shuffled"));
 
 
         System.out.println(GREEN + "Track ended!" + RESET);
         System.out.println("looped = " + looped);
-        System.out.println("shuffled = " + shuffled);
+      //  System.out.println("shuffled = " + shuffled);
 
 
         switch (looped) {
@@ -127,13 +127,13 @@ public class TrackScheduler extends AudioEventAdapter {
                 break;
         }
 
-        switch (shuffled){
+    /*  switch (shuffled){
             case 0:
                 shuffle = false;
                 break;
             case 1:
                 shuffle = true;
-        }
+        } */
 
 
         if (endReason.mayStartNext && trackLoop) {
@@ -143,13 +143,13 @@ public class TrackScheduler extends AudioEventAdapter {
             System.out.println(GREEN + "Queue looping enabled!" + RESET);
             queue.add(track.makeClone());
             nextTrack();
-        } else if (endReason.mayStartNext && shuffle) {
+        } /*else if (endReason.mayStartNext && shuffle) {
             System.out.println(GREEN + "Shuffle!" + RESET);
             final int index = ThreadLocalRandom.current().nextInt(getQueue().size());
             AudioTrack nextTrack = ((LinkedList<AudioTrack>) getQueue()).get(index);
             ((LinkedList<AudioTrack>) getQueue()).remove(index);
             player.startTrack(nextTrack, false);
-        } else if (endReason.mayStartNext) {
+        }*/ else if (endReason.mayStartNext) {
             System.out.println(GREEN + "NEXT TRACK STARTING SOON" + RESET);
             nextTrack();
         }

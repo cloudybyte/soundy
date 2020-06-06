@@ -1,0 +1,198 @@
+00:00:04.341 [main] INFO  net.cloudybyte.bot.Bot - Initializing cache
+00:00:04.344 [main] INFO  net.cloudybyte.bot.Bot - Cache initialized!
+00:00:04.413 [main] INFO  net.cloudybyte.bot.Bot - Building shardManager
+00:00:05.103 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+00:00:05.124 [main] INFO  net.cloudybyte.bot.Bot - shardManager built!
+00:00:05.490 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+00:00:06.892 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+00:00:06.893 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+00:00:06.893 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+00:01:14.021 [main] INFO  net.cloudybyte.bot.Bot - Initializing cache
+00:01:14.023 [main] INFO  net.cloudybyte.bot.Bot - Cache initialized!
+00:01:14.092 [main] INFO  net.cloudybyte.bot.Bot - Building shardManager
+00:01:14.760 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+00:01:14.783 [main] INFO  net.cloudybyte.bot.Bot - shardManager built!
+00:01:16.197 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+00:01:17.571 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+00:01:17.572 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+00:01:17.572 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+00:02:11.265 [main] INFO  net.cloudybyte.bot.Bot - Initializing cache
+00:02:11.267 [main] INFO  net.cloudybyte.bot.Bot - Cache initialized!
+00:02:11.350 [main] INFO  net.cloudybyte.bot.Bot - Building shardManager
+00:02:12.054 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+00:02:12.080 [main] INFO  net.cloudybyte.bot.Bot - shardManager built!
+00:02:12.446 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+00:02:13.368 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+00:02:13.369 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+00:02:13.369 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+00:06:25.291 [main] INFO  net.cloudybyte.bot.Bot - Initializing cache
+00:06:25.293 [main] INFO  net.cloudybyte.bot.Bot - Cache initialized!
+00:06:25.365 [main] INFO  net.cloudybyte.bot.Bot - Building shardManager
+00:06:26.078 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+00:06:26.101 [main] INFO  net.cloudybyte.bot.Bot - shardManager built!
+00:06:26.497 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+00:06:27.421 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+00:06:27.422 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+00:06:27.422 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+02:22:19.462 [main] INFO  net.cloudybyte.bot.Bot - Initializing cache
+02:22:19.485 [main] INFO  net.cloudybyte.bot.Bot - Cache initialized!
+02:22:19.558 [main] INFO  net.cloudybyte.bot.Bot - Building shardManager
+02:22:20.333 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+02:22:20.359 [main] INFO  net.cloudybyte.bot.Bot - shardManager built!
+02:22:20.741 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+02:22:21.640 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+02:22:21.641 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+02:22:21.641 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+02:22:30.485 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.lang.NullPointerException: null
+	at net.cloudybyte.bot.commands.DashboardCommand.handle(DashboardCommand.java:42)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:81)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:59)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+02:23:46.273 [main] INFO  net.cloudybyte.bot.Bot - Initializing cache
+02:23:46.275 [main] INFO  net.cloudybyte.bot.Bot - Cache initialized!
+02:23:46.360 [main] INFO  net.cloudybyte.bot.Bot - Building shardManager
+02:23:47.054 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+02:23:47.076 [main] INFO  net.cloudybyte.bot.Bot - shardManager built!
+02:23:47.439 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+02:23:49.220 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+02:23:49.221 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+02:23:49.221 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+02:24:27.124 [main] INFO  net.cloudybyte.bot.Bot - Initializing cache
+02:24:27.126 [main] INFO  net.cloudybyte.bot.Bot - Cache initialized!
+02:24:27.206 [main] INFO  net.cloudybyte.bot.Bot - Building shardManager
+02:24:27.899 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+02:24:27.922 [main] INFO  net.cloudybyte.bot.Bot - shardManager built!
+02:24:28.305 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+02:24:29.207 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+02:24:29.208 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+02:24:29.208 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+02:24:32.234 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.lang.NullPointerException: null
+	at net.cloudybyte.bot.commands.DashboardCommand.handle(DashboardCommand.java:46)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:81)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:59)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+02:26:26.852 [main] INFO  net.cloudybyte.bot.Bot - Initializing cache
+02:26:26.854 [main] INFO  net.cloudybyte.bot.Bot - Cache initialized!
+02:26:26.928 [main] INFO  net.cloudybyte.bot.Bot - Building shardManager
+02:26:27.613 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+02:26:27.638 [main] INFO  net.cloudybyte.bot.Bot - shardManager built!
+02:26:28.017 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+02:26:28.949 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+02:26:28.950 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+02:26:28.951 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+02:26:34.369 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.lang.IllegalArgumentException: Must provide an action consumer
+	at net.dv8tion.jda.internal.utils.Checks.check(Checks.java:38)
+	at com.jagrosh.jdautilities.menu.ButtonMenu$Builder.build(ButtonMenu.java:196)
+	at net.cloudybyte.bot.commands.DashboardCommand.handle(DashboardCommand.java:46)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:81)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:59)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+23:36:56.909 [main] INFO  net.cloudybyte.bot.Bot - Initializing cache
+23:36:56.911 [main] INFO  net.cloudybyte.bot.Bot - Cache initialized!
+23:36:56.987 [main] INFO  net.cloudybyte.bot.Bot - Building shardManager
+23:36:57.790 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+23:36:57.811 [main] INFO  net.cloudybyte.bot.Bot - shardManager built!
+23:36:58.173 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+23:36:59.607 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+23:36:59.607 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+23:36:59.608 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+23:37:53.230 [main] INFO  net.cloudybyte.bot.Bot - Initializing cache
+23:37:53.232 [main] INFO  net.cloudybyte.bot.Bot - Cache initialized!
+23:37:53.303 [main] INFO  net.cloudybyte.bot.Bot - Building shardManager
+23:37:54.037 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+23:37:54.060 [main] INFO  net.cloudybyte.bot.Bot - shardManager built!
+23:37:54.403 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+23:37:55.332 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+23:37:55.332 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+23:37:55.332 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+23:38:43.917 [main] INFO  net.cloudybyte.bot.Bot - Initializing cache
+23:38:43.919 [main] INFO  net.cloudybyte.bot.Bot - Cache initialized!
+23:38:43.989 [main] INFO  net.cloudybyte.bot.Bot - Building shardManager
+23:38:44.670 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+23:38:44.691 [main] INFO  net.cloudybyte.bot.Bot - shardManager built!
+23:38:45.031 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+23:38:45.971 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+23:38:45.972 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+23:38:45.972 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+23:41:36.283 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Initializing cache
+23:41:36.285 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Cache initialized!
+23:41:36.355 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Building shardManager
+23:41:37.026 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+23:41:37.047 [main] INFO  net.cloudybyte.bot.Bot - [CORE] shardManager built!
+23:41:37.188 [main] INFO  n.c.bot.core.botlists.PostStats - [CORE] Posted stats to Botlist! (TopGG)
+23:41:37.389 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+23:41:38.334 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+23:41:38.334 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+23:41:38.335 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+23:53:24.458 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Initializing cache
+23:53:24.460 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Cache initialized!
+23:53:24.536 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Building shardManager
+23:53:25.247 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+23:53:25.269 [main] INFO  net.cloudybyte.bot.Bot - [CORE] shardManager built!
+23:53:25.437 [pool-3-thread-1] INFO  n.c.bot.core.botlists.PostStats - [CORE] Posted stats to Botlist! (TopGG)
+23:53:25.622 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+23:53:26.577 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+23:53:26.579 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+23:53:26.579 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+23:53:40.404 [pool-3-thread-1] INFO  n.c.bot.core.botlists.PostStats - [CORE] Posted stats to Botlist! (TopGG)
+23:56:02.649 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Initializing cache
+23:56:02.651 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Cache initialized!
+23:56:02.720 [main] INFO  net.cloudybyte.bot.Bot - [CORE] Building shardManager
+23:56:03.418 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+23:56:03.440 [main] INFO  net.cloudybyte.bot.Bot - [CORE] shardManager built!
+23:56:03.568 [pool-3-thread-1] INFO  n.c.bot.core.botlists.PostStats - [CORE] Posted stats to Botlist! (TopGG)
+23:56:03.816 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+23:56:04.711 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+23:56:04.712 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+23:56:04.712 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m

@@ -62,7 +62,7 @@ public class HelpCommand implements ICommand {
         /*manager.getCommands().forEach(
                 (command) -> descriptionBuilder.append('`').append(command.getInvoke()).append("`\n")
                 );*/
-        descriptionBuilder.append("See https://docs.soundy.gq/ for a list of all commands and troubleshooting info");
+        descriptionBuilder.append("See https://docs.soundy.gq/ for a list of all commands and troubleshooting info. \n");
 
 
         descriptionBuilder.append("If you have problems, please join the support guild: ");

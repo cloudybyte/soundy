@@ -1,0 +1,9 @@
+23:58:54.596 [main] INFO  net.cloudybyte.bot.Bot - Initializing cache
+23:58:54.598 [main] INFO  net.cloudybyte.bot.Bot - Cache initialized!
+23:58:54.669 [main] INFO  net.cloudybyte.bot.Bot - Building shardManager
+23:58:55.351 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+23:58:55.373 [main] INFO  net.cloudybyte.bot.Bot - shardManager built!
+23:58:55.758 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+23:58:56.671 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+23:58:56.673 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+23:58:56.673 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m

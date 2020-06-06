@@ -9,6 +9,7 @@ package net.cloudybyte.bot.commands.music;
 
 
 import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
+import com.google.api.client.googleapis.json.GoogleJsonResponseException;
 import com.google.api.client.json.jackson2.JacksonFactory;
 import com.google.api.services.youtube.YouTube;
 import com.google.api.services.youtube.model.SearchResult;
@@ -19,11 +20,13 @@ import com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager;
 import com.sedmelluq.discord.lavaplayer.player.event.AudioEvent;
 import com.sedmelluq.discord.lavaplayer.player.event.AudioEventListener;
 import com.sedmelluq.discord.lavaplayer.source.AudioSourceManagers;
+import com.sedmelluq.discord.lavaplayer.source.soundcloud.SoundCloudAudioSourceManager;
 import io.sentry.SentryClient;
 import io.sentry.SentryClientFactory;
 import net.cloudybyte.bot.core.Constants;
 import net.cloudybyte.bot.core.audio.PlayerManager;
 import net.cloudybyte.bot.core.audio.TrackScheduler;
+import net.cloudybyte.bot.core.audio.youtube.SearchYoutube;
 import net.cloudybyte.bot.core.command.ICommand;
 import net.cloudybyte.bot.util.Colors;
 import net.cloudybyte.bot.util.EmbedBuilder;
@@ -99,8 +102,6 @@ public class PlayCommand implements ICommand, AudioEventListener {
         JoinCommand joinCommand = new JoinCommand();
 
 
-
-
         String BLUE = Colors.BLUE;
         String RESET = Colors.RESET;
 
@@ -124,51 +125,49 @@ public class PlayCommand implements ICommand, AudioEventListener {
         select.put("volume", 1);
         DBCursor cursor = collection.find(query, select);
         try {
-            BasicDBObject obj = (BasicDBObject)cursor.next();
+            BasicDBObject obj = (BasicDBObject) cursor.next();
 
 
-
-
-        //Connect to VC if not already connected
-        if (audioManager.getConnectionStatus().equals(ConnectionStatus.NOT_CONNECTED)) {
-            joinCommand.joinVC(event.getMember(), event.getGuild(), event);
-        }
-
-
-        String input = String.join(" ", args);
-
-        //search YT
-        if (!isURL(input)) {
-            String ytSearched = searchYoutube(input);
-            input = ytSearched;
-
-            if (ytSearched == null) {
-                embedBuilder.warn(event, "Search error", "Nothing found");
-
-                return;
+            //Connect to VC if not already connected
+            if (audioManager.getConnectionStatus().equals(ConnectionStatus.NOT_CONNECTED)) {
+                joinCommand.joinVC(event.getMember(), event.getGuild(), event);
             }
-        }
 
-        PlayerManager manager = PlayerManager.getInstance();
 
-        //Connect to VC (again)
-        if (audioManager.getConnectedChannel() == null) {
-            audioManager.openAudioConnection(event.getMember().getVoiceState().getChannel());
-        }
+            String input = String.join(" ", args);
 
-        //Play track
-        manager.loadAndPlay(event, input);
-        logger.info(BLUE + "Queued " + args.get(0) + " in guild " + event.getGuild().getName() + " by " + event.getAuthor() + RESET);
+            //search YT
+            if (!isURL(input)) {
+                String ytSearched = SearchYoutube.searchyt(input);
+                input = ytSearched;
 
-        //Set volume
+                if (ytSearched == null) {
+                    embedBuilder.warn(event, "Search error", "Nothing found");
+
+                    return;
+                }
+            }
+
+            PlayerManager manager = PlayerManager.getInstance();
+
+            //Connect to VC (again)
+            if (audioManager.getConnectedChannel() == null) {
+                audioManager.openAudioConnection(event.getMember().getVoiceState().getChannel());
+            }
+
+            //Play track
+            manager.loadAndPlay(event, input);
+            logger.info(BLUE + "Queued " + args.get(0) + " in guild " + event.getGuild().getName() + " by " + event.getAuthor() + RESET);
+
+            //Set volume
 
 
             System.out.println("obj.getString(\"volume\") = " + obj.getString("volume"));
             Integer volume = Integer.parseInt(obj.getString("volume"));
-           manager.getGuildMusicManager(event.getGuild()).player.setVolume(volume);
+            manager.getGuildMusicManager(event.getGuild()).player.setVolume(volume);
 
 
-        } catch (NoSuchElementException e){
+        } catch (NoSuchElementException e) {
             PlayerManager manager = PlayerManager.getInstance();
             collection.update(new BasicDBObject("guildid", guildid), new BasicDBObject("$set", new BasicDBObject("volume", 100)), true, false);
             //Connect to VC if not already connected
@@ -200,7 +199,6 @@ public class PlayCommand implements ICommand, AudioEventListener {
             manager.loadAndPlay(event, input);
             logger.info(BLUE + "Queued " + args.get(0) + " in guild " + event.getGuild().getName() + " by " + event.getAuthor() + RESET);
             manager.getGuildMusicManager(event.getGuild()).player.setVolume(100);
-            mongoClient.close();
         }
     }
 
@@ -217,6 +215,7 @@ public class PlayCommand implements ICommand, AudioEventListener {
 
     @Nullable
     private String searchYoutube(String input) {
+
 
         try {
             List<SearchResult> results = youTube.search()
@@ -237,12 +236,15 @@ public class PlayCommand implements ICommand, AudioEventListener {
                 return "https://www.youtube.com/watch?v=" + videoID;
 
             }
+        } catch (GoogleJsonResponseException ignore) {
+
         } catch (Exception e) {
             e.printStackTrace();
         }
 
         return null;
     }
+
 
     @Override
     public String getHelp() {

@@ -16,4 +16,6 @@ public class Constants {
     public static final String StripeAPIkey = "sk_test_I0jOmIUBW00NMDpx2Xk0uoF200McHX8Tpp";
     public static final String soundyPremiumID = "plan_HCQqYn4ofdLQVp";
     public static final String soundyGoldID = "plan_HCQr0FV3JKzE69";
+    public static final String spotifyClientID = "6ab0b0c7613b4123a2e5e94c693f8776";
+    public static final String spotifyClientSecret = "d975bf4e40d64a9998a4395407ad9f4f";
 }

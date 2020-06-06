@@ -41,14 +41,19 @@ public class QueueListCommand implements ICommand {
             StringBuilder queueMessage = new StringBuilder();
             queueMessage.append("```md\n");
             queueMessage.append("#Your queue:\n\n");
+            forEach:
             for (AudioTrack track : queueList) {
-                queueMessage.append("[" + i++ + "](" + track.getInfo().title + ")  <" + FormatUtil.formatTimestamp(track.getInfo().length) + ">\n");
-                System.out.println(Colors.CYAN + track.getInfo().title + Colors.RESET);
-                if(queueMessage.length() <= 1930){
-
+                if (i < 8) {
+                    queueMessage.append("[" + i++ + "](" + track.getInfo().title + ")  <" + FormatUtil.formatTimestamp(track.getInfo().length) + ">\n");
+                    System.out.println(Colors.CYAN + track.getInfo().title + Colors.RESET);
+                }else{
+                    break;
                 }
             }
             queueMessage.append("\n");
+            if(queueList.size() > 8){
+                queueMessage.append("");
+            }
             queueMessage.append("That's the queue! If you want to add more just use " + Constants.PREFIX + "play\n");
             queueMessage.append("```");
             String msg = queueMessage.toString();

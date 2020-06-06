@@ -1,0 +1,334 @@
+00:41:48.004 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+00:41:48.378 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+00:41:48.712 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+00:41:48.713 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+00:41:48.713 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+00:41:56.534 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+00:41:56.584 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+00:41:56.585 [cluster-ClusterId{value='5ec30f346301a20c56c01158', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:212}] to localhost:27017
+00:41:56.590 [cluster-ClusterId{value='5ec30f346301a20c56c01158', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3280600}
+00:41:56.598 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:213}] to localhost:27017
+00:41:56.634 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/playlist?list=PLmc0FwAPhZN5F8WjJw0xEN_tqqQrmU1xQ in guild nexottest by U:cloudybyte(301780655019130880)[0m
+00:41:58.337 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$229/0x0000000800438840@7a9bb05e
+00:41:58.348 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+00:41:58.348 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+00:41:58.378 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+00:42:01.940 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+00:42:01.941 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+00:42:01.943 [cluster-ClusterId{value='5ec30f396301a20c56c01159', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:214}] to localhost:27017
+00:42:01.943 [cluster-ClusterId{value='5ec30f396301a20c56c01159', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=324300}
+00:42:01.946 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:215}] to localhost:27017
+00:42:01.949 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:4, serverValue:215}] to localhost:27017 because the pool has been closed.
+00:42:03.601 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+00:42:03.602 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+00:42:03.604 [cluster-ClusterId{value='5ec30f3b6301a20c56c0115a', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:216}] to localhost:27017
+00:42:03.605 [cluster-ClusterId{value='5ec30f3b6301a20c56c0115a', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=504500}
+00:42:03.608 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:217}] to localhost:27017
+00:42:03.609 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:6, serverValue:217}] to localhost:27017 because the pool has been closed.
+00:42:10.142 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+00:42:10.145 [cluster-ClusterId{value='5ec30f426301a20c56c0115b', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:218}] to localhost:27017
+00:42:10.146 [cluster-ClusterId{value='5ec30f426301a20c56c0115b', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=420000}
+00:42:10.149 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:219}] to localhost:27017
+00:42:10.177 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:8, serverValue:219}] to localhost:27017 because the pool has been closed.
+00:43:24.141 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+00:43:24.515 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+00:43:24.819 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+00:43:24.820 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+00:43:24.821 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+00:43:27.891 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+00:43:27.938 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+00:43:27.943 [cluster-ClusterId{value='5ec30f8fa751110b94584cf8', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:225}] to localhost:27017
+00:43:27.947 [cluster-ClusterId{value='5ec30f8fa751110b94584cf8', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2498800}
+00:43:27.956 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:226}] to localhost:27017
+00:43:27.986 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/playlist?list=PLmc0FwAPhZN5F8WjJw0xEN_tqqQrmU1xQ in guild nexottest by U:cloudybyte(301780655019130880)[0m
+00:43:29.528 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$229/0x0000000800438840@5743fff4
+00:43:29.537 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+00:43:29.538 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+00:43:29.564 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+00:43:31.276 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+00:43:31.279 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+00:43:31.279 [cluster-ClusterId{value='5ec30f93a751110b94584cf9', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:227}] to localhost:27017
+00:43:31.280 [cluster-ClusterId{value='5ec30f93a751110b94584cf9', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=348200}
+00:43:31.283 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:228}] to localhost:27017
+00:43:31.301 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:4, serverValue:228}] to localhost:27017 because the pool has been closed.
+00:43:32.984 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+00:43:32.985 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+00:43:32.987 [cluster-ClusterId{value='5ec30f94a751110b94584cfa', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:229}] to localhost:27017
+00:43:32.988 [cluster-ClusterId{value='5ec30f94a751110b94584cfa', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=447900}
+00:43:32.990 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:230}] to localhost:27017
+00:43:32.992 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:6, serverValue:230}] to localhost:27017 because the pool has been closed.
+00:54:09.787 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+00:54:10.196 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+00:54:10.589 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+00:54:10.590 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+00:54:10.591 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+00:54:18.339 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+00:54:18.381 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+00:54:18.383 [cluster-ClusterId{value='5ec3121af976cd29de198047', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:231}] to localhost:27017
+00:54:18.386 [cluster-ClusterId{value='5ec3121af976cd29de198047', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2287300}
+00:54:18.395 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:232}] to localhost:27017
+00:54:18.427 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/playlist?list=PLmc0FwAPhZN5F8WjJw0xEN_tqqQrmU1xQ in guild nexottest by U:cloudybyte(301780655019130880)[0m
+00:54:19.941 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$229/0x0000000800438840@7c40971a
+00:54:19.953 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+00:54:19.953 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+00:54:19.981 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+00:54:22.565 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+00:54:22.568 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+00:54:22.569 [cluster-ClusterId{value='5ec3121ef976cd29de198048', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:233}] to localhost:27017
+00:54:22.570 [cluster-ClusterId{value='5ec3121ef976cd29de198048', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=453400}
+00:54:22.573 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:234}] to localhost:27017
+00:54:22.590 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:4, serverValue:234}] to localhost:27017 because the pool has been closed.
+00:54:58.053 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+00:54:58.418 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+00:54:58.792 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+00:54:58.793 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+00:54:58.793 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+00:55:07.698 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+00:55:07.738 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+00:55:07.740 [cluster-ClusterId{value='5ec3124b4af7155e24eb4105', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:237}] to localhost:27017
+00:55:07.744 [cluster-ClusterId{value='5ec3124b4af7155e24eb4105', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2259000}
+00:55:07.751 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:238}] to localhost:27017
+00:55:07.775 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/playlist?list=PLmc0FwAPhZN5F8WjJw0xEN_tqqQrmU1xQ in guild nexottest by U:cloudybyte(301780655019130880)[0m
+00:55:08.236 [lava-daemon-pool-info-loader-2-thread-1] ERROR c.s.d.l.p.DefaultAudioPlayerManager - Error in loading item https://www.youtube.com/playlist?list=PLmc0FwAPhZN5F8WjJw0xEN_tqqQrmU1xQ YouTube
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Something went wrong when looking up the track
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:43)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.dispatchItemLoadFailure(DefaultAudioPlayerManager.java:237)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$createItemLoader$0(DefaultAudioPlayerManager.java:226)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at com.sedmelluq.discord.lavaplayer.tools.OrderedExecutor$ChannelRunnable.executeQueue(OrderedExecutor.java:98)
+	at com.sedmelluq.discord.lavaplayer.tools.OrderedExecutor$ChannelRunnable.run(OrderedExecutor.java:87)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (org.apache.http.client.entity.LazyDecompressingInputStream); line: 2, column: 2]
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:57)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager$LoadingRoutes.playlist(YoutubeAudioSourceManager.java:235)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager$LoadingRoutes.playlist(YoutubeAudioSourceManager.java:220)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.DefaultYoutubeLinkRouter.routeFromMainDomain(DefaultYoutubeLinkRouter.java:67)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.DefaultYoutubeLinkRouter.route(DefaultYoutubeLinkRouter.java:39)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager.loadItemOnce(YoutubeAudioSourceManager.java:188)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager.loadItem(YoutubeAudioSourceManager.java:127)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItemOnce(DefaultAudioPlayerManager.java:437)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItem(DefaultAudioPlayerManager.java:419)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$createItemLoader$0(DefaultAudioPlayerManager.java:218)
+	... 6 common frames omitted
+Caused by: java.lang.RuntimeException: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (org.apache.http.client.entity.LazyDecompressingInputStream); line: 2, column: 2]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.DefaultYoutubePlaylistLoader.load(DefaultYoutubePlaylistLoader.java:45)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager$LoadingRoutes.playlist(YoutubeAudioSourceManager.java:232)
+	... 14 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (org.apache.http.client.entity.LazyDecompressingInputStream); line: 2, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2654)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._nextTokenNotInObject(UTF8StreamJsonParser.java:856)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:753)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4231)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2692)
+	at com.sedmelluq.discord.lavaplayer.tools.JsonBrowser.parse(JsonBrowser.java:210)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.DefaultYoutubePlaylistLoader.load(DefaultYoutubePlaylistLoader.java:41)
+	... 15 common frames omitted
+00:55:08.251 [lava-daemon-pool-info-loader-2-thread-1] ERROR n.c.bot.core.audio.PlayerManager - Loading track failed: Something went wrong when looking up the track
+00:55:17.378 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+00:55:17.379 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+00:55:17.381 [cluster-ClusterId{value='5ec312554af7155e24eb4106', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:239}] to localhost:27017
+00:55:17.382 [cluster-ClusterId{value='5ec312554af7155e24eb4106', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=487800}
+00:55:17.385 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:240}] to localhost:27017
+00:55:17.389 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/playlist?list=PLmc0FwAPhZN5F8WjJw0xEN_tqqQrmU1xQ in guild nexottest by U:cloudybyte(301780655019130880)[0m
+00:55:18.884 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$242/0x0000000800432440@505f32be
+00:55:18.893 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+00:55:18.893 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+00:55:18.920 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+00:55:36.043 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+00:55:36.046 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+00:55:36.046 [cluster-ClusterId{value='5ec312684af7155e24eb4107', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:244}] to localhost:27017
+00:55:36.047 [cluster-ClusterId{value='5ec312684af7155e24eb4107', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=309500}
+00:55:36.050 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:245}] to localhost:27017
+00:55:36.068 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:6, serverValue:245}] to localhost:27017 because the pool has been closed.
+00:57:05.406 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+00:57:05.407 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+00:57:05.409 [cluster-ClusterId{value='5ec312c14af7155e24eb4108', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:246}] to localhost:27017
+00:57:05.410 [cluster-ClusterId{value='5ec312c14af7155e24eb4108', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=311200}
+00:57:05.412 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:247}] to localhost:27017
+00:57:05.413 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:8, serverValue:247}] to localhost:27017 because the pool has been closed.
+00:57:07.400 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+00:57:07.402 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+00:57:07.404 [cluster-ClusterId{value='5ec312c34af7155e24eb4109', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:248}] to localhost:27017
+00:57:07.404 [cluster-ClusterId{value='5ec312c34af7155e24eb4109', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=260400}
+00:57:07.406 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:249}] to localhost:27017
+00:57:07.407 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:10, serverValue:249}] to localhost:27017 because the pool has been closed.
+00:57:15.480 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+00:57:15.481 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+00:57:15.482 [cluster-ClusterId{value='5ec312cb4af7155e24eb410a', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:11, serverValue:250}] to localhost:27017
+00:57:15.483 [cluster-ClusterId{value='5ec312cb4af7155e24eb410a', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=298300}
+00:57:15.485 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:12, serverValue:251}] to localhost:27017
+00:57:15.489 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:12, serverValue:251}] to localhost:27017 because the pool has been closed.
+00:58:15.017 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+00:58:15.393 [JDA [0 / 1] MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+00:58:15.822 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+00:58:15.823 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+00:58:15.823 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+00:58:21.297 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+00:58:21.337 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+00:58:21.340 [cluster-ClusterId{value='5ec3130de57fef15a68e69af', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:252}] to localhost:27017
+00:58:21.343 [cluster-ClusterId{value='5ec3130de57fef15a68e69af', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2149600}
+00:58:21.352 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:253}] to localhost:27017
+00:58:21.374 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/playlist?list=PLmc0FwAPhZN5F8WjJw0xEN_tqqQrmU1xQ in guild nexottest by U:cloudybyte(301780655019130880)[0m
+00:58:22.993 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$232/0x0000000800439440@78f1e9ca
+00:58:23.002 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+00:58:23.002 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+00:58:23.029 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+00:58:24.940 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+00:58:24.941 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+00:58:24.943 [cluster-ClusterId{value='5ec31310e57fef15a68e69b0', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:254}] to localhost:27017
+00:58:24.944 [cluster-ClusterId{value='5ec31310e57fef15a68e69b0', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=429800}
+00:58:24.946 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:255}] to localhost:27017
+00:58:24.948 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:4, serverValue:255}] to localhost:27017 because the pool has been closed.
+00:58:25.835 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+00:58:25.836 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+00:58:25.838 [cluster-ClusterId{value='5ec31311e57fef15a68e69b1', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:256}] to localhost:27017
+00:58:25.839 [cluster-ClusterId{value='5ec31311e57fef15a68e69b1', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=507200}
+00:58:25.841 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:257}] to localhost:27017
+00:58:25.843 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:6, serverValue:257}] to localhost:27017 because the pool has been closed.
+00:58:31.273 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+00:58:31.276 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+00:58:31.277 [cluster-ClusterId{value='5ec31317e57fef15a68e69b2', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:258}] to localhost:27017
+00:58:31.277 [cluster-ClusterId{value='5ec31317e57fef15a68e69b2', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=397400}
+00:58:31.281 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:259}] to localhost:27017
+00:58:31.299 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:8, serverValue:259}] to localhost:27017 because the pool has been closed.
+00:58:49.494 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+00:58:49.495 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+00:58:49.497 [cluster-ClusterId{value='5ec31329e57fef15a68e69b3', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:260}] to localhost:27017
+00:58:49.498 [cluster-ClusterId{value='5ec31329e57fef15a68e69b3', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=262400}
+00:58:49.500 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:261}] to localhost:27017
+00:58:49.503 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:10, serverValue:261}] to localhost:27017 because the pool has been closed.
+01:01:12.659 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+01:01:12.660 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+01:01:12.662 [cluster-ClusterId{value='5ec313b8e57fef15a68e69b4', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:11, serverValue:262}] to localhost:27017
+01:01:12.663 [cluster-ClusterId{value='5ec313b8e57fef15a68e69b4', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=480000}
+01:01:12.665 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:12, serverValue:263}] to localhost:27017
+01:01:12.668 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:12, serverValue:263}] to localhost:27017 because the pool has been closed.
+01:01:39.977 [lava-daemon-pool-native-udp-1-thread-1] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+01:01:39.978 [lava-daemon-pool-native-udp-1-thread-1] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+01:01:39.979 [cluster-ClusterId{value='5ec313d3e57fef15a68e69b5', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:13, serverValue:264}] to localhost:27017
+01:01:39.980 [cluster-ClusterId{value='5ec313d3e57fef15a68e69b5', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=300000}
+01:01:39.982 [lava-daemon-pool-native-udp-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:14, serverValue:265}] to localhost:27017
+01:01:39.983 [lava-daemon-pool-native-udp-1-thread-1] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:14, serverValue:265}] to localhost:27017 because the pool has been closed.
+01:01:40.635 [lava-daemon-pool-playback-1-thread-2] ERROR c.s.d.l.t.p.LocalAudioTrackExecutor - Error in playback of CzLsKm3sYO0
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Something broke when playing the track.
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:43)
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:117)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$1(DefaultAudioPlayerManager.java:349)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException: null
+	at java.base/java.net.URI$Parser.parse(URI.java:3106)
+	at java.base/java.net.URI.<init>(URI.java:600)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeTrackFormat.getUrl(YoutubeTrackFormat.java:66)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeSignatureCipherManager.resolveFormatUrl(YoutubeSignatureCipherManager.java:97)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.loadBestFormatWithUrl(YoutubeAudioTrack.java:87)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.process(YoutubeAudioTrack.java:42)
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:105)
+	... 4 common frames omitted
+01:01:40.646 [lava-daemon-pool-native-udp-1-thread-1] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+01:01:40.647 [lava-daemon-pool-native-udp-1-thread-1] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+01:01:40.649 [cluster-ClusterId{value='5ec313d4e57fef15a68e69b6', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:15, serverValue:266}] to localhost:27017
+01:01:40.649 [cluster-ClusterId{value='5ec313d4e57fef15a68e69b6', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=330100}
+01:01:40.651 [lava-daemon-pool-native-udp-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:16, serverValue:267}] to localhost:27017
+01:01:40.652 [lava-daemon-pool-native-udp-1-thread-1] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:16, serverValue:267}] to localhost:27017 because the pool has been closed.
+01:04:57.712 [lava-daemon-pool-native-udp-1-thread-1] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+01:04:57.713 [lava-daemon-pool-native-udp-1-thread-1] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+01:04:57.715 [cluster-ClusterId{value='5ec31499e57fef15a68e69b7', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:17, serverValue:268}] to localhost:27017
+01:04:57.715 [cluster-ClusterId{value='5ec31499e57fef15a68e69b7', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=202600}
+01:04:57.717 [lava-daemon-pool-native-udp-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:18, serverValue:269}] to localhost:27017
+01:04:57.719 [lava-daemon-pool-native-udp-1-thread-1] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:18, serverValue:269}] to localhost:27017 because the pool has been closed.
+01:08:21.439 [lava-daemon-pool-native-udp-1-thread-1] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+01:08:21.440 [lava-daemon-pool-native-udp-1-thread-1] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+01:08:21.442 [cluster-ClusterId{value='5ec31565e57fef15a68e69b8', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:19, serverValue:270}] to localhost:27017
+01:08:21.442 [cluster-ClusterId{value='5ec31565e57fef15a68e69b8', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=237500}
+01:08:21.445 [lava-daemon-pool-native-udp-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:20, serverValue:271}] to localhost:27017
+01:08:21.446 [lava-daemon-pool-native-udp-1-thread-1] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:20, serverValue:271}] to localhost:27017 because the pool has been closed.
+17:45:18.452 [main] INFO  n.d.jda.api.sharding.ShardManager - Login Successful!
+17:45:19.000 [JDA [0 / 1] MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+17:45:19.395 [JDA [0 / 1] MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+17:45:19.396 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - Logged in as soundy DEV#3047
+17:45:19.396 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.listeners.ReadyListener - [0;32mBooted[0m
+17:45:48.375 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+17:45:48.425 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+17:45:48.427 [cluster-ClusterId{value='5ec3ff2c7b0eeb7866fb119f', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:278}] to localhost:27017
+17:45:48.431 [cluster-ClusterId{value='5ec3ff2c7b0eeb7866fb119f', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2874600}
+17:45:48.446 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:279}] to localhost:27017
+17:45:48.485 [JDA [0 / 1] MainWS-ReadThread] INFO  n.c.bot.commands.music.PlayCommand - [0;34mQueued https://www.youtube.com/playlist?list=PLmc0FwAPhZN5F8WjJw0xEN_tqqQrmU1xQ in guild nexottest by U:cloudybyte(301780655019130880)[0m
+17:45:50.878 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$230/0x0000000800438c40@12475791
+17:45:50.888 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+17:45:50.889 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+17:45:50.917 [lava-daemon-pool-playback-4-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+17:45:51.520 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+17:45:51.521 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+17:45:51.523 [cluster-ClusterId{value='5ec3ff2f7b0eeb7866fb11a0', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:280}] to localhost:27017
+17:45:51.524 [cluster-ClusterId{value='5ec3ff2f7b0eeb7866fb11a0', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=424300}
+17:45:51.527 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:281}] to localhost:27017
+17:45:51.554 [JDA [0 / 1] MainWS-ReadThread] ERROR net.dv8tion.jda.api.JDA - One of the EventListeners had an uncaught exception
+java.lang.NumberFormatException: null
+	at java.base/java.lang.Integer.parseInt(Integer.java:614)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at net.cloudybyte.bot.commands.music.ShuffleCommand.handle(ShuffleCommand.java:110)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:80)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:58)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+17:46:38.561 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+17:46:38.563 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+17:46:38.565 [cluster-ClusterId{value='5ec3ff5e7b0eeb7866fb11a1', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:282}] to localhost:27017
+17:46:38.565 [cluster-ClusterId{value='5ec3ff5e7b0eeb7866fb11a1', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=329700}
+17:46:38.567 [JDA [0 / 1] MainWS-ReadThread] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:283}] to localhost:27017
+17:46:38.569 [JDA [0 / 1] MainWS-ReadThread] ERROR c.s.d.lavaplayer.player.AudioPlayer - Handler of event com.sedmelluq.discord.lavaplayer.player.event.TrackEndEvent@49e2dfc9 threw an exception.
+java.lang.NumberFormatException: null
+	at java.base/java.lang.Integer.parseInt(Integer.java:614)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at net.cloudybyte.bot.core.audio.TrackScheduler.onTrackEnd(TrackScheduler.java:106)
+	at com.sedmelluq.discord.lavaplayer.player.event.AudioEventAdapter.onEvent(AudioEventAdapter.java:74)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.dispatchEvent(DefaultAudioPlayer.java:368)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.stopWithReason(DefaultAudioPlayer.java:139)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.stopTrack(DefaultAudioPlayer.java:127)
+	at net.cloudybyte.bot.commands.music.DisconnectCommand.handle(DisconnectCommand.java:56)
+	at net.cloudybyte.bot.core.command.CommandManager.handleCommand(CommandManager.java:80)
+	at net.cloudybyte.bot.Listener.onGuildMessageReceived(Listener.java:58)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:346)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:64)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:151)
+	at net.dv8tion.jda.internal.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:853)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:741)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:720)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:891)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+18:08:37.768 [JDA [0 / 1] MainWS-ReadThread] WARN  n.d.j.i.requests.WebSocketClient - Got disconnected from WebSocket. Attempting to resume session
+18:09:51.858 [JDA [0 / 1] MainWS-ReadThread] WARN  n.d.j.i.requests.WebSocketClient - Reconnect failed! Next attempt in 4s

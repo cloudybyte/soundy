@@ -1,17 +1,16 @@
 package net.cloudybyte.bot.core.command;
 
 
+import com.jagrosh.jdautilities.commons.waiter.EventWaiter;
 import net.cloudybyte.bot.WelcomeCommand;
-import net.cloudybyte.bot.commands.HelpCommand;
-import net.cloudybyte.bot.commands.PingCommand;
-import net.cloudybyte.bot.commands.StatsCommand;
-import net.cloudybyte.bot.commands.UptimeCommand;
+import net.cloudybyte.bot.commands.*;
 import net.cloudybyte.bot.commands.music.Playlist.SavePlaylist;
 import net.cloudybyte.bot.commands.owner.PremiumCheckCommand;
 import net.cloudybyte.bot.commands.owner.ShardCommand;
 import net.cloudybyte.bot.commands.owner.ShutdownCommand;
 import net.cloudybyte.bot.commands.music.*;
 import net.cloudybyte.bot.commands.owner.addtocustomerdb;
+import net.cloudybyte.bot.commands.premium.AlwaysOnCommand;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import org.jetbrains.annotations.NotNull;
 
@@ -23,7 +22,7 @@ public class CommandManager {
     private final Map<String, ICommand> commands = new HashMap<>();
 
 
-    public CommandManager() {
+    public CommandManager(EventWaiter eventWaiter) {
 
         addCommand(new PingCommand());
         addCommand(new HelpCommand(this));
@@ -50,6 +49,8 @@ public class CommandManager {
         addCommand(new PremiumCheckCommand());
         addCommand(new addtocustomerdb());
         addCommand(new ShuffleCommand());
+        addCommand(new AlwaysOnCommand());
+        addCommand(new DashboardCommand(eventWaiter));
     }
 
 
