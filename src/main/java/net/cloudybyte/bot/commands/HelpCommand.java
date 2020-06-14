@@ -1,7 +1,6 @@
 package net.cloudybyte.bot.commands;
 
 
-import com.sun.org.apache.bcel.internal.Const;
 import net.cloudybyte.bot.core.Constants;
 import net.cloudybyte.bot.core.command.CommandManager;
 import net.cloudybyte.bot.core.command.ICommand;

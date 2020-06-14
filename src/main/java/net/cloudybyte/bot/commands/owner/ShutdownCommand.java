@@ -3,9 +3,9 @@ package net.cloudybyte.bot.commands.owner;
 
 import net.cloudybyte.bot.core.Constants;
 import net.cloudybyte.bot.core.command.ICommand;
-import net.cloudybyte.bot.util.*;
+import net.cloudybyte.bot.util.Colors;
+import net.cloudybyte.bot.util.EmbedBuilder;
 import net.dv8tion.jda.api.JDA;
-import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

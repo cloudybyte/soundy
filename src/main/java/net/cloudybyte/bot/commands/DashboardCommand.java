@@ -1,25 +1,18 @@
 package net.cloudybyte.bot.commands;
 
-import com.google.common.eventbus.EventBus;
 import com.jagrosh.jdautilities.commons.waiter.EventWaiter;
 import com.jagrosh.jdautilities.menu.ButtonMenu;
 import net.cloudybyte.bot.core.audio.GuildMusicManager;
 import net.cloudybyte.bot.core.audio.PlayerManager;
 import net.cloudybyte.bot.core.command.ICommand;
-import net.cloudybyte.bot.util.EmbedBuilder;
 import net.cloudybyte.bot.util.EmbedUtil;
 import net.cloudybyte.bot.util.Reactions;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.MessageEmbed;
-import net.dv8tion.jda.api.entities.MessageHistory;
 import net.dv8tion.jda.api.entities.MessageReaction;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
-import net.dv8tion.jda.api.events.message.guild.react.GuildMessageReactionAddEvent;
-import net.dv8tion.jda.api.requests.restaction.MessageAction;
 
-import java.util.Collection;
 import java.util.List;
-import java.util.function.Consumer;
 
 public class DashboardCommand implements ICommand {
 

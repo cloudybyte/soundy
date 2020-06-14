@@ -9,10 +9,8 @@ package net.cloudybyte.bot.commands.music;
 
 
 import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
-import com.google.api.client.googleapis.json.GoogleJsonResponseException;
 import com.google.api.client.json.jackson2.JacksonFactory;
 import com.google.api.services.youtube.YouTube;
-import com.google.api.services.youtube.model.SearchResult;
 import com.mongodb.*;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayerManager;
@@ -20,16 +18,21 @@ import com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager;
 import com.sedmelluq.discord.lavaplayer.player.event.AudioEvent;
 import com.sedmelluq.discord.lavaplayer.player.event.AudioEventListener;
 import com.sedmelluq.discord.lavaplayer.source.AudioSourceManagers;
-import com.sedmelluq.discord.lavaplayer.source.soundcloud.SoundCloudAudioSourceManager;
+import com.wrapper.spotify.exceptions.detailed.BadRequestException;
+import com.wrapper.spotify.exceptions.detailed.NotFoundException;
 import io.sentry.SentryClient;
 import io.sentry.SentryClientFactory;
 import net.cloudybyte.bot.core.Constants;
 import net.cloudybyte.bot.core.audio.PlayerManager;
 import net.cloudybyte.bot.core.audio.TrackScheduler;
+import net.cloudybyte.bot.core.audio.spotify.SpotifyAPIHandler;
+import net.cloudybyte.bot.core.audio.spotify.PlaylistInfo;
+import net.cloudybyte.bot.core.audio.spotify.TrackInfo;
 import net.cloudybyte.bot.core.audio.youtube.SearchYoutube;
 import net.cloudybyte.bot.core.command.ICommand;
 import net.cloudybyte.bot.util.Colors;
 import net.cloudybyte.bot.util.EmbedBuilder;
+import net.cloudybyte.bot.util.EmbedUtil;
 import net.cloudybyte.bot.util.GuildTrackScheduleHandler;
 import net.dv8tion.jda.api.audio.hooks.ConnectionStatus;
 import net.dv8tion.jda.api.entities.VoiceChannel;
@@ -38,12 +41,13 @@ import net.dv8tion.jda.api.managers.AudioManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.annotation.Nullable;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.UnknownHostException;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.Random;
+import java.util.concurrent.CompletableFuture;
 
 
 public class PlayCommand implements ICommand, AudioEventListener {
@@ -78,6 +82,7 @@ public class PlayCommand implements ICommand, AudioEventListener {
     public void handle(List<String> args, GuildMessageReceivedEvent event) {
         SentryClient sentry = SentryClientFactory.sentryClient();
         EmbedBuilder embedBuilder = new EmbedBuilder();
+        EmbedUtil embedUtil = new EmbedUtil();
 
 
      /*   PlayerManager playerManager = PlayerManager.getInstance();
@@ -100,6 +105,7 @@ public class PlayCommand implements ICommand, AudioEventListener {
         TrackScheduler trackScheduler = new TrackScheduler(player, guildid);
         GuildTrackScheduleHandler.addTrackScheduler(event.getGuild(), trackScheduler);
         JoinCommand joinCommand = new JoinCommand();
+        SpotifyAPIHandler SpotifyAPIHandler = new SpotifyAPIHandler();
 
 
         String BLUE = Colors.BLUE;
@@ -115,6 +121,7 @@ public class PlayCommand implements ICommand, AudioEventListener {
         //Connect to DB
         MongoClient mongoClient = null;
         mongoClient = new MongoClient(new MongoClientURI(Constants.DBUri));
+        System.out.println(Constants.DBUri);
         DB database = mongoClient.getDB("soundy");
         DBCollection collection = database.getCollection("volumes");
 
@@ -136,6 +143,56 @@ public class PlayCommand implements ICommand, AudioEventListener {
 
             String input = String.join(" ", args);
 
+
+            PlayerManager manager = PlayerManager.getInstance();
+
+
+            if (input.startsWith("https://open.spotify.com/track/")) {
+                try {
+                    TrackInfo trackInfo = SpotifyAPIHandler.getTrackInfo(input);
+                    String ytsearched = SearchYoutube.searchyt(trackInfo.getName(trackInfo) + " " + trackInfo.getArtist(trackInfo));
+                    input = ytsearched;
+                } catch (NullPointerException e) {
+                    embedBuilder.error(event, "Link Error", "That link is not a valid spotify track link!");
+                    return;
+                }
+
+
+            } else if (input.startsWith("https://open.spotify.com/playlist/")) {
+                try {
+                    LinkedList<TrackInfo> trackMap = SpotifyAPIHandler.getPlaylistMap(input);
+
+                PlaylistInfo playlistInfo = SpotifyAPIHandler.getPlaylistInfo(input);
+                //queue all songs (except the first one) async
+                TrackInfo trackInfo1st = trackMap.getFirst();
+
+                event.getChannel().sendMessage(embedUtil.SpotifyPlaylistQueued(event, playlistInfo)).queue();
+
+
+                String ytsearched = SearchYoutube.searchyt(trackInfo1st.getName(trackInfo1st) + " " + trackInfo1st.getArtist(trackInfo1st));
+                trackMap.remove(trackMap.getFirst());
+                input = ytsearched;
+                CompletableFuture.runAsync(() -> {
+                    Random random = new Random();
+                    for (TrackInfo trackInfo : trackMap) {
+                        String YTsearched = SearchYoutube.searchyt(trackInfo.getName(trackInfo) + " " + trackInfo.getArtist(trackInfo));
+                        try {
+                            Thread.sleep(random.nextInt(2500));
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                        manager.loadSilent(event, YTsearched);
+                    }
+                });
+
+                } catch (NullPointerException e) {
+                    embedBuilder.error(event, "Link Error", "That link is not a valid spotify playlist link!");
+                    return;
+                }
+
+            }
+
+
             //search YT
             if (!isURL(input)) {
                 String ytSearched = SearchYoutube.searchyt(input);
@@ -148,7 +205,6 @@ public class PlayCommand implements ICommand, AudioEventListener {
                 }
             }
 
-            PlayerManager manager = PlayerManager.getInstance();
 
             //Connect to VC (again)
             if (audioManager.getConnectedChannel() == null) {
@@ -159,10 +215,9 @@ public class PlayCommand implements ICommand, AudioEventListener {
             manager.loadAndPlay(event, input);
             logger.info(BLUE + "Queued " + args.get(0) + " in guild " + event.getGuild().getName() + " by " + event.getAuthor() + RESET);
 
+
             //Set volume
 
-
-            System.out.println("obj.getString(\"volume\") = " + obj.getString("volume"));
             Integer volume = Integer.parseInt(obj.getString("volume"));
             manager.getGuildMusicManager(event.getGuild()).player.setVolume(volume);
 
@@ -177,9 +232,12 @@ public class PlayCommand implements ICommand, AudioEventListener {
 
             String input = String.join(" ", args);
 
+
+
+
             //search YT
             if (!isURL(input)) {
-                String ytSearched = searchYoutube(input);
+                String ytSearched = SearchYoutube.searchyt(input);
                 input = ytSearched;
 
                 if (ytSearched == null) {
@@ -213,7 +271,9 @@ public class PlayCommand implements ICommand, AudioEventListener {
         }
     }
 
-    @Nullable
+
+    //Not used anymore -> Scraper
+ /*   @Nullable
     private String searchYoutube(String input) {
 
 
@@ -243,7 +303,7 @@ public class PlayCommand implements ICommand, AudioEventListener {
         }
 
         return null;
-    }
+    }*/
 
 
     @Override

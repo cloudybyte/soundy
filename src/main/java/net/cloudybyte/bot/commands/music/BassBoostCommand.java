@@ -1,9 +1,7 @@
 package net.cloudybyte.bot.commands.music;
 
-import com.sedmelluq.discord.lavaplayer.filter.PcmFilterFactory;
 import com.sedmelluq.discord.lavaplayer.filter.equalizer.EqualizerFactory;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
-import com.sedmelluq.discord.lavaplayer.player.AudioPlayerManager;
 import net.cloudybyte.bot.core.audio.GuildMusicManager;
 import net.cloudybyte.bot.core.audio.PlayerManager;
 import net.cloudybyte.bot.core.audio.TrackScheduler;

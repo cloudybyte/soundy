@@ -1,12 +1,5 @@
 package net.cloudybyte.bot.util;
 
-import lombok.extern.log4j.Log4j2;
-import net.dv8tion.jda.api.requests.RestFuture;
-import net.dv8tion.jda.api.requests.RestAction;
-
-import java.util.concurrent.ExecutionException;
-
-
 public class JDAUtil {
 
     /**

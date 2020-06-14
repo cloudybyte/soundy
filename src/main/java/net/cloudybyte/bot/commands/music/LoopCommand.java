@@ -9,12 +9,11 @@ import net.cloudybyte.bot.util.EmbedBuilder;
 import net.cloudybyte.bot.util.Reactions;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 
-import java.net.UnknownHostException;
-import java.util.Arrays;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-import static net.cloudybyte.bot.util.Colors.*;
+import static net.cloudybyte.bot.util.Colors.RED;
+import static net.cloudybyte.bot.util.Colors.RESET;
 
 public class LoopCommand implements ICommand {
 

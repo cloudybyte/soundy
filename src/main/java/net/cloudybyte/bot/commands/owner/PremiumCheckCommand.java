@@ -1,13 +1,9 @@
 package net.cloudybyte.bot.commands.owner;
 
 
-import io.sentry.SentryClient;
-import io.sentry.SentryClientFactory;
-import net.cloudybyte.bot.core.Constants;
 import net.cloudybyte.bot.core.command.ICommand;
 import net.cloudybyte.bot.core.premiumcheck.PremiumTierChecker;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
-import net.dv8tion.jda.api.exceptions.InsufficientPermissionException;
 
 import java.util.List;
 

@@ -1,6 +1,7 @@
 package net.cloudybyte.bot.util;
 
 import com.sun.management.OperatingSystemMXBean;
+import com.wrapper.spotify.model_objects.specification.PlaylistSimplified;
 import net.cloudybyte.bot.core.Constants;
 import net.cloudybyte.bot.core.data.MySQLManager;
 import net.dv8tion.jda.api.entities.Role;
@@ -243,6 +244,21 @@ public class EmbedBuilder {
         event.getChannel().sendMessage(builder.build()).queue();
 
     }
+    public void SpotifyPlaylistQueued(GuildMessageReceivedEvent event, String name, String artist, String thumbnail, String owner) {
+
+        String title = "Queued Playlist";
+
+
+        net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
+                .setColor(Color.GREEN)
+                .setFooter(URL, iconURL)
+                .setThumbnail(thumbnail)
+                .addField("Queued playlist:", Reactions.PLAY + " `" + name + "` by `" + owner + "`", false);
+
+        //TODO: Permission check if the bot can send embed messages
+        event.getChannel().sendMessage(builder.build()).queue();
+
+    }
 
     public void nowPlayingCommand(GuildMessageReceivedEvent event, String songname, Long progress, Long length, boolean isSteam) {
 
@@ -263,7 +279,7 @@ public class EmbedBuilder {
                     .setColor(Color.BLUE)
                     .setFooter(URL, iconURL)
                     .addField("now playing:", Reactions.PLAY + " `" + songname + "`", false)
-                    .addField("progress:", FormatUtil.formatProgressBar(progress, length), false);
+                    .addField("progress:", "[" + FormatUtil.formatTimestamp(progress) + "]   " + FormatUtil.formatProgressBar(progress, length) + "   [" + FormatUtil.formatTimestamp(length) + "]", false);
 
             //TODO: Permission check if the bot can send embed messages
             event.getChannel().sendMessage(builder.build()).queue();

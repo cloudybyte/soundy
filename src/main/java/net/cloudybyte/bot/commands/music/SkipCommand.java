@@ -10,7 +10,6 @@ package net.cloudybyte.bot.commands.music;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrackEndReason;
-import com.sedmelluq.discord.lavaplayer.track.AudioTrackInfo;
 import net.cloudybyte.bot.core.audio.GuildMusicManager;
 import net.cloudybyte.bot.core.audio.PlayerManager;
 import net.cloudybyte.bot.core.audio.TrackScheduler;
@@ -39,10 +38,11 @@ public class SkipCommand implements ICommand {
             embedBuilder.error(event, null, "\\*silence\\*");
             return;
         }
-        scheduler.onTrackEnd(player, queue.poll(), finished);
+        musicManager.player.playTrack(queue.poll());
         try {
             embedBuilder.nowPlaying(event, musicManager.player.getPlayingTrack().getInfo().title);
-        }catch (NullPointerException ignored){}
+        }catch (NullPointerException ignored){
+        }
     }
 
     @Override

@@ -2,6 +2,7 @@ package net.cloudybyte.bot.util;
 
 import com.sun.management.OperatingSystemMXBean;
 import net.cloudybyte.bot.core.Constants;
+import net.cloudybyte.bot.core.audio.spotify.PlaylistInfo;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDAInfo;
 import net.dv8tion.jda.api.entities.Guild;
@@ -79,4 +80,22 @@ public class EmbedUtil {
         return builder.build();
 
     }
+
+
+    public MessageEmbed SpotifyPlaylistQueued(GuildMessageReceivedEvent event, PlaylistInfo playlistInfo) {
+
+        String title = "Queued Playlist";
+
+
+        net.dv8tion.jda.api.EmbedBuilder builder = new net.dv8tion.jda.api.EmbedBuilder()
+                .setColor(Color.GREEN)
+                .setFooter(URL, iconURL)
+                .setThumbnail(playlistInfo.getThumbnail(playlistInfo))
+                .addField("Queued playlist:", Reactions.PLAY + " `" + playlistInfo.getName(playlistInfo) + "` by `" + playlistInfo.getOwner(playlistInfo) + "`", false);
+
+        //TODO: Permission check if the bot can send embed messages
+        return builder.build();
+
+    }
+
 }

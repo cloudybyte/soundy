@@ -9,6 +9,7 @@ import net.cloudybyte.bot.core.audio.TrackScheduler;
 import net.cloudybyte.bot.core.command.ICommand;
 import net.cloudybyte.bot.util.Colors;
 import net.cloudybyte.bot.util.FormatUtil;
+import net.cloudybyte.bot.util.Reactions;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 
@@ -37,10 +38,15 @@ public class QueueListCommand implements ICommand {
 
 
         if (scheduler.getQueue().size() <= 10){
-            int i = 0;
+            int i = 1;
             StringBuilder queueMessage = new StringBuilder();
             queueMessage.append("```md\n");
             queueMessage.append("#Your queue:\n\n");
+
+            if (!(player.getPlayingTrack() == null)){
+                queueMessage.append("[" + Reactions.PLAY + "](" + player.getPlayingTrack().getInfo().title + ")  <" + FormatUtil.formatTimestamp(player.getPlayingTrack().getInfo().length - player.getPlayingTrack().getPosition()) + ">\n");
+            }
+
             forEach:
             for (AudioTrack track : queueList) {
                 if (i < 8) {

@@ -5,18 +5,10 @@ import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
 import com.sedmelluq.discord.lavaplayer.player.event.AudioEventAdapter;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrackEndReason;
-
-import com.stripe.Stripe;
-import com.stripe.model.Customer;
 import net.cloudybyte.bot.core.Constants;
 
-import java.net.UnknownHostException;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.Map;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
-import java.util.concurrent.ThreadLocalRandom;
 
 import static net.cloudybyte.bot.util.Colors.*;
 
@@ -105,9 +97,6 @@ public class TrackScheduler extends AudioEventAdapter {
    //     BasicDBObject shuffleObj = (BasicDBObject) shuffleCursor.next();
         //   Integer shuffled = Integer.parseInt(shuffleObj.getString("shuffled"));
 
-
-        System.out.println(GREEN + "Track ended!" + RESET);
-        System.out.println("looped = " + looped);
       //  System.out.println("shuffled = " + shuffled);
 
 
@@ -137,10 +126,8 @@ public class TrackScheduler extends AudioEventAdapter {
 
 
         if (endReason.mayStartNext && trackLoop) {
-            System.out.println(BLUE + "Track looping enabled!" + RESET);
             player.playTrack(track.makeClone());
         } else if (endReason.mayStartNext && queueLoop) {
-            System.out.println(GREEN + "Queue looping enabled!" + RESET);
             queue.add(track.makeClone());
             nextTrack();
         } /*else if (endReason.mayStartNext && shuffle) {
@@ -150,7 +137,6 @@ public class TrackScheduler extends AudioEventAdapter {
             ((LinkedList<AudioTrack>) getQueue()).remove(index);
             player.startTrack(nextTrack, false);
         }*/ else if (endReason.mayStartNext) {
-            System.out.println(GREEN + "NEXT TRACK STARTING SOON" + RESET);
             nextTrack();
         }
         mongoClient.close();
@@ -161,15 +147,6 @@ public class TrackScheduler extends AudioEventAdapter {
     public void skipTrack() {
         //Starting the track with noInterrupt set to true will stop the current track and start the next one
         player.startTrack(queue.poll(), true);
-    }
-
-
-    public boolean isTrackLooped() {
-        return trackLoop;
-    }
-
-    public boolean isQueueLooped() {
-        return queueLoop;
     }
 
 

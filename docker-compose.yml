@@ -1,12 +1,9 @@
-version: '1'
+version: '3.8'
 services:
-  bot:
-    build: .
-    restart: always
-    networks:
-      - core
-    volumes:
-      - "$PWD:/opt/soundy/bot"
-    command: java -jar soundybot.jar
-networks:
   core:
+    build: .
+
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"

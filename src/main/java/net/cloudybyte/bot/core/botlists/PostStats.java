@@ -1,6 +1,5 @@
 package net.cloudybyte.bot.core.botlists;
 
-import net.cloudybyte.bot.Bot;
 import net.dv8tion.jda.api.sharding.ShardManager;
 import okhttp3.*;
 import org.slf4j.Logger;

@@ -4,13 +4,10 @@ import com.mongodb.*;
 import com.stripe.Stripe;
 import com.stripe.exception.StripeException;
 import com.stripe.model.Customer;
-import com.stripe.model.CustomerCollection;
 import com.stripe.model.Subscription;
 import com.stripe.model.SubscriptionCollection;
-import com.sun.org.apache.bcel.internal.Const;
 import net.cloudybyte.bot.core.Constants;
 
-import java.net.UnknownHostException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

@@ -7,9 +7,6 @@ import net.cloudybyte.bot.core.premiumcheck.PremiumTierCache;
 import net.cloudybyte.bot.core.premiumcheck.PremiumTiers;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 
-import java.lang.reflect.Array;
-import java.net.UnknownHostException;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 

@@ -5,7 +5,6 @@ import net.cloudybyte.bot.core.Constants;
 import net.dv8tion.jda.api.entities.Guild;
 
 import java.net.UnknownHostException;
-import java.util.Set;
 
 
 public class GuildVolumeHandler {

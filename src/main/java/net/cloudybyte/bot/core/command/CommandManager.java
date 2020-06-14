@@ -4,13 +4,13 @@ package net.cloudybyte.bot.core.command;
 import com.jagrosh.jdautilities.commons.waiter.EventWaiter;
 import net.cloudybyte.bot.WelcomeCommand;
 import net.cloudybyte.bot.commands.*;
-import net.cloudybyte.bot.commands.music.Playlist.SavePlaylist;
+import net.cloudybyte.bot.commands.music.*;
 import net.cloudybyte.bot.commands.owner.PremiumCheckCommand;
 import net.cloudybyte.bot.commands.owner.ShardCommand;
 import net.cloudybyte.bot.commands.owner.ShutdownCommand;
-import net.cloudybyte.bot.commands.music.*;
 import net.cloudybyte.bot.commands.owner.addtocustomerdb;
 import net.cloudybyte.bot.commands.premium.AlwaysOnCommand;
+import net.cloudybyte.bot.commands.premium.VoteCheck;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import org.jetbrains.annotations.NotNull;
 
@@ -50,6 +50,7 @@ public class CommandManager {
         addCommand(new addtocustomerdb());
         addCommand(new ShuffleCommand());
         addCommand(new AlwaysOnCommand());
+addCommand(new VoteCheck());
         addCommand(new DashboardCommand(eventWaiter));
     }
 

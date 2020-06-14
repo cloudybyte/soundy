@@ -3,8 +3,7 @@ package net.cloudybyte.bot;
 import com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendFactory;
 import io.sentry.Sentry;
 import net.cloudybyte.bot.core.Constants;
-import net.cloudybyte.bot.core.audio.spotify.GetPlaylistContent;
-import net.cloudybyte.bot.core.audio.youtube.SearchYoutube;
+import net.cloudybyte.bot.core.audio.spotify.SpotifyAPIHandler;
 import net.cloudybyte.bot.core.botlists.BotsForDiscord;
 import net.cloudybyte.bot.core.botlists.PostStats;
 import net.cloudybyte.bot.core.data.cache.AlwaysOnCache;
@@ -13,10 +12,11 @@ import net.cloudybyte.bot.core.data.cache.YTStatusCache;
 import net.cloudybyte.bot.listeners.AutoDisconnect;
 import net.cloudybyte.bot.listeners.GuildLeaveListener;
 import net.cloudybyte.bot.listeners.ReadyListener;
-import net.dv8tion.jda.api.sharding.DefaultShardManagerBuilder;
-import net.dv8tion.jda.api.sharding.ShardManager;
+import net.cloudybyte.bot.util.PrintStartupBanner;
 import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Activity;
+import net.dv8tion.jda.api.sharding.DefaultShardManagerBuilder;
+import net.dv8tion.jda.api.sharding.ShardManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -38,12 +38,14 @@ public class Bot {
     private Listener Listener;
     private ShardManager shardManager;
     BotsForDiscord botsForDiscord = new BotsForDiscord();
-    GetPlaylistContent getPlaylistContent = new GetPlaylistContent();
+    SpotifyAPIHandler SpotifyAPIHandler = new SpotifyAPIHandler();
     AlwaysOnCache alwaysOnCache;
     YTStatusCache ytStatusCache;
     YTKeyCache ytKeyCache;
 
     private Bot(String[] args) {
+        //Display Banner
+        PrintStartupBanner.print();
 
       //  getPlaylistContent.getTrackName("https://open.spotify.com/track/5ZONFzb7kpERR8AClG0Mo7?si=g5FMbuHcTYKcKRJ30vpgCA");
 
@@ -83,12 +85,7 @@ public class Bot {
 
         //Schedule Statistics Poster
         ScheduledExecutorService ses = Executors.newSingleThreadScheduledExecutor();
-        ses.scheduleAtFixedRate(new Runnable() {
-            @Override
-            public void run() {
-                PostStats.postToTopGG(shardManager);
-            }
-        }, 0, 5, TimeUnit.MINUTES);
+        ses.scheduleAtFixedRate(() -> PostStats.postToTopGG(shardManager), 0, 5, TimeUnit.MINUTES);
 
 
     }

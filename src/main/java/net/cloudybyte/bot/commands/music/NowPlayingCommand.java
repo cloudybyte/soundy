@@ -26,7 +26,7 @@ public class NowPlayingCommand implements ICommand {
         }
         boolean isStream = player.getPlayingTrack().getInfo().isStream;
 
-        embedBuilder.nowPlayingCommand(event, player.getPlayingTrack().getInfo().title,player.getPlayingTrack().getPosition() ,player.getPlayingTrack().getInfo().length, isStream);
+        embedBuilder.nowPlayingCommand(event, player.getPlayingTrack().getInfo().title,player.getPlayingTrack().getPosition(), player.getPlayingTrack().getInfo().length, isStream);
 
     }
 
